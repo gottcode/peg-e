@@ -49,7 +49,7 @@ Board::Board(QUndoStack* moves, QWidget* parent)
 	setScene(scene);
 
 	// Configure view
-	setCacheMode(QGraphicsView::CacheBackground);
+	setCacheMode(QGraphicsView::CacheNone);
 	setRenderHints(QPainter::Antialiasing | QPainter::TextAntialiasing);
 	setFrameStyle(QFrame::NoFrame);
 	setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -169,7 +169,7 @@ void Board::setAppearance(const QColor& color) {
 /*****************************************************************************/
 
 void Board::drawBackground(QPainter* painter, const QRectF& rect) {
-	QLinearGradient gradient(rect.topLeft(), rect.bottomRight());
+	QLinearGradient gradient(sceneRect().topLeft(), sceneRect().bottomRight());
 	gradient.setColorAt(0, QColor(241, 208, 178));
 	gradient.setColorAt(1, QColor(193, 146, 70));
 	painter->fillRect(rect, gradient);
