@@ -197,6 +197,7 @@ void Window::newGame() {
 void Window::restartGame() {
 	if (m_board->isFinished() || QMessageBox::question(this, tr("Question"), tr("Do you want to restart?"), QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes) == QMessageBox::Yes) {
 		m_board->generate(m_seed, m_difficulty, m_algorithm);
+		QSettings().remove("Current/Moves");
 	}
 }
 
