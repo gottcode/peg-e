@@ -1,0 +1,46 @@
+2009-04-21 Graeme Gott <graeme@gottcode.org>
+	* Tag version 1.1.0.
+	* Change icon color.
+
+2009-04-20 Graeme Gott <graeme@gottcode.org>
+	* Allow changing the color of the pegs.
+	* Add toolbar.
+	* Add details window.
+
+2009-02-04 Graeme Gott <graeme@gottcode.org>
+	* Add line puzzle generation algorithm.
+
+2009-02-03 Graeme Gott <graeme@gottcode.org>
+	* Add branch puzzle generation algorithm.
+	* Move puzzle creation into separate class.
+
+2009-01-26 Graeme Gott <graeme@gottcode.org>
+	* Tag version 1.0.0.
+	* FIXED: Wrong mouse cursor when game finished.
+	* Prompt before restarting.
+
+2009-01-25 Graeme Gott <graeme@gottcode.org>
+	* Add program icon.
+	* Add graphics for peg, hole, and background.
+	* Change mouse cursor over pegs.
+	* Add undo support.
+
+2009-01-24 Graeme Gott <graeme@gottcode.org>
+	* Save and restore current game.
+	* Store difficulty rating for new games.
+	* FIXED: Board was not always sized correctly.
+
+2009-01-23 Graeme Gott <graeme@gottcode.org>
+	* Allow player to start a new game.
+	* Show success message.
+	* Scale board based on window size.
+	* Determine when game is over.
+	* Highlight holes available to current peg.
+	* Add jumping pegs.
+	* Add hole class.
+	* Add peg class.
+
+2009-01-22 Graeme Gott <graeme@gottcode.org>
+	* Add board class.
+	* Add puzzle generation algorithm.
+	* Add window class.

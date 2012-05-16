@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Peg-E
+Comment=Peg elimination game
+Exec=peg-e
+Icon=peg-e
+Terminal=false
+Type=Application
+Categories=Qt;Game;

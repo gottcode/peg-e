@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<file>peg-e.png</file>
+
+	<file>16x16/application-exit.png</file>
+	<file>16x16/document-new.png</file>
+	<file>16x16/edit-undo.png</file>
+	<file>16x16/edit-redo.png</file>
+	<file>16x16/view-refresh.png</file>
+
+	<file>22x22/application-exit.png</file>
+	<file>22x22/document-new.png</file>
+	<file>22x22/edit-undo.png</file>
+	<file>22x22/edit-redo.png</file>
+	<file>22x22/view-refresh.png</file>
+</qresource>
+</RCC>
