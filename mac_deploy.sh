@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APP='Peg-E'
-VERSION='1.1.0'
+VERSION=$(git rev-parse --short HEAD)
 
 BUNDLE="$APP.app"
 BUNDLE_FW="$BUNDLE/Contents/Frameworks"
