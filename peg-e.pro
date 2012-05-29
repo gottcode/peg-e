@@ -1,10 +1,7 @@
 TEMPLATE = app
-VERSION = 1.1.0
-CONFIG += warn_on release
+CONFIG += warn_on
 macx {
-	# Uncomment the following line to compile on PowerPC Macs
-	# QMAKE_MAC_SDK = /Developer/SDKs/MacOSX10.4u.sdk
-	CONFIG += x86 ppc
+	CONFIG += x86_64
 }
 
 MOC_DIR = build
@@ -25,6 +22,7 @@ unix: !macx {
 
 HEADERS = src/board.h \
 	src/hole.h \
+	src/locale_dialog.h \
 	src/movement.h \
 	src/peg.h \
 	src/puzzle.h \
@@ -32,11 +30,14 @@ HEADERS = src/board.h \
 
 SOURCES = src/board.cpp \
 	src/hole.cpp \
+	src/locale_dialog.cpp \
 	src/main.cpp \
 	src/movement.cpp \
 	src/peg.cpp \
 	src/puzzle.cpp \
 	src/window.cpp
+
+TRANSLATIONS = translations/pege_en.ts
 
 RESOURCES = icons/icon.qrc
 macx {
@@ -49,8 +50,11 @@ unix: !macx {
 	isEmpty(PREFIX) {
 		PREFIX = /usr/local
 	}
+	isEmpty(BINDIR) {
+		BINDIR = bin
+	}
 
-	target.path = $$PREFIX/bin/
+	target.path = $$PREFIX/$$BINDIR/
 
 	icon.path = $$PREFIX/share/icons/hicolor/48x48/apps
 	icon.files = icons/peg-e.png
@@ -58,5 +62,8 @@ unix: !macx {
 	desktop.path = $$PREFIX/share/applications/
 	desktop.files = icons/peg-e.desktop
 
-	INSTALLS += target icon desktop
+	qm.files = translations/*.qm
+	qm.path = $$PREFIX/share/peg-e/translations
+
+	INSTALLS += target icon desktop qm
 }
