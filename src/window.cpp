@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2012 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,6 +20,7 @@
 #include "window.h"
 
 #include "board.h"
+#include "locale_dialog.h"
 
 #include <QActionGroup>
 #include <QApplication>
@@ -114,6 +115,9 @@ Window::Window()
 	connect(m_colors, SIGNAL(triggered(QAction*)), this, SLOT(changeAppearance(QAction*)));
 
 	appearance_menu->addAction(tr("Custom..."), this, SLOT(changeAppearanceCustom()));
+
+	QMenu* settings_menu = menuBar()->addMenu(tr("&Settings"));
+	settings_menu->addAction(tr("Application &Language..."), this, SLOT(setLocale()));
 
 	QMenu* help_menu = menuBar()->addMenu(tr("&Help"));
 	help_menu->addAction(tr("&About"), this, SLOT(about()));
@@ -218,6 +222,13 @@ void Window::showDetails() {
 		break;
 	}
 	QMessageBox::information(this, tr("Details"), tr("<p><b>Algorithm:</b> %1<br><b>Difficulty:</b> %2<br><b>Seed:</b> %L3</p>").arg(algorithm).arg(m_difficulty).arg(m_seed));
+}
+
+/*****************************************************************************/
+
+void Window::setLocale() {
+	LocaleDialog dialog;
+	dialog.exec();
 }
 
 /*****************************************************************************/
