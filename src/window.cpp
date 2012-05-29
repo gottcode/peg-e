@@ -223,14 +223,16 @@ void Window::showDetails() {
 /*****************************************************************************/
 
 void Window::about() {
-	QMessageBox::about(this, tr("About Peg-E"), tr(
-		"<center>"
-		"<big><b>Peg-E %1</b></big><br/>"
-		"Peg elimination game<br/>"
-		"<small>Copyright &copy; 2009 Graeme Gott</small><br/><br/>"
-		"Toolbar icons are from <a href=\"http://www.oxygen-icons.org/\">Oyxgen</a>"
-		"</center>"
-	).arg(qApp->applicationVersion()));
+	QMessageBox::about(this, tr("About Peg-E"), QString(
+		"<p align='center'><big><b>%1 %2</b></big><br/>%3<br/><small>%4<br/>%5</small></p>"
+		"<p align='center'>%6<br/><small>%7</small></p>")
+		.arg(tr("Peg-E"), QCoreApplication::applicationVersion(),
+			tr("Peg elimination game"),
+			tr("Copyright &copy; 2009-%1 Graeme Gott").arg("2012"),
+			tr("Released under the <a href=%1>GPL 3</a> license").arg("\"http://www.gnu.org/licenses/gpl.html\""),
+			tr("Uses icons from the <a href=%1>Oxygen</a> icon theme").arg("\"http://www.oxygen-icons.org/\""),
+			tr("Used under the <a href=%1>LGPL 3</a> license").arg("\"http://www.gnu.org/licenses/lgpl.html\""))
+	);
 }
 
 /*****************************************************************************/
