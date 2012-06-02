@@ -37,7 +37,8 @@ SOURCES = src/board.cpp \
 	src/puzzle.cpp \
 	src/window.cpp
 
-TRANSLATIONS = translations/pege_en.ts
+TRANSLATIONS = translations/pege_en.ts \
+	translations/pege_he_IL.ts
 
 RESOURCES = icons/icon.qrc
 macx {
