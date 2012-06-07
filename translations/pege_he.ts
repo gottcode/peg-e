@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="he_IL">
+<TS version="2.0" language="he">
 <context>
     <name>Board</name>
     <message>
@@ -43,7 +43,7 @@
         <location filename="../src/window.cpp" line="49"/>
         <location filename="../src/window.cpp" line="240"/>
         <source>Peg-E</source>
-        <translation></translation>
+        <translation>Peg-E</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="58"/>
@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/window.cpp" line="62"/>
         <source>Ctrl+N</source>
-        <translation></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="66"/>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../src/window.cpp" line="66"/>
         <source>F5</source>
-        <translation></translation>
+        <translation>F5</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="68"/>
@@ -83,7 +83,7 @@
     <message>
         <location filename="../src/window.cpp" line="74"/>
         <source>Ctrl+Q</source>
-        <translation></translation>
+        <translation>Ctrl+Q</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="76"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/window.cpp" line="80"/>
         <source>Ctrl+z</source>
-        <translation></translation>
+        <translation>Ctrl+z</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="86"/>
@@ -108,7 +108,7 @@
     <message>
         <location filename="../src/window.cpp" line="86"/>
         <source>Shift+Ctrl+Z</source>
-        <translation></translation>
+        <translation>Shift+Ctrl+Z</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="90"/>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../src/window.cpp" line="117"/>
         <source>Custom...</source>
-        <translation>מותאם...</translation>
+        <translation>אחר...</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="119"/>
@@ -259,12 +259,12 @@
     <message>
         <location filename="../src/window.cpp" line="242"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
-        <translation></translation>
+        <translation>Copyright &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="243"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation>משוחרר תחת הרשיון &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
+        <translation>משוחרר תחת הרשיון ‫&lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="244"/>
