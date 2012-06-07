@@ -37,6 +37,8 @@
 #include <QUndoStack>
 #include <QVBoxLayout>
 
+#include <ctime>
+
 /*****************************************************************************/
 
 Window::Window()
