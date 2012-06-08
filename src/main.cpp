@@ -29,6 +29,10 @@ int main(int argc, char** argv) {
 	app.setOrganizationDomain("gottcode.org");
 	app.setOrganizationName("GottCode");
 
+#ifdef Q_WS_MAC
+	app.setAttribute(Qt::AA_DontShowIconsInMenus, true);
+#endif
+
 	LocaleDialog::loadTranslator("pege_");
 
 	Window window;
