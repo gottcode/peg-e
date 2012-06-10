@@ -1,3 +1,6 @@
+2012-06-10 Graeme Gott <graeme@gottcode.org>
+	* FIXED: Was not loading board messages.
+
 2012-06-09 Graeme Gott <graeme@gottcode.org>
 	* Tag version 1.1.1.
 

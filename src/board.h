@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2012 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,6 +28,7 @@ class Hole;
 class Peg;
 
 class Board : public QGraphicsView {
+	Q_OBJECT
 public:
 	Board(QUndoStack* moves, QWidget* parent = 0);
 
