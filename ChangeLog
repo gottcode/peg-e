@@ -1,3 +1,6 @@
+2012-06-10 Graeme Gott <graeme@gottcode.org>
+	* FIXED: Was not loading board messages.
+
 2012-06-08 Graeme Gott <graeme@gottcode.org>
 	* Don't show menu icons on the Mac.
 
