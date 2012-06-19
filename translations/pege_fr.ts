@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="he">
+<TS version="2.0" language="fr">
 <context>
     <name>Board</name>
     <message>
         <location filename="../src/board.cpp" line="182"/>
         <source>Success</source>
-        <translation>הצלחה</translation>
+        <translation>Succès</translation>
     </message>
     <message>
         <location filename="../src/board.cpp" line="182"/>
         <source>Game Over</source>
-        <translation>המשחק נגמר</translation>
+        <translation>Partie terminée</translation>
     </message>
 </context>
 <context>
@@ -19,22 +19,22 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="50"/>
         <source>Select application language:</source>
-        <translation>נא לבחור את שפת היישום:</translation>
+        <translation>Sélectionner la langue de l&apos;application :</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>&lt;System Language&gt;</source>
-        <translation>&lt;שפת מערכת&gt;</translation>
+        <translation>&lt;Langue du système&gt;</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="181"/>
         <source>Note</source>
-        <translation>הערה</translation>
+        <translation>Remarque</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="181"/>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>נא לאתחל את יישום זה כדי להחיל את השינוי בשפה.</translation>
+        <translation>Veuillez relancer l&apos;application pour que la modification prenne effet. </translation>
     </message>
 </context>
 <context>
@@ -48,12 +48,12 @@
     <message>
         <location filename="../src/window.cpp" line="60"/>
         <source>&amp;Game</source>
-        <translation>&amp;משחק</translation>
+        <translation>&amp;Jeu</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="64"/>
         <source>&amp;New</source>
-        <translation>&amp;חדש</translation>
+        <translation>&amp;Nouveau</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="64"/>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../src/window.cpp" line="68"/>
         <source>&amp;Restart Game</source>
-        <translation>&amp;התחלה מחדש</translation>
+        <translation>&amp;Redémarrer la partie</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="68"/>
@@ -73,12 +73,12 @@
     <message>
         <location filename="../src/window.cpp" line="70"/>
         <source>&amp;Details</source>
-        <translation>&amp;פרטים</translation>
+        <translation>&amp;Détails</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="76"/>
         <source>Quit</source>
-        <translation>יציאה</translation>
+        <translation>Quitter</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="76"/>
@@ -88,12 +88,12 @@
     <message>
         <location filename="../src/window.cpp" line="78"/>
         <source>&amp;Move</source>
-        <translation>&amp;תור</translation>
+        <translation>&amp;Déplacer</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="82"/>
         <source>&amp;Undo</source>
-        <translation>&amp;ביטול</translation>
+        <translation>&amp;Annuler</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="82"/>
@@ -103,158 +103,158 @@
     <message>
         <location filename="../src/window.cpp" line="88"/>
         <source>&amp;Redo</source>
-        <translation>ביצוע־&amp;חוזר</translation>
+        <translation>&amp;Rétablir</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="88"/>
         <source>Shift+Ctrl+Z</source>
-        <translation>Shift+Ctrl+Z</translation>
+        <translation>Maj+Ctrl+Z</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="92"/>
         <source>&amp;Appearance</source>
-        <translation>&amp;הופעה</translation>
+        <translation>&amp;Apparence</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="95"/>
         <source>Blue</source>
-        <translation>כחול</translation>
+        <translation>Bleu</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="96"/>
         <source>Charcoal</source>
-        <translation>פחם</translation>
+        <translation>Marron</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="97"/>
         <source>Green</source>
-        <translation>ירוק</translation>
+        <translation>Vert</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="98"/>
         <source>Midnight</source>
-        <translation>חצות</translation>
+        <translation>Bleu nuit</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="99"/>
         <source>Plum</source>
-        <translation>שזיף</translation>
+        <translation>Prune</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="100"/>
         <source>Red</source>
-        <translation>אדום</translation>
+        <translation>Rouge</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="101"/>
         <source>Yellow</source>
-        <translation>צהוב</translation>
+        <translation>Jaune</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="119"/>
         <source>Custom...</source>
-        <translation>אחר...</translation>
+        <translation>Personnalisée...</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="121"/>
         <source>&amp;Settings</source>
-        <translation>&amp;הגדרות</translation>
+        <translation>&amp;Paramètres</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="122"/>
         <source>Application &amp;Language...</source>
-        <translation>&amp;שפת יישום...</translation>
+        <translation>&amp;Langue de l&apos;application…</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="124"/>
         <source>&amp;Help</source>
-        <translation>&amp;עזרה</translation>
+        <translation>&amp;Aide</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="125"/>
         <source>&amp;About</source>
-        <translation>&amp;אודות</translation>
+        <translation>À &amp;propos de…</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="126"/>
         <source>About &amp;Qt</source>
-        <translation>אודות &amp;QT</translation>
+        <translation>À propos de &amp;Qt</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="161"/>
         <source>New Game</source>
-        <translation>משחק חדש</translation>
+        <translation>Nouveau jeu</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="165"/>
         <location filename="../src/window.cpp" line="223"/>
         <location filename="../src/window.cpp" line="309"/>
         <source>Original</source>
-        <translation>מקורי</translation>
+        <translation>Original</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="166"/>
         <location filename="../src/window.cpp" line="216"/>
         <location filename="../src/window.cpp" line="312"/>
         <source>Branch</source>
-        <translation>מסועף</translation>
+        <translation>Branche</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="167"/>
         <location filename="../src/window.cpp" line="219"/>
         <location filename="../src/window.cpp" line="315"/>
         <source>Line</source>
-        <translation>שורה</translation>
+        <translation>Ligne</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="177"/>
         <source>Random</source>
-        <translation>אקראי</translation>
+        <translation>Aléatoire</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="186"/>
         <source>Algorithm:</source>
-        <translation>אלגוריתם:</translation>
+        <translation>Algorithme : </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="187"/>
         <source>Difficulty:</source>
-        <translation>קושי:</translation>
+        <translation>Difficulté :</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="188"/>
         <source>Seed:</source>
-        <translation>זרעים:</translation>
+        <translation>Grain : </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="204"/>
         <source>Question</source>
-        <translation>שאלה</translation>
+        <translation>Question</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="204"/>
         <source>Do you want to restart?</source>
-        <translation>האם ברצונך להתחיל מחדש?</translation>
+        <translation>Voulez-vous redémarrer ?</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="226"/>
         <source>Details</source>
-        <translation>פרטים</translation>
+        <translation>Détails</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="226"/>
         <source>&lt;p&gt;&lt;b&gt;Algorithm:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Difficulty:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Seed:&lt;/b&gt; %L3&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;אלגוריתם:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;קושי:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;זרעים:&lt;/b&gt; %L3&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Algorithme : &lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Difficulté : &lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Grain : &lt;/b&gt; %L3&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="239"/>
         <source>About Peg-E</source>
-        <translation>אודות Peg-E</translation>
+        <translation>À propos de Peg-E</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="243"/>
         <source>Peg elimination game</source>
-        <translation>משחק הלוח מחשבת</translation>
+        <translation>Peg, un jeu d&apos;élimination</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="244"/>
@@ -264,17 +264,17 @@
     <message>
         <location filename="../src/window.cpp" line="245"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation>משוחרר תחת הרשיון ‫&lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
+        <translation>Distribué sous licence GNU &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="246"/>
         <source>Uses icons from the &lt;a href=%1&gt;Oxygen&lt;/a&gt; icon theme</source>
-        <translation>הצלמיות נלקחו מהפרוייקט &lt;a href=%1&gt;Oxygen&lt;/a&gt;</translation>
+        <translation>Utilise les icônes du thème &lt;a href=%1&gt;Oxygen&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="247"/>
         <source>Used under the &lt;a href=%1&gt;LGPL 3&lt;/a&gt; license</source>
-        <translation>בשימוש תחת הרשיון &lt;a href=%1&gt;LGPL 3&lt;/a&gt;</translation>
+        <translation>Distribué sous licence GNU &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
 </context>
 </TS>

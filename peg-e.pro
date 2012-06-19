@@ -35,6 +35,7 @@ SOURCES = src/board.cpp \
 	src/window.cpp
 
 TRANSLATIONS = translations/pege_en.ts \
+	translations/pege_fr.ts \
 	translations/pege_he.ts \
 	translations/pege_nl.ts
 
