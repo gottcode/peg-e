@@ -11,7 +11,7 @@ MOC_DIR = build
 OBJECTS_DIR = build
 RCC_DIR = build
 
-VERSION = 1.1.1.1
+VERSION = 1.1.2
 DEFINES += VERSIONSTR=\\\"$${VERSION}\\\"
 
 unix: !macx {

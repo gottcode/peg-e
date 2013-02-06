@@ -1,7 +1,7 @@
 @ECHO OFF
 
 SET APP=Peg-E
-SET VERSION=1.1.1.1
+SET VERSION=1.1.2
 
 ECHO Copying executable
 MKDIR %APP%
