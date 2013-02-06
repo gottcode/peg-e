@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2013 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,12 +24,13 @@
 #include <QBrush>
 #include <QPen>
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-Peg::Peg(const QPoint& hole, Board* board, QGraphicsItem* parent)
-: QGraphicsEllipseItem(0, 0, 20, 20, parent),
-  m_hole(hole),
-  m_board(board) {
+Peg::Peg(const QPoint& hole, Board* board, QGraphicsItem* parent) :
+	QGraphicsEllipseItem(0, 0, 20, 20, parent),
+	m_hole(hole),
+	m_board(board)
+{
 	setPen(Qt::NoPen);
 
 	QGraphicsEllipseItem* gloss = new QGraphicsEllipseItem(3, 1.5, 14, 9, this);
@@ -45,9 +46,10 @@ Peg::Peg(const QPoint& hole, Board* board, QGraphicsItem* parent)
 	setCursor(Qt::OpenHandCursor);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Peg::mousePressEvent(QGraphicsSceneMouseEvent* event) {
+void Peg::mousePressEvent(QGraphicsSceneMouseEvent* event)
+{
 	findHoles();
 	m_board->setHighlight(m_holes, true);
 
@@ -56,9 +58,10 @@ void Peg::mousePressEvent(QGraphicsSceneMouseEvent* event) {
 	QGraphicsEllipseItem::mousePressEvent(event);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Peg::mouseReleaseEvent(QGraphicsSceneMouseEvent* event) {
+void Peg::mouseReleaseEvent(QGraphicsSceneMouseEvent* event)
+{
 	m_board->setHighlight(m_holes, false);
 
 	QPoint hole = ((mapToScene(boundingRect().center()) / 20.f) - QPointF(0.5f, 0.5f)).toPoint();
@@ -76,25 +79,28 @@ void Peg::mouseReleaseEvent(QGraphicsSceneMouseEvent* event) {
 	QGraphicsEllipseItem::mouseReleaseEvent(event);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Peg::move(QPoint hole) {
+void Peg::move(QPoint hole)
+{
 	m_hole = hole;
 	setPos(m_hole.x() * 20, m_hole.y() * 20);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Peg::setAppearance(const QColor& color) {
+void Peg::setAppearance(const QColor& color)
+{
 	QRadialGradient gradient(QPointF(10,10), 10, QPoint(10,13));
 	gradient.setColorAt(0, color);
 	gradient.setColorAt(1, color.darker());
 	setBrush(gradient);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Peg::findHoles() {
+void Peg::findHoles()
+{
 	m_holes.clear();
 	for (int r = -1; r < 2; ++r) {
 		for (int c = -1; c < 2; ++c) {
@@ -107,4 +113,4 @@ void Peg::findHoles() {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------

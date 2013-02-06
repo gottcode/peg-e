@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2013 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,11 +23,12 @@
 #include <QPen>
 #include <QRadialGradient>
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-Hole::Hole(const QPoint& position, QGraphicsItem* parent)
-: QGraphicsEllipseItem(0, 0, 16, 16, parent),
-  m_peg(0) {
+Hole::Hole(const QPoint& position, QGraphicsItem* parent) :
+	QGraphicsEllipseItem(0, 0, 16, 16, parent),
+	m_peg(0)
+{
 	QRadialGradient gradient(QPointF(8,8), 8);
 	gradient.setColorAt(0, QColor(0, 0, 0, 0));
 	gradient.setColorAt(1, QColor(0, 0, 0, 64));
@@ -39,10 +40,11 @@ Hole::Hole(const QPoint& position, QGraphicsItem* parent)
 	setFlag(QGraphicsItem::ItemIsMovable, false);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Hole::setHighlight(bool highlight) {
+void Hole::setHighlight(bool highlight)
+{
 	setPen(!highlight ? Qt::NoPen : QPen(Qt::yellow, 2));
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------

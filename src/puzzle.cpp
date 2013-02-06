@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2013 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,15 +22,17 @@
 #include <algorithm>
 #include <cstdlib>
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-inline uint qHash(const QPoint& key) {
+inline uint qHash(const QPoint& key)
+{
 	return (key.x() << 16) + key.y();
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-Puzzle::Puzzle() {
+Puzzle::Puzzle()
+{
 	m_directions = QList<QPoint>()
 		<< QPoint(-1,0)
 		<< QPoint(-1,-1)
@@ -42,32 +44,37 @@ Puzzle::Puzzle() {
 		<< QPoint(-1,1);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-Puzzle::~Puzzle() {
+Puzzle::~Puzzle()
+{
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-QHash<QPoint, bool> Puzzle::holes() const {
+QHash<QPoint, bool> Puzzle::holes() const
+{
 	return m_holes;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-QPoint Puzzle::position() const {
+QPoint Puzzle::position() const
+{
 	return m_top_left;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-QSize Puzzle::size() const {
+QSize Puzzle::size() const
+{
 	return QSize((m_bottom_right.x() - m_top_left.x()) + 1, (m_bottom_right.y() - m_top_left.y()) + 1);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Puzzle::generate(int seed, int difficulty) {
+void Puzzle::generate(int seed, int difficulty)
+{
 	srand(seed);
 
 	difficulty = qBound(1, difficulty, 101);
@@ -76,29 +83,33 @@ void Puzzle::generate(int seed, int difficulty) {
 	generate(difficulty);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Puzzle::generate(int pegs) {
+void Puzzle::generate(int pegs)
+{
 	QPoint start(0, 0);
 	setHasPeg(start, true);
 	findMoves(start, pegs);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-bool Puzzle::isAvailable(const QPoint& hole) const {
+bool Puzzle::isAvailable(const QPoint& hole) const
+{
 	return hasPeg(hole) != 1;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Puzzle::shuffle(QList<QPoint>& pegs) const {
+void Puzzle::shuffle(QList<QPoint>& pegs) const
+{
 	std::random_shuffle(pegs.begin(), pegs.end());
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-bool Puzzle::findNextMove(const QPoint& start_hole, QPoint& jumped_hole, QPoint& end_hole) {
+bool Puzzle::findNextMove(const QPoint& start_hole, QPoint& jumped_hole, QPoint& end_hole)
+{
 	std::random_shuffle(m_directions.begin(), m_directions.end());
 	foreach (const QPoint& direction, m_directions) {
 		jumped_hole = direction + start_hole;
@@ -113,9 +124,10 @@ bool Puzzle::findNextMove(const QPoint& start_hole, QPoint& jumped_hole, QPoint&
 	return false;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-QPoint Puzzle::findMoves(const QPoint& start, int loops) {
+QPoint Puzzle::findMoves(const QPoint& start, int loops)
+{
 	QList<QPoint> pegs;
 	pegs.append(start);
 
@@ -135,15 +147,17 @@ QPoint Puzzle::findMoves(const QPoint& start, int loops) {
 	return pegs.last();
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-int Puzzle::hasPeg(const QPoint& hole) const {
+int Puzzle::hasPeg(const QPoint& hole) const
+{
 	return m_holes.contains(hole) ? m_holes.value(hole) : -1;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Puzzle::setHasPeg(const QPoint& hole, bool value) {
+void Puzzle::setHasPeg(const QPoint& hole, bool value)
+{
 	m_top_left.setX(qMin(m_top_left.x(), hole.x()));
 	m_top_left.setY(qMin(m_top_left.y(), hole.y()));
 	m_bottom_right.setX(qMax(m_bottom_right.x(), hole.x()));
@@ -151,9 +165,10 @@ void Puzzle::setHasPeg(const QPoint& hole, bool value) {
 	m_holes[hole] = value;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void PuzzleBranch::generate(int pegs) {
+void PuzzleBranch::generate(int pegs)
+{
 	QPoint start_hole(0, 0);
 	setHasPeg(start_hole, true);
 
@@ -174,15 +189,17 @@ void PuzzleBranch::generate(int pegs) {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-bool PuzzleLine::isAvailable(const QPoint& hole) const {
+bool PuzzleLine::isAvailable(const QPoint& hole) const
+{
 	return hasPeg(hole) == -1;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void PuzzleLine::shuffle(QList<QPoint>&) const {
+void PuzzleLine::shuffle(QList<QPoint>&) const
+{
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------

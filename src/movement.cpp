@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2013 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,13 +25,14 @@
 
 #include <QSettings>
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-Movement::Movement(const QPoint& start_hole, const QPoint& end_hole, Board* board)
-: m_start_hole(start_hole),
-  m_jumped_hole(start_hole + ((end_hole - start_hole) / 2)),
-  m_end_hole(end_hole),
-  m_board(board) {
+Movement::Movement(const QPoint& start_hole, const QPoint& end_hole, Board* board) :
+	m_start_hole(start_hole),
+	m_jumped_hole(start_hole + ((end_hole - start_hole) / 2)),
+	m_end_hole(end_hole),
+	m_board(board)
+{
 	Q_ASSERT(m_board->isPeg(m_start_hole));
 	Q_ASSERT(m_board->isPeg(m_jumped_hole));
 	Q_ASSERT(m_board->isHole(m_end_hole));
@@ -40,9 +41,10 @@ Movement::Movement(const QPoint& start_hole, const QPoint& end_hole, Board* boar
 	m_jumped_peg = m_board->hole(m_jumped_hole)->peg();
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Movement::redo() {
+void Movement::redo()
+{
 	m_board->hole(m_start_hole)->setPeg(0);
 	m_board->hole(m_jumped_hole)->setPeg(0);
 	m_board->hole(m_end_hole)->setPeg(m_peg);
@@ -55,9 +57,10 @@ void Movement::redo() {
 	QSettings().setValue("Current/Moves", moves);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Movement::undo() {
+void Movement::undo()
+{
 	m_board->hole(m_start_hole)->setPeg(m_peg);
 	m_board->hole(m_jumped_hole)->setPeg(m_jumped_peg);
 	m_board->hole(m_end_hole)->setPeg(0);
@@ -70,4 +73,4 @@ void Movement::undo() {
 	QSettings().setValue("Current/Moves", moves);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2012 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2012, 2013 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -39,12 +39,13 @@
 
 #include <ctime>
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-Window::Window()
-: m_seed(0),
-  m_difficulty(QSettings().value("Difficulty", 5).toInt()),
-  m_algorithm(QSettings().value("Algorithm", 1).toInt()) {
+Window::Window() :
+	m_seed(0),
+	m_difficulty(QSettings().value("Difficulty", 5).toInt()),
+	m_algorithm(QSettings().value("Algorithm", 1).toInt())
+{
 #if defined(Q_OS_UNIX) && !defined(Q_OS_MAC)
 	setWindowIcon(QIcon(":/peg-e.png"));
 #endif
@@ -147,16 +148,18 @@ Window::Window()
 	loadGame();
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::closeEvent(QCloseEvent* event) {
+void Window::closeEvent(QCloseEvent* event)
+{
 	QSettings().setValue("Geometry", saveGeometry());
 	QMainWindow::closeEvent(event);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::newGame() {
+void Window::newGame()
+{
 	QDialog dialog(this);
 	dialog.setWindowTitle(tr("New Game"));
 
@@ -198,18 +201,20 @@ void Window::newGame() {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::restartGame() {
+void Window::restartGame()
+{
 	if (m_board->isFinished() || QMessageBox::question(this, tr("Question"), tr("Do you want to restart?"), QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes) == QMessageBox::Yes) {
 		m_board->generate(m_seed, m_difficulty, m_algorithm);
 		QSettings().remove("Current/Moves");
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::showDetails() {
+void Window::showDetails()
+{
 	QString algorithm;
 	switch (m_algorithm) {
 	case 2:
@@ -226,37 +231,41 @@ void Window::showDetails() {
 	QMessageBox::information(this, tr("Details"), tr("<p><b>Algorithm:</b> %1<br><b>Difficulty:</b> %2<br><b>Seed:</b> %L3</p>").arg(algorithm).arg(m_difficulty).arg(m_seed));
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::setLocale() {
+void Window::setLocale()
+{
 	LocaleDialog dialog;
 	dialog.exec();
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::about() {
+void Window::about()
+{
 	QMessageBox::about(this, tr("About Peg-E"), QString(
 		"<p align='center'><big><b>%1 %2</b></big><br/>%3<br/><small>%4<br/>%5</small></p>"
 		"<p align='center'>%6<br/><small>%7</small></p>")
 		.arg(tr("Peg-E"), QCoreApplication::applicationVersion(),
 			tr("Peg elimination game"),
-			tr("Copyright &copy; 2009-%1 Graeme Gott").arg("2012"),
+			tr("Copyright &copy; 2009-%1 Graeme Gott").arg("2013"),
 			tr("Released under the <a href=%1>GPL 3</a> license").arg("\"http://www.gnu.org/licenses/gpl.html\""),
 			tr("Uses icons from the <a href=%1>Oxygen</a> icon theme").arg("\"http://www.oxygen-icons.org/\""),
 			tr("Used under the <a href=%1>LGPL 3</a> license").arg("\"http://www.gnu.org/licenses/lgpl.html\""))
 	);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::changeAppearance(QAction* action) {
+void Window::changeAppearance(QAction* action)
+{
 	m_board->setAppearance(action->data().toString());
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::changeAppearanceCustom() {
+void Window::changeAppearanceCustom()
+{
 	QColor color = QColorDialog::getColor(QSettings().value("Appearance").toString(), this);
 	if (!color.isValid()) {
 		return;
@@ -271,9 +280,10 @@ void Window::changeAppearanceCustom() {
 	m_board->setAppearance(color);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::loadGame() {
+void Window::loadGame()
+{
 	// Load board
 	QSettings settings;
 	int seed = settings.value("Current/Seed", m_seed).toInt();
@@ -299,9 +309,10 @@ void Window::loadGame() {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Window::startGame(int seed, int difficulty, int algorithm) {
+void Window::startGame(int seed, int difficulty, int algorithm)
+{
 	m_algorithm = algorithm;
 	QString text;
 	switch (m_algorithm) {
@@ -337,4 +348,4 @@ void Window::startGame(int seed, int difficulty, int algorithm) {
 	settings.remove("Current/Moves");
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------

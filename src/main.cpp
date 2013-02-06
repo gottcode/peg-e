@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2012 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2012, 2013 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,14 +22,22 @@
 
 #include <QApplication>
 
-int main(int argc, char** argv) {
+/**
+ * Program entry point.
+ *
+ * @param argc amount of command line arguments
+ * @param argv command line arguments
+ * @return @c 0 on successful exit
+ */
+int main(int argc, char** argv)
+{
 	QApplication app(argc, argv);
 	app.setApplicationName("Peg-E");
 	app.setApplicationVersion(VERSIONSTR);
 	app.setOrganizationDomain("gottcode.org");
 	app.setOrganizationName("GottCode");
 
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MAC
 	app.setAttribute(Qt::AA_DontShowIconsInMenus, true);
 #endif
 

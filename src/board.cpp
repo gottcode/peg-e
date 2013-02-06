@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2013 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,19 +32,21 @@
 
 #include <algorithm>
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-inline uint qHash(const QPoint& key) {
+inline uint qHash(const QPoint& key)
+{
 	return (key.x() << 16) + key.y();
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-Board::Board(QUndoStack* moves, QWidget* parent)
-: QGraphicsView(parent),
-  m_color(QSettings().value("Appearance", "#0055ff").toString()),
-  m_status(0),
-  m_moves(moves) {
+Board::Board(QUndoStack* moves, QWidget* parent) :
+	QGraphicsView(parent),
+	m_color(QSettings().value("Appearance", "#0055ff").toString()),
+	m_status(0),
+	m_moves(moves)
+{
 	QGraphicsScene* scene = new QGraphicsScene(this);
 	setScene(scene);
 
@@ -57,27 +59,31 @@ Board::Board(QUndoStack* moves, QWidget* parent)
 	setMinimumSize(300, 300);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-bool Board::isHole(const QPoint& hole) const {
+bool Board::isHole(const QPoint& hole) const
+{
 	return m_holes.contains(hole) ? !m_holes.value(hole)->hasPeg() : 0;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-bool Board::isPeg(const QPoint& hole) const {
+bool Board::isPeg(const QPoint& hole) const
+{
 	return m_holes.contains(hole) ? m_holes.value(hole)->hasPeg() : 0;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-Hole* Board::hole(const QPoint& hole) const {
+Hole* Board::hole(const QPoint& hole) const
+{
 	return m_holes.contains(hole) ? m_holes[hole] : 0;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Board::generate(int seed, int difficulty, int algorithm) {
+void Board::generate(int seed, int difficulty, int algorithm)
+{
 	// Remove old board
 	m_status = 0;
 	m_moves->clear();
@@ -126,9 +132,10 @@ void Board::generate(int seed, int difficulty, int algorithm) {
 	delete puzzle;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Board::move(const QPoint& old_hole, const QPoint& new_hole) {
+void Board::move(const QPoint& old_hole, const QPoint& new_hole)
+{
 	// Move peg
 	Movement* movement = new Movement(old_hole, new_hole, this);
 	m_moves->push(movement);
@@ -142,18 +149,20 @@ void Board::move(const QPoint& old_hole, const QPoint& new_hole) {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Board::setHighlight(const QList<QPoint>& holes, bool highlight) {
+void Board::setHighlight(const QList<QPoint>& holes, bool highlight)
+{
 	foreach (const QPoint& hole, holes) {
 		Q_ASSERT(m_holes.contains(hole));
 		m_holes[hole]->setHighlight(highlight);
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Board::setAppearance(const QColor& color) {
+void Board::setAppearance(const QColor& color)
+{
 	m_color = color;
 	QSettings().setValue("Appearance", m_color.name());
 
@@ -166,18 +175,20 @@ void Board::setAppearance(const QColor& color) {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Board::drawBackground(QPainter* painter, const QRectF& rect) {
+void Board::drawBackground(QPainter* painter, const QRectF& rect)
+{
 	QLinearGradient gradient(sceneRect().topLeft(), sceneRect().bottomRight());
 	gradient.setColorAt(0, QColor(241, 208, 178));
 	gradient.setColorAt(1, QColor(193, 146, 70));
 	painter->fillRect(rect, gradient);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Board::drawForeground(QPainter* painter, const QRectF&) {
+void Board::drawForeground(QPainter* painter, const QRectF&)
+{
 	if (m_status) {
 		QString message((m_status == 2) ? tr("Success") : tr("Game Over"));
 		QFontMetrics metrics(QFont("Sans", 24));
@@ -206,16 +217,18 @@ void Board::drawForeground(QPainter* painter, const QRectF&) {
 	}
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-void Board::resizeEvent(QResizeEvent* event) {
+void Board::resizeEvent(QResizeEvent* event)
+{
 	fitInView(sceneRect(), Qt::KeepAspectRatio);
 	QGraphicsView::resizeEvent(event);
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
 
-bool Board::checkFinished() {
+bool Board::checkFinished()
+{
 	int pegs = 0;
 	foreach (Hole* hole, m_holes) {
 		if (hole->hasPeg()) {
@@ -229,4 +242,4 @@ bool Board::checkFinished() {
 	return true;
 }
 
-/*****************************************************************************/
+//-----------------------------------------------------------------------------
