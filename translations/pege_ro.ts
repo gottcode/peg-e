@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="he">
+<TS version="2.0" language="ro">
 <context>
     <name>Board</name>
     <message>
         <location filename="../src/board.cpp" line="193"/>
         <source>Success</source>
-        <translation>הצלחה</translation>
+        <translation>Succes</translation>
     </message>
     <message>
         <location filename="../src/board.cpp" line="193"/>
         <source>Game Over</source>
-        <translation>המשחק נגמר</translation>
+        <translation>Joc terminat</translation>
     </message>
 </context>
 <context>
@@ -19,22 +19,22 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="50"/>
         <source>Select application language:</source>
-        <translation>בחירת שפת יישום:</translation>
+        <translation>Selectaţi limba aplicaţiei:</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>&lt;System Language&gt;</source>
-        <translation>&lt;שפת מערכת&gt;</translation>
+        <translation>&lt;Limbaj Sistem&gt;</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="181"/>
         <source>Note</source>
-        <translation>הערה</translation>
+        <translation>Notă</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="181"/>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>נא לאתחל את יישום זה כדי להחיל את השינוי בשפה.</translation>
+        <translation>Vă rugăm reporniţi această aplicaţie pentru ca schimbarea limbii să aibă efect.</translation>
     </message>
 </context>
 <context>
@@ -43,17 +43,17 @@
         <location filename="../src/window.cpp" line="49"/>
         <location filename="../src/window.cpp" line="246"/>
         <source>Peg-E</source>
-        <translation>‫Peg-E</translation>
+        <translation>Peg-E</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="58"/>
         <source>&amp;Game</source>
-        <translation>&amp;משחק</translation>
+        <translation>&amp;Joc</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="62"/>
         <source>&amp;New</source>
-        <translation>&amp;חדש</translation>
+        <translation>&amp;Nou</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="62"/>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../src/window.cpp" line="66"/>
         <source>&amp;Restart Game</source>
-        <translation>&amp;התחל מחדש</translation>
+        <translation>&amp;Restart Joc</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="66"/>
@@ -73,12 +73,12 @@
     <message>
         <location filename="../src/window.cpp" line="68"/>
         <source>&amp;Details</source>
-        <translation>&amp;פרטים</translation>
+        <translation>&amp;Detalii</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="74"/>
         <source>Quit</source>
-        <translation>יציאה</translation>
+        <translation>Ieşire</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="74"/>
@@ -88,12 +88,12 @@
     <message>
         <location filename="../src/window.cpp" line="76"/>
         <source>&amp;Move</source>
-        <translation>&amp;תור</translation>
+        <translation>&amp;Mută</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="80"/>
         <source>&amp;Undo</source>
-        <translation>&amp;ביטול</translation>
+        <translation>Anulează</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="80"/>
@@ -103,7 +103,7 @@
     <message>
         <location filename="../src/window.cpp" line="86"/>
         <source>&amp;Redo</source>
-        <translation>&amp;חזרה</translation>
+        <translation>Reface</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="86"/>
@@ -113,168 +113,168 @@
     <message>
         <location filename="../src/window.cpp" line="90"/>
         <source>&amp;Appearance</source>
-        <translation>&amp;מראה</translation>
+        <translation>&amp;Aspect</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="93"/>
         <source>Blue</source>
-        <translation>כחול</translation>
+        <translation>Albastru</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="94"/>
         <source>Charcoal</source>
-        <translation>פחם</translation>
+        <translation>Cărbune</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="95"/>
         <source>Green</source>
-        <translation>ירוק</translation>
+        <translation>Verde</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="96"/>
         <source>Midnight</source>
-        <translation>חצות</translation>
+        <translation>Miezul nopţii</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="97"/>
         <source>Plum</source>
-        <translation>שזיף</translation>
+        <translation>Prună</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="98"/>
         <source>Red</source>
-        <translation>אדום</translation>
+        <translation>Roşu</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="99"/>
         <source>Yellow</source>
-        <translation>צהוב</translation>
+        <translation>Galben</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="117"/>
         <source>Custom...</source>
-        <translation>אחר...</translation>
+        <translation>Personalizat...</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="119"/>
         <source>&amp;Settings</source>
-        <translation>&amp;הגדרות</translation>
+        <translation>&amp;Setări</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="120"/>
         <source>Application &amp;Language...</source>
-        <translation>&amp;שפת יישום...</translation>
+        <translation>&amp;Limbă aplicaţie...</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="122"/>
         <source>&amp;Help</source>
-        <translation>&amp;עזרה</translation>
+        <translation>&amp;Ajutor</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="123"/>
         <source>&amp;About</source>
-        <translation>&amp;אודות</translation>
+        <translation>&amp;Despre</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="124"/>
         <source>About &amp;Qt</source>
-        <translation>אודות &amp;QT</translation>
+        <translation>Despre &amp;Qt</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="161"/>
         <source>New Game</source>
-        <translation>משחק חדש</translation>
+        <translation>Joc nou</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="165"/>
         <location filename="../src/window.cpp" line="225"/>
         <location filename="../src/window.cpp" line="317"/>
         <source>Original</source>
-        <translation>מקורי</translation>
+        <translation>Original</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="166"/>
         <location filename="../src/window.cpp" line="218"/>
         <location filename="../src/window.cpp" line="320"/>
         <source>Branch</source>
-        <translation>מסועף</translation>
+        <translation>Ramificaţie</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="167"/>
         <location filename="../src/window.cpp" line="221"/>
         <location filename="../src/window.cpp" line="323"/>
         <source>Line</source>
-        <translation>שורה</translation>
+        <translation>Linie</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="177"/>
         <source>Random</source>
-        <translation>אקראי</translation>
+        <translation>Aleator</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="186"/>
         <source>Algorithm:</source>
-        <translation>אלגוריתם:</translation>
+        <translation>Algoritm</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="187"/>
         <source>Difficulty:</source>
-        <translation>קושי:</translation>
+        <translation>Dificultate:</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="188"/>
         <source>Seed:</source>
-        <translation>זרעים:</translation>
+        <translation>Sămînţă:</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="205"/>
         <source>Question</source>
-        <translation>שאלה</translation>
+        <translation>Întrebare</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="205"/>
         <source>Do you want to restart?</source>
-        <translation>האם ברצונך להתחיל מחדש?</translation>
+        <translation>Doriţi să reporniţi?</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="228"/>
         <source>Details</source>
-        <translation>פרטים</translation>
+        <translation>Detalii</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="228"/>
         <source>&lt;p&gt;&lt;b&gt;Algorithm:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Difficulty:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Seed:&lt;/b&gt; %L3&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;אלגוריתם:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;קושי:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;זרעים:&lt;/b&gt; %L3&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Algoritm:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Dificultate:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Sămînţă:&lt;/b&gt; %L3&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="243"/>
         <source>About Peg-E</source>
-        <translation>אודות ‫Peg-E</translation>
+        <translation>Despre Peg-E</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="247"/>
         <source>Peg elimination game</source>
-        <translation>משחק הלוח מחשבת</translation>
+        <translation>Peg - joc de eliminare</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="248"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
-        <translation>Copyright &amp;copy; 2009-%1 Graeme Gott</translation>
+        <translation>Toate drepturile rezervate &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="249"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation>משוחרר תחת הרשיון ‫&lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
+        <translation>Lansat sub licenţă &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="250"/>
         <source>Uses icons from the &lt;a href=%1&gt;Oxygen&lt;/a&gt; icon theme</source>
-        <translation>הצלמיות נלקחו מן הפרויקט &lt;a href=%1&gt;Oxygen&lt;/a&gt;</translation>
+        <translation>Foloseşte iconuri din tema &lt;a href=%1&gt;Oxygen&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="251"/>
         <source>Used under the &lt;a href=%1&gt;LGPL 3&lt;/a&gt; license</source>
-        <translation>בשימוש תחת הרשיון &lt;a href=%1&gt;LGPL 3&lt;/a&gt;</translation>
+        <translation>Folosit sub licenţă &lt;a href=%1&gt;LGPL 3&lt;/a&gt;</translation>
     </message>
 </context>
 </TS>
