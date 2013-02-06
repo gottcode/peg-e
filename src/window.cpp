@@ -46,9 +46,6 @@ Window::Window() :
 	m_difficulty(QSettings().value("Difficulty", 5).toInt()),
 	m_algorithm(QSettings().value("Algorithm", 1).toInt())
 {
-#if defined(Q_OS_UNIX) && !defined(Q_OS_MAC)
-	setWindowIcon(QIcon(":/peg-e.png"));
-#endif
 	setWindowTitle(tr("Peg-E"));
 
 	// Create board

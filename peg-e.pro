@@ -59,14 +59,17 @@ unix: !macx {
 
 	target.path = $$PREFIX/$$BINDIR/
 
-	icon.path = $$PREFIX/share/icons/hicolor/48x48/apps
-	icon.files = icons/peg-e.png
+	icon.files = icons/hicolor/*
+	icon.path = $$PREFIX/share/icons/hicolor
 
-	desktop.path = $$PREFIX/share/applications/
+	pixmap.files = icons/peg-e.xpm
+	pixmap.path = $$PREFIX/share/pixmaps
+
 	desktop.files = icons/peg-e.desktop
+	desktop.path = $$PREFIX/share/applications
 
 	qm.files = translations/*.qm
 	qm.path = $$PREFIX/share/peg-e/translations
 
-	INSTALLS += target icon desktop qm
+	INSTALLS += target icon pixmap desktop qm
 }
