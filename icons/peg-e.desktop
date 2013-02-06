@@ -5,4 +5,4 @@ Exec=peg-e
 Icon=peg-e
 Terminal=false
 Type=Application
-Categories=Qt;Game;
+Categories=Qt;Game;BoardGame;
