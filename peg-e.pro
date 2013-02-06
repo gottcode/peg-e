@@ -43,7 +43,8 @@ SOURCES = src/board.cpp \
 TRANSLATIONS = translations/pege_en.ts \
 	translations/pege_fr.ts \
 	translations/pege_he.ts \
-	translations/pege_nl.ts
+	translations/pege_nl.ts \
+	translations/pege_ro.ts
 
 RESOURCES = icons/icon.qrc
 macx {
