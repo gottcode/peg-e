@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2013 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,32 +17,54 @@
  *
  ***********************************************************************/
 
-#ifndef HOLE_H
-#define HOLE_H
+#ifndef PEGE_HOLE_H
+#define PEGE_HOLE_H
 
-#include <QGraphicsEllipseItem>
 class Peg;
 
-class Hole : public QGraphicsEllipseItem {
+#include <QGraphicsEllipseItem>
+
+/**
+ * %Hole that can contain a Peg.
+ *
+ * This class represents a hole on a game board. It stores a reference to any
+ * peg that rests in it. It also handles drawing itself as well as a highlight
+ * if it is the target for a valid jump.
+ */
+class Hole : public QGraphicsEllipseItem
+{
 public:
+	/**
+	 * Constructs a hole.
+	 *
+	 * @param position the location of the hole
+	 * @param parent the parent item of the hole
+	 */
 	Hole(const QPoint& position, QGraphicsItem* parent = 0);
 
-	bool hasPeg() const {
+	/** Returns @c true if the hole has a peg. */
+	bool hasPeg() const
+	{
 		return m_peg != 0;
 	}
 
-	Peg* peg() const {
+	/** Returns the peg contained by the hole. */
+	Peg* peg() const
+	{
 		return m_peg;
 	}
 
-	void setPeg(Peg* peg) {
+	/** Sets the peg contained by the hole. */
+	void setPeg(Peg* peg)
+	{
 		m_peg = peg;
 	}
 
+	/** Sets the highlighted status of the hole. */
 	void setHighlight(bool highlight);
 
 private:
-	Peg* m_peg;
+	Peg* m_peg; /**< peg contained by the hole */
 };
 
-#endif
+#endif // PEGE_HOLE_H

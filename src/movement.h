@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2013 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,30 +17,49 @@
  *
  ***********************************************************************/
 
-#ifndef MOVEMENT_H
-#define MOVEMENT_H
+#ifndef PEGE_MOVEMENT_H
+#define PEGE_MOVEMENT_H
 
-#include <QHash>
-#include <QPoint>
-#include <QUndoCommand>
 class Board;
 class Hole;
 class Peg;
 
-class Movement : public QUndoCommand {
+#include <QHash>
+#include <QPoint>
+#include <QUndoCommand>
+
+/**
+ * %Movement of a Peg.
+ *
+ * This class represents a move that has been made. It tracks references to
+ * the pegs that were moved or removed, as well as their positions on a game
+ * board.
+ */
+class Movement : public QUndoCommand
+{
 public:
+	/**
+	 * Constructs a movement.
+	 *
+	 * @param start_hole the hole the peg jumped from
+	 * @param end_hole the hole the peg jumped to
+	 * @param board the board that contains the holes
+	 */
 	Movement(const QPoint& start_hole, const QPoint& end_hole, Board* board);
 
-	virtual void redo();
-	virtual void undo();
+	/** Move the peg from the start hole to the end hole, removing the peg in the hole between them. */
+	void redo();
+
+	/** Move the peg from the end hole to the start hole, restoring the peg in the hole between them. */
+	void undo();
 
 private:
-	Peg* m_peg;
-	Peg* m_jumped_peg;
-	QPoint m_start_hole;
-	QPoint m_jumped_hole;
-	QPoint m_end_hole;
-	Board* m_board;
+	Peg* m_peg; /**< peg that was moved */
+	Peg* m_jumped_peg; /**< peg that was removed */
+	QPoint m_start_hole; /**< start position of moved peg */
+	QPoint m_jumped_hole; /**< position of removed peg */
+	QPoint m_end_hole; /**< end position of moved peg */
+	Board* m_board; /**< game board */
 };
 
-#endif
+#endif // PEGE_MOVEMENT_H
