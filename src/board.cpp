@@ -166,9 +166,9 @@ void Board::setAppearance(const QColor& color)
 	m_color = color;
 	QSettings().setValue("Appearance", m_color.name());
 
-	QList<QGraphicsItem*> items = scene()->items();
-	foreach (QGraphicsItem* item, items) {
-		Peg* peg = qgraphicsitem_cast<Peg*>(item);
+	QHashIterator<QPoint, Hole*> i(m_holes);
+	while (i.hasNext()) {
+		Peg* peg = i.next().value()->peg();
 		if (peg) {
 			peg->setAppearance(m_color);
 		}

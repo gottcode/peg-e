@@ -66,12 +66,6 @@ public:
 	 */
 	void setAppearance(const QColor& color);
 
-	/** Override parent function to specify unique ID. */
-	int type() const
-	{
-		return UserType + 1;
-	}
-
 protected:
 	/** Override parent function to check if there are valid moves. */
 	void mousePressEvent(QGraphicsSceneMouseEvent* event);
