@@ -310,29 +310,13 @@ void Window::loadGame()
 
 void Window::startGame(int seed, int difficulty, int algorithm)
 {
-	m_algorithm = algorithm;
-	QString text;
-	switch (m_algorithm) {
-	case 1:
-		text = tr("Original");
-		break;
-	case 2:
-		text = tr("Branch");
-		break;
-	case 3:
-		text = tr("Line");
-		break;
-	default:
-		break;
-	}
-
-	m_difficulty = difficulty;
-
 	if (seed == 0) {
 		srand(time(0));
 		seed = rand();
 	}
 	m_seed = seed;
+	m_difficulty = difficulty;
+	m_algorithm = algorithm;
 
 	m_board->generate(m_seed, m_difficulty, m_algorithm);
 
