@@ -46,8 +46,9 @@ public:
 	 * Load the stored language into the application; defaults to system language.
 	 *
 	 * @param appname application name to prepend to translation filenames
+	 * @param datadirs locations to search for directory containing translations
 	 */
-	static void loadTranslator(const QString& appname);
+	static void loadTranslator(const QString& appname, const QStringList& datadirs = QStringList());
 
 	/**
 	 * Fetch native language name for QLocale name.
