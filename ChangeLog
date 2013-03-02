@@ -1,3 +1,6 @@
+2013-03-01 Graeme Gott <graeme@gottcode.org>
+	* Simplify build system file.
+
 2013-02-06 Graeme Gott <graeme@gottcode.org>
 	* Tag version 1.1.2.
 	* FIXED: Regression - could not change peg color.
