@@ -27,12 +27,12 @@
         <translation>Systeem Taal</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="181"/>
+        <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Note</source>
         <translation>Noteren</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="181"/>
+        <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Please restart this application for the change in language to take effect.</source>
         <translation>Herstarten van programma is nodig om van taal te veranderen.</translation>
     </message>
@@ -188,21 +188,18 @@
     <message>
         <location filename="../src/window.cpp" line="165"/>
         <location filename="../src/window.cpp" line="225"/>
-        <location filename="../src/window.cpp" line="317"/>
         <source>Original</source>
         <translation>Orgineel</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="166"/>
         <location filename="../src/window.cpp" line="218"/>
-        <location filename="../src/window.cpp" line="320"/>
         <source>Branch</source>
         <translation>Afdeling</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="167"/>
         <location filename="../src/window.cpp" line="221"/>
-        <location filename="../src/window.cpp" line="323"/>
         <source>Line</source>
         <translation>Lijn</translation>
     </message>
