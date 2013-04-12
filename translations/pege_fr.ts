@@ -27,12 +27,12 @@
         <translation>&lt;Langue du système&gt;</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="181"/>
+        <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Note</source>
         <translation>Remarque</translation>
     </message>
     <message>
-        <location filename="../src/locale_dialog.cpp" line="181"/>
+        <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Please restart this application for the change in language to take effect.</source>
         <translation>Veuillez relancer l&apos;application pour que la modification prenne effet. </translation>
     </message>
@@ -188,21 +188,18 @@
     <message>
         <location filename="../src/window.cpp" line="165"/>
         <location filename="../src/window.cpp" line="225"/>
-        <location filename="../src/window.cpp" line="317"/>
         <source>Original</source>
         <translation>Original</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="166"/>
         <location filename="../src/window.cpp" line="218"/>
-        <location filename="../src/window.cpp" line="320"/>
         <source>Branch</source>
         <translation>Branche</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="167"/>
         <location filename="../src/window.cpp" line="221"/>
-        <location filename="../src/window.cpp" line="323"/>
         <source>Line</source>
         <translation>Ligne</translation>
     </message>
