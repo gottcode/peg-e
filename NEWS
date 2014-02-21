@@ -1,0 +1,21 @@
+1.1.2
+-----
+* Added support for Qt 5.
+* Improved Linux desktop integration.
+* Translation updates: Romanian.
+
+1.1.1.1
+-------
+* Fixed not loading translated board messages.
+
+1.1.1
+-----
+* Fixed restarting not clearing saved moves.
+* Fixed background sometimes misdrawn.
+* Translation updates: Dutch, Hebrew.
+
+1.1.0
+-----
+* Added changing the peg color.
+* Added new puzzle algorithms.
+* Added a toolbar.
