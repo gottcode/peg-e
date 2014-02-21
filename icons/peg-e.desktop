@@ -1,6 +1,24 @@
 [Desktop Entry]
 Name=Peg-E
+Name[cs]=Peg-E
+Name[de]=Peg-E
+Name[es]=Peg-E
+Name[he]=Peg-E
+Name[ms]=Peg-E
+Name[pl]=Peg-E
+Name[ro]=Peg-E
+Name[ru]=Peg-E
+Name[tr]=Peg-E
 Comment=Peg elimination game
+Comment[cs]=Peg eliminační hra
+Comment[de]=Peg Elimination Spiel
+Comment[es]=Juego de eliminación tipo Peg
+Comment[he]=משחק הלוח מחשבת
+Comment[ms]=Permainan penyingkiran pepaku
+Comment[pl]=Gra eliminacji Peg
+Comment[ro]=Joc de eliminare Peg
+Comment[ru]=Peg — игра, в которой нужно очистить игровое поле
+Comment[tr]=Peg eleme oyunu
 Exec=peg-e
 Icon=peg-e
 Terminal=false

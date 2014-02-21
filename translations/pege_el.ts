@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<TS version="2.1" language="el">
 <context>
     <name>Board</name>
     <message>
         <location filename="../src/board.cpp" line="193"/>
         <source>Success</source>
-        <translation>Succès</translation>
+        <translation>Επιτυχία </translation>
     </message>
     <message>
         <location filename="../src/board.cpp" line="193"/>
         <source>Game Over</source>
-        <translation>Partie terminée</translation>
+        <translation>Τέλος παιχνιδιού </translation>
     </message>
 </context>
 <context>
@@ -19,22 +19,22 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="50"/>
         <source>Select application language:</source>
-        <translation>Sélectionner la langue de l&apos;application :</translation>
+        <translation>Επιλέξτε γλώσσα εφαρμογής: </translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>&lt;System Language&gt;</source>
-        <translation>&lt;Langue du système&gt;</translation>
+        <translation>&lt;Γλωσσα συστηματος&gt;</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Note</source>
-        <translation>Remarque</translation>
+        <translation>Παρατηρηση</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>Veuillez relancer l&apos;application pour que la modification prenne effet. </translation>
+        <translation>Παρακαλώ κάντε επανεκκίνηση την εφαρμογή αυτή για αλλαγή στη γλώσσα να τεθεί σε ισχύ. </translation>
     </message>
 </context>
 <context>
@@ -48,12 +48,12 @@
     <message>
         <location filename="../src/window.cpp" line="58"/>
         <source>&amp;Game</source>
-        <translation>&amp;Jeu</translation>
+        <translation>Παιχνιδι</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="62"/>
         <source>&amp;New</source>
-        <translation>&amp;Nouveau</translation>
+        <translation>Νεο</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="62"/>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../src/window.cpp" line="66"/>
         <source>&amp;Restart Game</source>
-        <translation>&amp;Redémarrer la partie</translation>
+        <translation>Επανεκινηση παιχνιδιου</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="66"/>
@@ -73,12 +73,12 @@
     <message>
         <location filename="../src/window.cpp" line="68"/>
         <source>&amp;Details</source>
-        <translation>&amp;Détails</translation>
+        <translation>Λεπτομερειες</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="74"/>
         <source>Quit</source>
-        <translation>Quitter</translation>
+        <translation>Αποχωρηση</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="74"/>
@@ -88,12 +88,12 @@
     <message>
         <location filename="../src/window.cpp" line="76"/>
         <source>&amp;Move</source>
-        <translation>&amp;Déplacer</translation>
+        <translation>Μετακινηση</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="80"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Annuler</translation>
+        <translation>Αναιρεση</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="80"/>
@@ -103,155 +103,155 @@
     <message>
         <location filename="../src/window.cpp" line="86"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Rétablir</translation>
+        <translation>Επανάληψη </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="86"/>
         <source>Shift+Ctrl+Z</source>
-        <translation>Maj+Ctrl+Z</translation>
+        <translation>Shift+Ctrl+Z</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="90"/>
         <source>&amp;Appearance</source>
-        <translation>&amp;Apparence</translation>
+        <translation>Εμφάνιση </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="93"/>
         <source>Blue</source>
-        <translation>Bleu</translation>
+        <translation>Μπλε</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="94"/>
         <source>Charcoal</source>
-        <translation>Marron</translation>
+        <translation>Κάρβουνο </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="95"/>
         <source>Green</source>
-        <translation>Vert</translation>
+        <translation>Πρασινο</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="96"/>
         <source>Midnight</source>
-        <translation>Bleu nuit</translation>
+        <translation>Μεσανυχτα</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="97"/>
         <source>Plum</source>
-        <translation>Prune</translation>
+        <translation>Δαμάσκηνο </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="98"/>
         <source>Red</source>
-        <translation>Rouge</translation>
+        <translation>Κοκκινο</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="99"/>
         <source>Yellow</source>
-        <translation>Jaune</translation>
+        <translation>Κιτρινο</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="117"/>
         <source>Custom...</source>
-        <translation>Personnalisée...</translation>
+        <translation>Τροποποιηση </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="119"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Paramètres</translation>
+        <translation>Ρυθμισεις</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="120"/>
         <source>Application &amp;Language...</source>
-        <translation>&amp;Langue de l&apos;application…</translation>
+        <translation>Γλωσσα εφαρμογης...</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="122"/>
         <source>&amp;Help</source>
-        <translation>&amp;Aide</translation>
+        <translation>Βοηθεια</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="123"/>
         <source>&amp;About</source>
-        <translation>À &amp;propos de…</translation>
+        <translation>Σχετικα</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="124"/>
         <source>About &amp;Qt</source>
-        <translation>À propos de &amp;Qt</translation>
+        <translation>Σχετικα με το Qt</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="161"/>
         <source>New Game</source>
-        <translation>Nouveau jeu</translation>
+        <translation>Νεο παιχνιδι</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="165"/>
         <location filename="../src/window.cpp" line="225"/>
         <source>Original</source>
-        <translation>Original</translation>
+        <translation>Αυθεντικο</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="166"/>
         <location filename="../src/window.cpp" line="218"/>
         <source>Branch</source>
-        <translation>Branche</translation>
+        <translation>Κλάδος </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="167"/>
         <location filename="../src/window.cpp" line="221"/>
         <source>Line</source>
-        <translation>Ligne</translation>
+        <translation>Γραμμη</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="177"/>
         <source>Random</source>
-        <translation>Aléatoire</translation>
+        <translation>Τυχαία </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="186"/>
         <source>Algorithm:</source>
-        <translation>Algorithme : </translation>
+        <translation>Αλγορυθμος:</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="187"/>
         <source>Difficulty:</source>
-        <translation>Difficulté :</translation>
+        <translation>Δυσκολια:</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="188"/>
         <source>Seed:</source>
-        <translation>Grain : </translation>
+        <translation>Σπόρος: </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="205"/>
         <source>Question</source>
-        <translation>Question</translation>
+        <translation>Ερωτηση</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="205"/>
         <source>Do you want to restart?</source>
-        <translation>Voulez-vous redémarrer ?</translation>
+        <translation>Θέλετε να κάνετε επανεκκίνηση; </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="228"/>
         <source>Details</source>
-        <translation>Détails</translation>
+        <translation>Λεπτομερειες</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="228"/>
         <source>&lt;p&gt;&lt;b&gt;Algorithm:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Difficulty:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Seed:&lt;/b&gt; %L3&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Algorithme : &lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Difficulté : &lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Grain : &lt;/b&gt; %L3&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Αλγορυυμος:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Δυσκολια:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Καρπος:&lt;/b&gt; %L3&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="243"/>
         <source>About Peg-E</source>
-        <translation>À propos de Peg-E</translation>
+        <translation>Σχετικα με το Peg-E</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="247"/>
         <source>Peg elimination game</source>
-        <translation>Peg, un jeu d&apos;élimination</translation>
+        <translation>Peg παιχνίδι εξάλειψης </translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="248"/>
@@ -261,17 +261,17 @@
     <message>
         <location filename="../src/window.cpp" line="249"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation>Distribué sous licence GNU &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
+        <translation>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="250"/>
         <source>Uses icons from the &lt;a href=%1&gt;Oxygen&lt;/a&gt; icon theme</source>
-        <translation>Utilise les icônes du thème &lt;a href=%1&gt;Oxygen&lt;/a&gt;</translation>
+        <translation>Χρησιμοποιηση εικονιδιων απο το &lt;a href=%1&gt;Oxygen&lt;/a&gt; icon theme</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="251"/>
         <source>Used under the &lt;a href=%1&gt;LGPL 3&lt;/a&gt; license</source>
-        <translation>Distribué sous licence GNU &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
+        <translation>Χρησιμοποιηση κατα την &lt;a href=%1&gt;LGPL 3&lt;/a&gt; αδεια χρησης</translation>
     </message>
 </context>
 </TS>
