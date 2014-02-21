@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<TS version="2.1" language="es">
 <context>
     <name>Board</name>
     <message>
         <location filename="../src/board.cpp" line="193"/>
         <source>Success</source>
-        <translation>Succès</translation>
+        <translation>Éxito</translation>
     </message>
     <message>
         <location filename="../src/board.cpp" line="193"/>
         <source>Game Over</source>
-        <translation>Partie terminée</translation>
+        <translation>Fin del juego</translation>
     </message>
 </context>
 <context>
@@ -19,22 +19,22 @@
     <message>
         <location filename="../src/locale_dialog.cpp" line="50"/>
         <source>Select application language:</source>
-        <translation>Sélectionner la langue de l&apos;application :</translation>
+        <translation>Selección de idioma:</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="53"/>
         <source>&lt;System Language&gt;</source>
-        <translation>&lt;Langue du système&gt;</translation>
+        <translation>&lt;Idioma del Sistema&gt;</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Note</source>
-        <translation>Remarque</translation>
+        <translation>Nota</translation>
     </message>
     <message>
         <location filename="../src/locale_dialog.cpp" line="183"/>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>Veuillez relancer l&apos;application pour que la modification prenne effet. </translation>
+        <translation>Por favor reinicia la aplicación para que se produzca el cambio de idioma.</translation>
     </message>
 </context>
 <context>
@@ -48,12 +48,12 @@
     <message>
         <location filename="../src/window.cpp" line="58"/>
         <source>&amp;Game</source>
-        <translation>&amp;Jeu</translation>
+        <translation>&amp;Juego</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="62"/>
         <source>&amp;New</source>
-        <translation>&amp;Nouveau</translation>
+        <translation>&amp;Nuevo</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="62"/>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../src/window.cpp" line="66"/>
         <source>&amp;Restart Game</source>
-        <translation>&amp;Redémarrer la partie</translation>
+        <translation>&amp;Reiniciar juego</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="66"/>
@@ -73,12 +73,12 @@
     <message>
         <location filename="../src/window.cpp" line="68"/>
         <source>&amp;Details</source>
-        <translation>&amp;Détails</translation>
+        <translation>&amp;Detalles</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="74"/>
         <source>Quit</source>
-        <translation>Quitter</translation>
+        <translation>Salir</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="74"/>
@@ -88,12 +88,12 @@
     <message>
         <location filename="../src/window.cpp" line="76"/>
         <source>&amp;Move</source>
-        <translation>&amp;Déplacer</translation>
+        <translation>&amp;Mover</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="80"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Annuler</translation>
+        <translation>&amp;Deshacer</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="80"/>
@@ -103,87 +103,87 @@
     <message>
         <location filename="../src/window.cpp" line="86"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Rétablir</translation>
+        <translation>&amp;Rehacer</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="86"/>
         <source>Shift+Ctrl+Z</source>
-        <translation>Maj+Ctrl+Z</translation>
+        <translation>Shift+Ctrl+Z</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="90"/>
         <source>&amp;Appearance</source>
-        <translation>&amp;Apparence</translation>
+        <translation>&amp;Apariencia</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="93"/>
         <source>Blue</source>
-        <translation>Bleu</translation>
+        <translation>Azul</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="94"/>
         <source>Charcoal</source>
-        <translation>Marron</translation>
+        <translation>Carbón</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="95"/>
         <source>Green</source>
-        <translation>Vert</translation>
+        <translation>Verde</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="96"/>
         <source>Midnight</source>
-        <translation>Bleu nuit</translation>
+        <translation>Medianoche</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="97"/>
         <source>Plum</source>
-        <translation>Prune</translation>
+        <translation>Ciruela</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="98"/>
         <source>Red</source>
-        <translation>Rouge</translation>
+        <translation>Rojo</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="99"/>
         <source>Yellow</source>
-        <translation>Jaune</translation>
+        <translation>Amarillo</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="117"/>
         <source>Custom...</source>
-        <translation>Personnalisée...</translation>
+        <translation>Personalizar...</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="119"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Paramètres</translation>
+        <translation>&amp;Configuración</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="120"/>
         <source>Application &amp;Language...</source>
-        <translation>&amp;Langue de l&apos;application…</translation>
+        <translation>&amp;Idioma de la aplicación</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="122"/>
         <source>&amp;Help</source>
-        <translation>&amp;Aide</translation>
+        <translation>&amp;Ayuda</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="123"/>
         <source>&amp;About</source>
-        <translation>À &amp;propos de…</translation>
+        <translation>&amp;Acerca de</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="124"/>
         <source>About &amp;Qt</source>
-        <translation>À propos de &amp;Qt</translation>
+        <translation>Acerca de &amp;Qt</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="161"/>
         <source>New Game</source>
-        <translation>Nouveau jeu</translation>
+        <translation>Nuevo juego</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="165"/>
@@ -195,63 +195,63 @@
         <location filename="../src/window.cpp" line="166"/>
         <location filename="../src/window.cpp" line="218"/>
         <source>Branch</source>
-        <translation>Branche</translation>
+        <translation>Rama</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="167"/>
         <location filename="../src/window.cpp" line="221"/>
         <source>Line</source>
-        <translation>Ligne</translation>
+        <translation>Línea</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="177"/>
         <source>Random</source>
-        <translation>Aléatoire</translation>
+        <translation>Aleatorio</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="186"/>
         <source>Algorithm:</source>
-        <translation>Algorithme : </translation>
+        <translation>Algoritmo:</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="187"/>
         <source>Difficulty:</source>
-        <translation>Difficulté :</translation>
+        <translation>Dificultad:</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="188"/>
         <source>Seed:</source>
-        <translation>Grain : </translation>
+        <translation>Semilla:</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="205"/>
         <source>Question</source>
-        <translation>Question</translation>
+        <translation>Pregunta</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="205"/>
         <source>Do you want to restart?</source>
-        <translation>Voulez-vous redémarrer ?</translation>
+        <translation>¿Quieres volver a empezar?</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="228"/>
         <source>Details</source>
-        <translation>Détails</translation>
+        <translation>Detalles</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="228"/>
         <source>&lt;p&gt;&lt;b&gt;Algorithm:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Difficulty:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Seed:&lt;/b&gt; %L3&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Algorithme : &lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Difficulté : &lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Grain : &lt;/b&gt; %L3&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Algoritmo:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Dificultad:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Semilla:&lt;/b&gt; %L3&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="243"/>
         <source>About Peg-E</source>
-        <translation>À propos de Peg-E</translation>
+        <translation>Acerca de Peg-E</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="247"/>
         <source>Peg elimination game</source>
-        <translation>Peg, un jeu d&apos;élimination</translation>
+        <translation>Juego de eliminación tipo Peg</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="248"/>
@@ -261,17 +261,17 @@
     <message>
         <location filename="../src/window.cpp" line="249"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
-        <translation>Distribué sous licence GNU &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
+        <translation>Distribuido bajo licencia &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="250"/>
         <source>Uses icons from the &lt;a href=%1&gt;Oxygen&lt;/a&gt; icon theme</source>
-        <translation>Utilise les icônes du thème &lt;a href=%1&gt;Oxygen&lt;/a&gt;</translation>
+        <translation>Utiliza los iconos del tema &lt;a href=%1&gt;Oxygen&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/window.cpp" line="251"/>
         <source>Used under the &lt;a href=%1&gt;LGPL 3&lt;/a&gt; license</source>
-        <translation>Distribué sous licence GNU &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
+        <translation>Distribuido bajo licencia &lt;a href=%1&gt;LGPL 3&lt;/a&gt;</translation>
     </message>
 </context>
 </TS>
