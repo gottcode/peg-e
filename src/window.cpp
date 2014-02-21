@@ -57,34 +57,20 @@ Window::Window() :
 	// Create menubar
 	QMenu* game_menu = menuBar()->addMenu(tr("&Game"));
 
-	QIcon new_icon(QPixmap(":/22x22/document-new.png"));
-	new_icon.addPixmap(QPixmap(":/16x16/document-new.png"));
-	QAction* new_action = game_menu->addAction(new_icon, tr("&New"), this, SLOT(newGame()), QKeySequence::New);
-
-	QIcon restart_icon(QPixmap(":/22x22/view-refresh.png"));
-	restart_icon.addPixmap(QPixmap(":/16x16/view-refresh.png"));
-	QAction* restart_action = game_menu->addAction(restart_icon, tr("&Restart Game"), this, SLOT(restartGame()), QKeySequence::Refresh);
-
+	QAction* new_action = game_menu->addAction(QIcon::fromTheme("document-new"), tr("&New"), this, SLOT(newGame()), QKeySequence::New);
+	QAction* restart_action = game_menu->addAction(QIcon::fromTheme("view-refresh"), tr("&Restart Game"), this, SLOT(restartGame()), QKeySequence::Refresh);
 	game_menu->addAction(tr("&Details"), this, SLOT(showDetails()));
-
 	game_menu->addSeparator();
-
-	QIcon quit_icon(QPixmap(":/22x22/application-exit.png"));
-	quit_icon.addPixmap(QPixmap(":/16x16/application-exit.png"));
-	QAction* quit_action = game_menu->addAction(quit_icon, tr("Quit"), this, SLOT(close()), QKeySequence::Quit);
+	QAction* quit_action = game_menu->addAction(QIcon::fromTheme("application-exit"), tr("Quit"), this, SLOT(close()), QKeySequence::Quit);
 	quit_action->setMenuRole(QAction::QuitRole);
 
 	QMenu* move_menu = menuBar()->addMenu(tr("&Move"));
 
-	QIcon undo_icon(QPixmap(":/22x22/edit-undo.png"));
-	undo_icon.addPixmap(QPixmap(":/16x16/edit-undo.png"));
-	QAction* undo_action = move_menu->addAction(undo_icon, tr("&Undo"), moves, SLOT(undo()), QKeySequence::Undo);
+	QAction* undo_action = move_menu->addAction(QIcon::fromTheme("edit-undo"), tr("&Undo"), moves, SLOT(undo()), QKeySequence::Undo);
 	undo_action->setEnabled(false);
 	connect(moves, SIGNAL(canUndoChanged(bool)), undo_action, SLOT(setEnabled(bool)));
 
-	QIcon redo_icon(QPixmap(":/22x22/edit-redo.png"));
-	redo_icon.addPixmap(QPixmap(":/16x16/edit-redo.png"));
-	QAction* redo_action = move_menu->addAction(redo_icon, tr("&Redo"), moves, SLOT(redo()), QKeySequence::Redo);
+	QAction* redo_action = move_menu->addAction(QIcon::fromTheme("edit-redo"), tr("&Redo"), moves, SLOT(redo()), QKeySequence::Redo);
 	redo_action->setEnabled(false);
 	connect(moves, SIGNAL(canRedoChanged(bool)), redo_action, SLOT(setEnabled(bool)));
 
