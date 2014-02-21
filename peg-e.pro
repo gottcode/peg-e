@@ -1,5 +1,5 @@
-lessThan(QT_VERSION, 4.5) {
-	error("Peg-E requires Qt 4.5 or greater")
+lessThan(QT_VERSION, 4.6) {
+	error("Peg-E requires Qt 4.6 or greater")
 }
 
 TEMPLATE = app

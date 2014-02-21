@@ -59,11 +59,11 @@ Window::Window() :
 
 	QIcon new_icon(QPixmap(":/22x22/document-new.png"));
 	new_icon.addPixmap(QPixmap(":/16x16/document-new.png"));
-	QAction* new_action = game_menu->addAction(new_icon, tr("&New"), this, SLOT(newGame()), tr("Ctrl+N"));
+	QAction* new_action = game_menu->addAction(new_icon, tr("&New"), this, SLOT(newGame()), QKeySequence::New);
 
 	QIcon restart_icon(QPixmap(":/22x22/view-refresh.png"));
 	restart_icon.addPixmap(QPixmap(":/16x16/view-refresh.png"));
-	QAction* restart_action = game_menu->addAction(restart_icon, tr("&Restart Game"), this, SLOT(restartGame()), tr("F5"));
+	QAction* restart_action = game_menu->addAction(restart_icon, tr("&Restart Game"), this, SLOT(restartGame()), QKeySequence::Refresh);
 
 	game_menu->addAction(tr("&Details"), this, SLOT(showDetails()));
 
@@ -71,19 +71,20 @@ Window::Window() :
 
 	QIcon quit_icon(QPixmap(":/22x22/application-exit.png"));
 	quit_icon.addPixmap(QPixmap(":/16x16/application-exit.png"));
-	game_menu->addAction(quit_icon, tr("Quit"), this, SLOT(close()), tr("Ctrl+Q"));
+	QAction* quit_action = game_menu->addAction(quit_icon, tr("Quit"), this, SLOT(close()), QKeySequence::Quit);
+	quit_action->setMenuRole(QAction::QuitRole);
 
 	QMenu* move_menu = menuBar()->addMenu(tr("&Move"));
 
 	QIcon undo_icon(QPixmap(":/22x22/edit-undo.png"));
 	undo_icon.addPixmap(QPixmap(":/16x16/edit-undo.png"));
-	QAction* undo_action = move_menu->addAction(undo_icon, tr("&Undo"), moves, SLOT(undo()), tr("Ctrl+z"));
+	QAction* undo_action = move_menu->addAction(undo_icon, tr("&Undo"), moves, SLOT(undo()), QKeySequence::Undo);
 	undo_action->setEnabled(false);
 	connect(moves, SIGNAL(canUndoChanged(bool)), undo_action, SLOT(setEnabled(bool)));
 
 	QIcon redo_icon(QPixmap(":/22x22/edit-redo.png"));
 	redo_icon.addPixmap(QPixmap(":/16x16/edit-redo.png"));
-	QAction* redo_action = move_menu->addAction(redo_icon, tr("&Redo"), moves, SLOT(redo()), tr("Shift+Ctrl+Z"));
+	QAction* redo_action = move_menu->addAction(redo_icon, tr("&Redo"), moves, SLOT(redo()), QKeySequence::Redo);
 	redo_action->setEnabled(false);
 	connect(moves, SIGNAL(canRedoChanged(bool)), redo_action, SLOT(setEnabled(bool)));
 
@@ -120,8 +121,10 @@ Window::Window() :
 	settings_menu->addAction(tr("Application &Language..."), this, SLOT(setLocale()));
 
 	QMenu* help_menu = menuBar()->addMenu(tr("&Help"));
-	help_menu->addAction(tr("&About"), this, SLOT(about()));
-	help_menu->addAction(tr("About &Qt"), qApp, SLOT(aboutQt()));
+	QAction* about_action = help_menu->addAction(tr("&About"), this, SLOT(about()));
+	about_action->setMenuRole(QAction::AboutRole);
+	QAction* about_qt_action = help_menu->addAction(tr("About &Qt"), qApp, SLOT(aboutQt()));
+	about_qt_action->setMenuRole(QAction::AboutQtRole);
 
 	// Create toolbar
 	QToolBar* toolbar = new QToolBar(this);
