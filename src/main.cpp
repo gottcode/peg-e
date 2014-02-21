@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2012, 2013 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2012, 2013, 2014 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -45,18 +45,37 @@ int main(int argc, char** argv)
 		fallback.addFile(":/hicolor/24x24/apps/peg-e.png");
 		fallback.addFile(":/hicolor/22x22/apps/peg-e.png");
 		fallback.addFile(":/hicolor/16x16/apps/peg-e.png");
-#if (QT_VERSION >= (QT_VERSION_CHECK(4,6,0)))
-		app.setWindowIcon(QIcon::fromTheme("peg-e", fallback));
-#else
-		app.setWindowIcon(fallback);
-#endif
+		if (!QIcon::themeName().isEmpty() && (QIcon::themeName() != "hicolor")) {
+			app.setWindowIcon(QIcon::fromTheme("peg-e", fallback));
+		} else {
+			app.setWindowIcon(fallback);
+		}
 	}
-
-#ifdef Q_OS_MAC
 	app.setAttribute(Qt::AA_DontShowIconsInMenus, true);
-#endif
 
 	LocaleDialog::loadTranslator("pege_");
+
+	// Set location of fallback icons
+	{
+		QString appdir = app.applicationDirPath();
+		QString datadir;
+#if defined(Q_OS_MAC)
+		datadir = appdir + "/../Resources";
+#elif defined(Q_OS_UNIX)
+		datadir = appdir + "/../share/peg-e";
+#else
+		datadir = appdir;
+#endif
+
+		QStringList paths = QIcon::themeSearchPaths();
+		paths.prepend(datadir + "/icons");
+		QIcon::setThemeSearchPaths(paths);
+	}
+
+	// Set up icons
+	if (QIcon::themeName().isEmpty()) {
+		QIcon::setThemeName("hicolor");
+	}
 
 	Window window;
 	window.show();

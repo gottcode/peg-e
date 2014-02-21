@@ -50,11 +50,14 @@ TRANSLATIONS = translations/pege_en.ts \
 RESOURCES = icons/icon.qrc
 macx {
 	ICON = icons/peg-e.icns
+
+	ICONS.files = icons/oxygen/hicolor
+	ICONS.path = Contents/Resources/icons
+
+	QMAKE_BUNDLE_DATA += ICONS
 } else:win32 {
 	RC_FILE = icons/icon.rc
-}
-
-unix: !macx {
+} else:unix {
 	isEmpty(PREFIX) {
 		PREFIX = /usr/local
 	}
@@ -70,11 +73,14 @@ unix: !macx {
 	pixmap.files = icons/peg-e.xpm
 	pixmap.path = $$PREFIX/share/pixmaps
 
+	icons.files = icons/oxygen/hicolor/*
+	icons.path = $$PREFIX/share/peg-e/icons/hicolor
+
 	desktop.files = icons/peg-e.desktop
 	desktop.path = $$PREFIX/share/applications
 
 	qm.files = translations/*.qm
 	qm.path = $$PREFIX/share/peg-e/translations
 
-	INSTALLS += target icon pixmap desktop qm
+	INSTALLS += target icon pixmap desktop icons qm
 }
