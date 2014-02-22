@@ -7,13 +7,6 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 	QT += widgets
 }
 CONFIG += warn_on
-macx {
-	CONFIG += x86_64
-}
-
-MOC_DIR = build
-OBJECTS_DIR = build
-RCC_DIR = build
 
 VERSION = 1.1.2
 DEFINES += VERSIONSTR=\\\"$${VERSION}\\\"
@@ -41,11 +34,7 @@ SOURCES = src/board.cpp \
 	src/puzzle.cpp \
 	src/window.cpp
 
-TRANSLATIONS = translations/pege_en.ts \
-	translations/pege_fr.ts \
-	translations/pege_he.ts \
-	translations/pege_nl.ts \
-	translations/pege_ro.ts
+TRANSLATIONS = $$files(translations/pege_*.ts)
 
 RESOURCES = icons/icon.qrc
 macx {
