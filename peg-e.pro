@@ -71,5 +71,8 @@ macx {
 	qm.files = translations/*.qm
 	qm.path = $$PREFIX/share/peg-e/translations
 
-	INSTALLS += target icon pixmap desktop icons qm
+	man.files = doc/peg-e.6
+	man.path = $$PREFIX/share/man/man6
+
+	INSTALLS += target icon pixmap desktop icons qm man
 }
