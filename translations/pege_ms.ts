@@ -41,7 +41,7 @@
     <name>Window</name>
     <message>
         <location filename="../src/window.cpp" line="49"/>
-        <location filename="../src/window.cpp" line="249"/>
+        <location filename="../src/window.cpp" line="235"/>
         <source>Peg-E</source>
         <translation>Peg-E</translation>
     </message>
@@ -51,200 +51,200 @@
         <translation>&amp;Permainan</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="62"/>
+        <location filename="../src/window.cpp" line="60"/>
         <source>&amp;New</source>
         <translation>&amp;Baru</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="66"/>
+        <location filename="../src/window.cpp" line="61"/>
         <source>&amp;Restart Game</source>
         <translation>&amp;Mulakan Semula Permainan</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="68"/>
+        <location filename="../src/window.cpp" line="62"/>
         <source>&amp;Details</source>
         <translation>P&amp;erincian</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="74"/>
+        <location filename="../src/window.cpp" line="64"/>
         <source>Quit</source>
         <translation>Keluar</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="77"/>
+        <location filename="../src/window.cpp" line="67"/>
         <source>&amp;Move</source>
         <translation>&amp;Gerakan</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="81"/>
+        <location filename="../src/window.cpp" line="69"/>
         <source>&amp;Undo</source>
         <translation>Buat &amp;Asal</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="87"/>
+        <location filename="../src/window.cpp" line="73"/>
         <source>&amp;Redo</source>
         <translation>Buat &amp;Semula</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="91"/>
+        <location filename="../src/window.cpp" line="77"/>
         <source>&amp;Appearance</source>
         <translation>Pe&amp;nampilan</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="94"/>
+        <location filename="../src/window.cpp" line="80"/>
         <source>Blue</source>
         <translation>Biru</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="95"/>
+        <location filename="../src/window.cpp" line="81"/>
         <source>Charcoal</source>
         <translation>Arang</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="96"/>
+        <location filename="../src/window.cpp" line="82"/>
         <source>Green</source>
         <translation>Hijau</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="97"/>
+        <location filename="../src/window.cpp" line="83"/>
         <source>Midnight</source>
         <translation>Tengah Malam</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="98"/>
+        <location filename="../src/window.cpp" line="84"/>
         <source>Plum</source>
         <translation>Plum</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="99"/>
+        <location filename="../src/window.cpp" line="85"/>
         <source>Red</source>
         <translation>Merah</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="100"/>
+        <location filename="../src/window.cpp" line="86"/>
         <source>Yellow</source>
         <translation>Kuning</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="118"/>
+        <location filename="../src/window.cpp" line="104"/>
         <source>Custom...</source>
         <translation>Suai...</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="120"/>
+        <location filename="../src/window.cpp" line="106"/>
         <source>&amp;Settings</source>
         <translation>&amp;Tetapan</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="121"/>
+        <location filename="../src/window.cpp" line="107"/>
         <source>Application &amp;Language...</source>
         <translation>&amp;Bahasa Aplikasi...</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="123"/>
+        <location filename="../src/window.cpp" line="109"/>
         <source>&amp;Help</source>
         <translation>Ba&amp;ntuan</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="124"/>
+        <location filename="../src/window.cpp" line="110"/>
         <source>&amp;About</source>
         <translation>Perih&amp;al</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="126"/>
+        <location filename="../src/window.cpp" line="112"/>
         <source>About &amp;Qt</source>
         <translation>Perihal &amp;Qt</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="164"/>
+        <location filename="../src/window.cpp" line="150"/>
         <source>New Game</source>
         <translation>Permainan Baru</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="168"/>
-        <location filename="../src/window.cpp" line="228"/>
+        <location filename="../src/window.cpp" line="154"/>
+        <location filename="../src/window.cpp" line="214"/>
         <source>Original</source>
         <translation>Asal</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="169"/>
-        <location filename="../src/window.cpp" line="221"/>
+        <location filename="../src/window.cpp" line="155"/>
+        <location filename="../src/window.cpp" line="207"/>
         <source>Branch</source>
         <translation>Cabang</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="170"/>
-        <location filename="../src/window.cpp" line="224"/>
+        <location filename="../src/window.cpp" line="156"/>
+        <location filename="../src/window.cpp" line="210"/>
         <source>Line</source>
         <translation>Baris</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="180"/>
+        <location filename="../src/window.cpp" line="166"/>
         <source>Random</source>
         <translation>Rawak</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="189"/>
+        <location filename="../src/window.cpp" line="175"/>
         <source>Algorithm:</source>
         <translation>Algoritma:</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="190"/>
+        <location filename="../src/window.cpp" line="176"/>
         <source>Difficulty:</source>
         <translation>Kesukaran:</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="191"/>
+        <location filename="../src/window.cpp" line="177"/>
         <source>Seed:</source>
         <translation>Pilihan:</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="208"/>
+        <location filename="../src/window.cpp" line="194"/>
         <source>Question</source>
         <translation>Soalan</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="208"/>
+        <location filename="../src/window.cpp" line="194"/>
         <source>Do you want to restart?</source>
         <translation>Anda hendak mulakan semula?</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="231"/>
+        <location filename="../src/window.cpp" line="217"/>
         <source>Details</source>
         <translation>Perincian</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="231"/>
+        <location filename="../src/window.cpp" line="217"/>
         <source>&lt;p&gt;&lt;b&gt;Algorithm:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Difficulty:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Seed:&lt;/b&gt; %L3&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Algoritma:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Kesukaran:&lt;/b&gt; %2&lt;br&gt;&lt;b&gt;Pilihan:&lt;/b&gt; %L3&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="246"/>
+        <location filename="../src/window.cpp" line="232"/>
         <source>About Peg-E</source>
         <translation>Perihal Peg-E</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="250"/>
+        <location filename="../src/window.cpp" line="236"/>
         <source>Peg elimination game</source>
         <translation>Permainan penyingkiran pepaku</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="251"/>
+        <location filename="../src/window.cpp" line="237"/>
         <source>Copyright &amp;copy; 2009-%1 Graeme Gott</source>
         <translation>Hakcipta &amp;copy; 2009-%1 Graeme Gott</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="252"/>
+        <location filename="../src/window.cpp" line="238"/>
         <source>Released under the &lt;a href=%1&gt;GPL 3&lt;/a&gt; license</source>
         <translation>Dikeluarkan dibawah lesen &lt;a href=%1&gt;GPL 3&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="253"/>
+        <location filename="../src/window.cpp" line="239"/>
         <source>Uses icons from the &lt;a href=%1&gt;Oxygen&lt;/a&gt; icon theme</source>
         <translation>Guna ikon dari tema ikon &lt;a href=%1&gt;Oxygen&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/window.cpp" line="254"/>
+        <location filename="../src/window.cpp" line="240"/>
         <source>Used under the &lt;a href=%1&gt;LGPL 3&lt;/a&gt; license</source>
         <translation>Digunakan bawah lesen &lt;a href=%1&gt;LGPL 3&lt;/a&gt;</translation>
     </message>
