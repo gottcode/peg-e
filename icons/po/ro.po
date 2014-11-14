@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 10:30+0000\n"
+"POT-Creation-Date: 2014-11-14 20:54+0000\n"
 "PO-Revision-Date: 2014-11-14 10:34+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Romanian (http://www.transifex.com/projects/p/peg-e/language/"
@@ -19,11 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
 
-#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:3
+#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:1
+msgid "Peg-E"
+msgstr "Peg-E"
+
+#: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
 msgstr ""
 
-#: ../peg-e.appdata.xml.in.h:2
+#: ../peg-e.appdata.xml.in.h:3
 msgid ""
 "Peg-E is a peg solitaire game in which you jump over pieces in order to "
 "remove them from the board, ultimately trying to eliminate all but one. The "
@@ -31,10 +35,6 @@ msgid ""
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
 msgstr ""
-
-#: ../peg-e.desktop.in.h:1
-msgid "Peg-E"
-msgstr "Peg-E"
 
 #: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
