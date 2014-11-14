@@ -68,11 +68,14 @@ macx {
 	desktop.files = icons/peg-e.desktop
 	desktop.path = $$PREFIX/share/applications
 
+	appdata.files = icons/peg-e.appdata.xml
+	appdata.path = $$PREFIX/share/appdata/
+
 	qm.files = translations/*.qm
 	qm.path = $$PREFIX/share/peg-e/translations
 
 	man.files = doc/peg-e.6
 	man.path = $$PREFIX/share/man/man6
 
-	INSTALLS += target icon pixmap desktop icons qm man
+	INSTALLS += target icon pixmap desktop appdata icons qm man
 }

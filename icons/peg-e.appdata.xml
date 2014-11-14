@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>peg-e.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Peg-E</name>
+  <summary>Jump pegs to eliminate them</summary>
+  <description>
+    <p>Peg-E is a peg solitaire game in which you jump over pieces in order to remove them from the board, ultimately trying to eliminate all but one. The boards are randomly generated, with 100 levels of difficulty. The game auto-saves, and has undo-redo capability. Pieces can move horizontally, vertically, and diagonally.</p>
+  </description>
+  <screenshots>
+    <screenshot width="752" type="default" height="453">
+      <image>http://gottcode.org/peg-e/screenshots/appdata.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">http://gottcode.org/peg-e/</url>
+  <url type="bugtracker">http://gottcode.org/peg-e/bugs/</url>
+  <url type="donation">http://gottcode.org/tip/</url>
+  <developer_name>Graeme Gott</developer_name>
+  <updatecontact>graeme@gottcode.org</updatecontact>
+  <provides>
+    <binary>peg-e</binary>
+  </provides>
+</component>
