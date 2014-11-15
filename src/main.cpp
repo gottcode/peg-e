@@ -36,21 +36,9 @@ int main(int argc, char** argv)
 	app.setApplicationVersion(VERSIONSTR);
 	app.setOrganizationDomain("gottcode.org");
 	app.setOrganizationName("GottCode");
-	{
-		QIcon fallback(":/hicolor/256x256/apps/peg-e.png");
-		fallback.addFile(":/hicolor/128x128/apps/peg-e.png");
-		fallback.addFile(":/hicolor/64x64/apps/peg-e.png");
-		fallback.addFile(":/hicolor/48x48/apps/peg-e.png");
-		fallback.addFile(":/hicolor/32x32/apps/peg-e.png");
-		fallback.addFile(":/hicolor/24x24/apps/peg-e.png");
-		fallback.addFile(":/hicolor/22x22/apps/peg-e.png");
-		fallback.addFile(":/hicolor/16x16/apps/peg-e.png");
-		if (!QIcon::themeName().isEmpty() && (QIcon::themeName() != "hicolor")) {
-			app.setWindowIcon(QIcon::fromTheme("peg-e", fallback));
-		} else {
-			app.setWindowIcon(fallback);
-		}
-	}
+#if !defined(Q_OS_WIN) && !defined(Q_OS_MAC)
+	app.setWindowIcon(QIcon::fromTheme("peg-e", QIcon(":/peg-e.png")));
+#endif
 	app.setAttribute(Qt::AA_DontShowIconsInMenus, true);
 
 	LocaleDialog::loadTranslator("pege_");

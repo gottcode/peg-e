@@ -36,7 +36,6 @@ SOURCES = src/board.cpp \
 
 TRANSLATIONS = $$files(translations/pege_*.ts)
 
-RESOURCES = icons/icon.qrc
 macx {
 	ICON = icons/peg-e.icns
 
@@ -47,6 +46,8 @@ macx {
 } else:win32 {
 	RC_FILE = icons/icon.rc
 } else:unix {
+	RESOURCES = icons/icon.qrc
+
 	isEmpty(PREFIX) {
 		PREFIX = /usr/local
 	}
