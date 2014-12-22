@@ -276,6 +276,9 @@ void Window::loadGame()
 	int difficulty = settings.value("Current/Difficulty", m_difficulty).toInt();
 	int algorithm = settings.value("Current/Algorithm", m_algorithm).toInt();
 	QStringList moves = settings.value("Current/Moves").toStringList();
+	if (settings.value("Current/Version").toInt() != 2) {
+		moves.clear();
+	}
 	startGame(seed, difficulty, algorithm);
 
 	// Load moves
@@ -314,6 +317,7 @@ void Window::startGame(int seed, int difficulty, int algorithm)
 	QSettings settings;
 	settings.setValue("Difficulty", m_difficulty);
 	settings.setValue("Algorithm", m_algorithm);
+	settings.setValue("Current/Version", 2);
 	settings.setValue("Current/Seed", m_seed);
 	settings.setValue("Current/Difficulty", m_difficulty);
 	settings.setValue("Current/Algorithm", m_algorithm);
