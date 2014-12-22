@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2013 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2013, 2014 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,6 +23,8 @@
 #include <QHash>
 #include <QPoint>
 #include <QSize>
+
+#include <random>
 
 /**
  * Contains the layout of holes and pegs.
@@ -77,7 +79,7 @@ protected:
 	 *
 	 * @param pegs the pegs to shuffle
 	 */
-	virtual void shuffle(QList<QPoint>& pegs) const;
+	virtual void shuffle(QList<QPoint>& pegs);
 
 	/**
 	 * Determines where to move next.
@@ -119,6 +121,7 @@ private:
 	QList<QPoint> m_directions; /**< list of directions to check */
 	QPoint m_top_left; /**< top left hole */
 	QPoint m_bottom_right; /**< bottom right hole */
+	std::mt19937 m_random; /**< random number generator */
 };
 
 /** Puzzle that has branches between groups of pegs. */
@@ -149,7 +152,7 @@ protected:
 	 *
 	 * @param pegs the pegs to shuffle
 	 */
-	void shuffle(QList<QPoint>& pegs) const;
+	void shuffle(QList<QPoint>& pegs);
 };
 
 #endif // PEGE_PUZZLE_H

@@ -74,7 +74,7 @@ QSize Puzzle::size() const
 
 void Puzzle::generate(int seed, int difficulty)
 {
-	srand(seed);
+	m_random.seed(seed);
 
 	difficulty = qBound(1, difficulty, 101);
 	difficulty += 5;
@@ -100,16 +100,16 @@ bool Puzzle::isAvailable(const QPoint& hole) const
 
 //-----------------------------------------------------------------------------
 
-void Puzzle::shuffle(QList<QPoint>& pegs) const
+void Puzzle::shuffle(QList<QPoint>& pegs)
 {
-	std::random_shuffle(pegs.begin(), pegs.end());
+	std::shuffle(pegs.begin(), pegs.end(), m_random);
 }
 
 //-----------------------------------------------------------------------------
 
 bool Puzzle::findNextMove(const QPoint& start_hole, QPoint& jumped_hole, QPoint& end_hole)
 {
-	std::random_shuffle(m_directions.begin(), m_directions.end());
+	std::shuffle(m_directions.begin(), m_directions.end(), m_random);
 	for (const QPoint& direction : m_directions) {
 		jumped_hole = direction + start_hole;
 		end_hole = (direction * 2) + start_hole;
@@ -197,7 +197,7 @@ bool PuzzleLine::isAvailable(const QPoint& hole) const
 
 //-----------------------------------------------------------------------------
 
-void PuzzleLine::shuffle(QList<QPoint>&) const
+void PuzzleLine::shuffle(QList<QPoint>&)
 {
 }
 

@@ -37,7 +37,7 @@
 #include <QUndoStack>
 #include <QVBoxLayout>
 
-#include <ctime>
+#include <random>
 
 //-----------------------------------------------------------------------------
 
@@ -161,7 +161,7 @@ void Window::newGame()
 	difficulty_box->setValue(m_difficulty);
 
 	QSpinBox* seed_box = new QSpinBox(&dialog);
-	seed_box->setRange(0, RAND_MAX);
+	seed_box->setRange(0, INT_MAX);
 	seed_box->setValue(0);
 	seed_box->setSpecialValueText(tr("Random"));
 
@@ -300,8 +300,10 @@ void Window::loadGame()
 void Window::startGame(int seed, int difficulty, int algorithm)
 {
 	if (seed == 0) {
-		srand(time(0));
-		seed = rand();
+		std::random_device rd;
+		std::mt19937 gen(rd());
+		std::uniform_int_distribution<int> dis(0, INT_MAX);
+		seed = dis(gen);
 	}
 	m_seed = seed;
 	m_difficulty = difficulty;
