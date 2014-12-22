@@ -68,11 +68,11 @@ Window::Window() :
 
 	QAction* undo_action = move_menu->addAction(QIcon::fromTheme("edit-undo"), tr("&Undo"), moves, SLOT(undo()), QKeySequence::Undo);
 	undo_action->setEnabled(false);
-	connect(moves, SIGNAL(canUndoChanged(bool)), undo_action, SLOT(setEnabled(bool)));
+	connect(moves, &QUndoStack::canUndoChanged, undo_action, &QAction::setEnabled);
 
 	QAction* redo_action = move_menu->addAction(QIcon::fromTheme("edit-redo"), tr("&Redo"), moves, SLOT(redo()), QKeySequence::Redo);
 	redo_action->setEnabled(false);
-	connect(moves, SIGNAL(canRedoChanged(bool)), redo_action, SLOT(setEnabled(bool)));
+	connect(moves, &QUndoStack::canRedoChanged, redo_action, &QAction::setEnabled);
 
 	QMenu* appearance_menu = menuBar()->addMenu(tr("&Appearance"));
 
@@ -99,7 +99,7 @@ Window::Window() :
 		}
 	}
 
-	connect(m_colors, SIGNAL(triggered(QAction*)), this, SLOT(changeAppearance(QAction*)));
+	connect(m_colors, &QActionGroup::triggered, this, &Window::changeAppearance);
 
 	appearance_menu->addAction(tr("Custom..."), this, SLOT(changeAppearanceCustom()));
 
@@ -167,8 +167,8 @@ void Window::newGame()
 
 	// Create dialog buttons
 	QDialogButtonBox* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, Qt::Horizontal, &dialog);
-	connect(buttons, SIGNAL(accepted()), &dialog, SLOT(accept()));
-	connect(buttons, SIGNAL(rejected()), &dialog, SLOT(reject()));
+	connect(buttons, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
+	connect(buttons, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
 
 	// Lay out options
 	QFormLayout* options_layout = new QFormLayout;

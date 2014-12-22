@@ -1,13 +1,10 @@
-lessThan(QT_VERSION, 4.6) {
-	error("Peg-E requires Qt 4.6 or greater")
+lessThan(QT_VERSION, 5.2) {
+	error("Peg-E requires Qt 5.2 or greater")
 }
 
 TEMPLATE = app
-greaterThan(QT_MAJOR_VERSION, 4) {
-	QT += widgets
-}
-CONFIG += warn_on
-QMAKE_CXXFLAGS += -std=c++11
+QT += widgets
+CONFIG += warn_on c++11
 
 VERSION = 1.1.2
 DEFINES += VERSIONSTR=\\\"$${VERSION}\\\"
