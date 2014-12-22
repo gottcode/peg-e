@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2013 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2013, 2014 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,7 +20,6 @@
 #include "puzzle.h"
 
 #include <algorithm>
-#include <cstdlib>
 
 //-----------------------------------------------------------------------------
 
@@ -111,7 +110,7 @@ void Puzzle::shuffle(QList<QPoint>& pegs) const
 bool Puzzle::findNextMove(const QPoint& start_hole, QPoint& jumped_hole, QPoint& end_hole)
 {
 	std::random_shuffle(m_directions.begin(), m_directions.end());
-	foreach (const QPoint& direction, m_directions) {
+	for (const QPoint& direction : m_directions) {
 		jumped_hole = direction + start_hole;
 		end_hole = (direction * 2) + start_hole;
 		if (isAvailable(jumped_hole) && isAvailable(end_hole)) {
@@ -134,7 +133,7 @@ QPoint Puzzle::findMoves(const QPoint& start, int loops)
 	QPoint jumped_hole, end_hole;
 	for (int i = 0; i < loops; ++i) {
 		shuffle(pegs);
-		foreach (const QPoint& start_hole, pegs) {
+		for (const QPoint& start_hole : pegs) {
 			if (findNextMove(start_hole, jumped_hole, end_hole)) {
 				pegs.removeOne(start_hole);
 				pegs.append(jumped_hole);
@@ -158,10 +157,10 @@ int Puzzle::hasPeg(const QPoint& hole) const
 
 void Puzzle::setHasPeg(const QPoint& hole, bool value)
 {
-	m_top_left.setX(qMin(m_top_left.x(), hole.x()));
-	m_top_left.setY(qMin(m_top_left.y(), hole.y()));
-	m_bottom_right.setX(qMax(m_bottom_right.x(), hole.x()));
-	m_bottom_right.setY(qMax(m_bottom_right.y(), hole.y()));
+	m_top_left.setX(std::min(m_top_left.x(), hole.x()));
+	m_top_left.setY(std::min(m_top_left.y(), hole.y()));
+	m_bottom_right.setX(std::max(m_bottom_right.x(), hole.x()));
+	m_bottom_right.setY(std::max(m_bottom_right.y(), hole.y()));
 	m_holes[hole] = value;
 }
 
@@ -174,12 +173,12 @@ void PuzzleBranch::generate(int pegs)
 
 	int loops = pegs;
 	while (loops > 0) {
-		int group_loops = qMin(10, loops);
+		int group_loops = std::min(10, loops);
 		start_hole = findMoves(start_hole, group_loops);
 		loops -= group_loops;
 
 		QPoint jumped_hole, end_hole;
-		int branch_loops = qMin(10, loops);
+		int branch_loops = std::min(10, loops);
 		for (int i = 0; i < branch_loops; ++i) {
 			if (findNextMove(start_hole, jumped_hole, end_hole)) {
 				start_hole = end_hole;

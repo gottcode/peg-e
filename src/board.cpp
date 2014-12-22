@@ -153,7 +153,7 @@ void Board::move(const QPoint& old_hole, const QPoint& new_hole)
 
 void Board::setHighlight(const QList<QPoint>& holes, bool highlight)
 {
-	foreach (const QPoint& hole, holes) {
+	for (const QPoint& hole : holes) {
 		Q_ASSERT(m_holes.contains(hole));
 		m_holes[hole]->setHighlight(highlight);
 	}
@@ -230,7 +230,7 @@ void Board::resizeEvent(QResizeEvent* event)
 bool Board::checkFinished()
 {
 	int pegs = 0;
-	foreach (Hole* hole, m_holes) {
+	for (Hole* hole : m_holes) {
 		if (hole->hasPeg()) {
 			pegs++;
 			if (hole->peg()->canMove()) {

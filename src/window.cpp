@@ -259,7 +259,7 @@ void Window::changeAppearanceCustom()
 
 	QString selected_color = color.name();
 	QList<QAction*> actions = m_colors->actions();
-	foreach (QAction* action, actions) {
+	for (QAction* action : actions) {
 		action->setChecked(action->data() == selected_color);
 	}
 
@@ -280,7 +280,7 @@ void Window::loadGame()
 
 	// Load moves
 	QRegExp parse("(-?\\d+)x(-?\\d+) to (-?\\d+)x(-?\\d+)");
-	foreach (const QString& move, moves) {
+	for (const QString& move : moves) {
 		if (!parse.exactMatch(move)) {
 			continue;
 		}
