@@ -46,8 +46,6 @@ Window::Window() :
 	m_difficulty(QSettings().value("Difficulty", 5).toInt()),
 	m_algorithm(QSettings().value("Algorithm", 1).toInt())
 {
-	setWindowTitle(tr("Peg-E"));
-
 	// Create board
 	QUndoStack* moves = new QUndoStack(this);
 	m_board = new Board(moves, this);
