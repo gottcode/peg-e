@@ -162,15 +162,6 @@ Section "install"
 	;Copy files
 	SetOutPath $INSTDIR
 	File ..\release\Peg-E.exe
-	File $%QTDIR%\bin\icudt51.dll
-	File $%QTDIR%\bin\icuin51.dll
-	File $%QTDIR%\bin\icuuc51.dll
-	File $%QTDIR%\bin\libgcc_s_dw2-1.dll
-	File $%QTDIR%\bin\libstdc++-6.dll
-	File $%QTDIR%\bin\libwinpthread-1.dll
-	File $%QTDIR%\bin\Qt5Core.dll
-	File $%QTDIR%\bin\Qt5Gui.dll
-	File $%QTDIR%\bin\Qt5Widgets.dll
 
 	SetOutPath $INSTDIR\icons\hicolor
 	File ..\icons\oxygen\hicolor\index.theme
@@ -182,9 +173,6 @@ Section "install"
 	File ..\icons\oxygen\hicolor\32x32\*
 	SetOutPath $INSTDIR\icons\hicolor\64x64
 	File ..\icons\oxygen\hicolor\64x64\*
-
-	SetOutPath $INSTDIR\platforms
-	File $%QTDIR%\plugins\platforms\qwindows.dll
 
 	SetOutPath $INSTDIR\translations
 	File ..\translations\*.qm
@@ -258,16 +246,13 @@ Section "Uninstall"
 	;Remove files
 	Delete $INSTDIR\Peg-E.exe
 	Delete $INSTDIR\ReadMe.txt
-	Delete $INSTDIR\*.dll
 	Delete $INSTDIR\icons\hicolor\index.theme
 	Delete $INSTDIR\icons\hicolor\*\*
-	Delete $INSTDIR\platforms\qwindows.dll
 	Delete $INSTDIR\translations\*.qm
 	Delete $INSTDIR\Uninstall.exe
 
 	;Remove directories
 	RMDir /r $INSTDIR\icons
-	RMDir $INSTDIR\platforms
 	RMDir $INSTDIR\translations
 	RMDir $INSTDIR
 
