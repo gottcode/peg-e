@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2012, 2013, 2014 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2012, 2013, 2014, 2015 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -41,6 +41,7 @@ int main(int argc, char** argv)
 	app.setWindowIcon(QIcon::fromTheme("peg-e", QIcon(":/peg-e.png")));
 #endif
 	app.setAttribute(Qt::AA_DontShowIconsInMenus, true);
+	app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
 	LocaleDialog::loadTranslator("pege_");
 
