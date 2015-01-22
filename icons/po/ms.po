@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# abuyop <abuyop@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2014-11-14 10:34+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-12-29 01:01+0000\n"
+"Last-Translator: abuyop <abuyop@gmail.com>\n"
 "Language-Team: Malay (Malaysia) (http://www.transifex.com/projects/p/peg-e/"
 "language/ms_MY/)\n"
 "Language: ms\n"
@@ -24,7 +25,7 @@ msgstr "Peg-E"
 
 #: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
-msgstr ""
+msgstr "Langkau pepaku untuk menyingkirnya"
 
 #: ../peg-e.appdata.xml.in.h:3
 msgid ""
@@ -34,7 +35,12 @@ msgid ""
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
 msgstr ""
+"Peg-E merupakan permainan solitaire pepaku yang mana anda perlu lompat di "
+"atas pepaku untuk membuang kesemuanya dari papan permainan kecuali satu "
+"pepaku. Papan dijana secara rawak, dengan 100 aras kesukaran. Permainan "
+"dalam mod auto-simpan, dan mempunyai keupayaan buat asal - buat semula. "
+"Pepaku boleh dialih secara mengufuk, menegak atau mengikut pepenjuru."
 
 #: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
-msgstr "Permainan penyingkiran pepaku"
+msgstr "Permainan Penyingkiran Pepaku"

@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Francisco Zamorano <pacozamo@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2014-11-14 10:34+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-11-27 11:28+0000\n"
+"Last-Translator: Francisco Zamorano <pacozamo@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/peg-e/language/"
 "es/)\n"
 "Language: es\n"
@@ -24,7 +25,7 @@ msgstr "Peg-E"
 
 #: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
-msgstr ""
+msgstr "Salta sobre los pegs para eliminarlos"
 
 #: ../peg-e.appdata.xml.in.h:3
 msgid ""
@@ -34,6 +35,11 @@ msgid ""
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
 msgstr ""
+"Peg-E es un juego tipo solitario en el que saltas sobre fichas para "
+"eliminarlas del tablero hasta que solo quede una. Los tableros se generan al "
+"azar, contando con 100 niveles de dificultad. El juego se puede autoguardar "
+"y tiene una función para deshacer-rehacer movimientos. Las fichas se pueden "
+"mover en horizontal, vertical o diagonal."
 
 #: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"

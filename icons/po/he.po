@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# GenghisKhan <genghiskhan@gmx.ca>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2014-11-14 10:34+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-11-26 13:29+0000\n"
+"Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
 "Language-Team: Hebrew (http://www.transifex.com/projects/p/peg-e/language/"
 "he/)\n"
 "Language: he\n"
@@ -24,7 +25,7 @@ msgstr ""
 
 #: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
-msgstr ""
+msgstr "קפוץ מעל גולות כדי לסלק אותן"
 
 #: ../peg-e.appdata.xml.in.h:3
 msgid ""
@@ -34,7 +35,11 @@ msgid ""
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
 msgstr ""
+"Peg-E הינו משחק סוליטר מחשבת בו עליך לקפוץ מעל גולות כדי להסירן מתוך הלוח, "
+"בסופו של דבר לנסות להסיר את כולן למעט אחת. הלוחות מופקות באופן אקראי, עם 100 "
+"שלבי קושי. המשחק נשמר אוטומטית, ויש לו יכולת ביטול וחזרה של צעדים. גולות "
+"ניתנות להזזה באופן מאוזן, מאונך, ובאלכסון."
 
 #: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
-msgstr "משחק הלוח מחשבת"
+msgstr "משחק לוח מחשבת"

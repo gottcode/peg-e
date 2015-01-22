@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Oprea Nicolae <jaff2002@yahoo.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2014-11-14 10:34+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-11-14 13:24+0000\n"
+"Last-Translator: Oprea Nicolae <jaff2002@yahoo.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/projects/p/peg-e/language/"
 "ro/)\n"
 "Language: ro\n"
@@ -25,7 +26,7 @@ msgstr "Peg-E"
 
 #: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
-msgstr ""
+msgstr "Sari peste pioni pentru a-i eliminna"
 
 #: ../peg-e.appdata.xml.in.h:3
 msgid ""
@@ -35,7 +36,12 @@ msgid ""
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
 msgstr ""
+"Peg-E este un joc cu pioni în care sa sari peste piese pentru a le elimina "
+"de pe tablă, încercînd, în cele din urmă, a le elimina pe toate cu excepţia "
+"uneia. Tablele sunt generate aleator, cu 100 de niveluri de dificultate. "
+"Jocul salvează automat şi are capacitatea de a face/reface. Piese se pot "
+"deplasa orizontal, vertical şi pe diagonală."
 
 #: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
-msgstr "Joc de eliminare Peg"
+msgstr "Peg - joc de eliminare"
