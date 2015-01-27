@@ -194,7 +194,9 @@ void Board::drawForeground(QPainter* painter, const QRectF&)
 		QFontMetrics metrics(QFont("Sans", 24));
 		int w = metrics.width(message);
 		int h = metrics.height();
-		QPixmap pixmap(QSize(w + h, h * 2));
+		int ratio = devicePixelRatio();
+		QPixmap pixmap(QSize(w + h, h * 2) * ratio);
+		pixmap.setDevicePixelRatio(ratio);
 		pixmap.fill(QColor(0, 0, 0, 0));
 		{
 			QPainter pixmap_painter(&pixmap);
@@ -212,7 +214,7 @@ void Board::drawForeground(QPainter* painter, const QRectF&)
 
 		painter->save();
 		painter->resetTransform();
-		painter->drawPixmap((width() - pixmap.width()) / 2, (height() - pixmap.height()) / 2, pixmap);
+		painter->drawPixmap((width() - (pixmap.width() / ratio)) / 2, (height() - (pixmap.height() / ratio)) / 2, pixmap);
 		painter->restore();
 	}
 }
