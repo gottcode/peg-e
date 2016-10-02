@@ -6,7 +6,7 @@
 !define VERSIONMINOR 2
 !define VERSIONPATCH 1
 !define APPVERSION "${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONPATCH}"
-!define ABOUTURL "http://gottcode.org/peg-e/"
+!define ABOUTURL "https://gottcode.org/peg-e/"
 
 ;--------------------------------
 ;Includes
@@ -162,6 +162,19 @@ Section "install"
 	;Copy files
 	SetOutPath $INSTDIR
 	File ..\release\Peg-E.exe
+	File $%QTDIR%\bin\libgcc_s_dw2-1.dll
+	File $%QTDIR%\bin\libstdc++-6.dll
+	File $%QTDIR%\bin\libwinpthread-1.dll
+	File $%QTDIR%\bin\Qt5Core.dll
+	File $%QTDIR%\bin\Qt5Gui.dll
+	File $%QTDIR%\bin\Qt5Widgets.dll
+
+	SetOutPath $INSTDIR\platforms
+	File $%QTDIR%\plugins\platforms\qwindows.dll
+
+	SetOutPath $INSTDIR\translations
+	File ..\translations\*.qm
+	File $%QTDIR%\translations\qtbase_*.qm
 
 	SetOutPath $INSTDIR\icons\hicolor
 	File ..\icons\oxygen\hicolor\index.theme
@@ -173,10 +186,6 @@ Section "install"
 	File ..\icons\oxygen\hicolor\32x32\*
 	SetOutPath $INSTDIR\icons\hicolor\64x64
 	File ..\icons\oxygen\hicolor\64x64\*
-
-	SetOutPath $INSTDIR\translations
-	File ..\translations\*.qm
-	File $%QTDIR%\translations\qtbase_*.qm
 
 	;Create ReadMe file
 	SetOutPath $INSTDIR
@@ -246,6 +255,8 @@ Section "Uninstall"
 	;Remove files
 	Delete $INSTDIR\Peg-E.exe
 	Delete $INSTDIR\ReadMe.txt
+	Delete $INSTDIR\*.dll
+	Delete $INSTDIR\platforms\*.dll
 	Delete $INSTDIR\icons\hicolor\index.theme
 	Delete $INSTDIR\icons\hicolor\*\*
 	Delete $INSTDIR\translations\*.qm
@@ -253,6 +264,7 @@ Section "Uninstall"
 
 	;Remove directories
 	RMDir /r $INSTDIR\icons
+	RMDir $INSTDIR\platforms
 	RMDir $INSTDIR\translations
 	RMDir $INSTDIR
 
