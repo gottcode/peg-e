@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Wasilis Mandratzis-Walz, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2014-11-14 10:34+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/peg-e/language/"
+"PO-Revision-Date: 2015-04-16 14:16+0000\n"
+"Last-Translator: Wasilis Mandratzis-Walz\n"
+"Language-Team: German (http://www.transifex.com/gottcode/peg-e/language/"
 "de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +25,7 @@ msgstr "Peg-E"
 
 #: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
-msgstr ""
+msgstr "Sprung zu Heringen, um sie zu beseitigen"
 
 #: ../peg-e.appdata.xml.in.h:3
 msgid ""
@@ -34,6 +35,12 @@ msgid ""
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
 msgstr ""
+"Peg-E ist ein Solitär-Spiel, in dem Sie über Stücke, um sie vom Brett zu "
+"entfernen springen und schließlich versuchen, alle bis auf einen zu "
+"beseitigen. Die Platten werden nach dem Zufallsprinzip erzeugt mit 100 "
+"Schwierigkeitsstufen. Das Spiel wird automatisch speichert und hat eine "
+"zurücksetzen-Redo-Funktion. Stücke können horizontal bewegt werden aber auch "
+"vertikal und diagonal."
 
 #: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"

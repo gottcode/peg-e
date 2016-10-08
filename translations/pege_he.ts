@@ -191,7 +191,7 @@
     </message>
     <message>
         <source>Uses icons from the &lt;a href=%1&gt;Oxygen&lt;/a&gt; icon theme</source>
-        <translation>הצלמיות נלקחו מתוך הפרויקט &lt;a href=%1&gt;Oxygen&lt;/a&gt;</translation>
+        <translation>סמלים נלקחו מתוך פרויקט &lt;a href=%1&gt;Oxygen&lt;/a&gt;</translation>
     </message>
     <message>
         <source>Used under the &lt;a href=%1&gt;LGPL 3&lt;/a&gt; license</source>

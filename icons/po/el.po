@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Wasilis Mandratzis-Walz, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2014-11-14 10:34+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Greek (http://www.transifex.com/projects/p/peg-e/language/"
-"el/)\n"
+"PO-Revision-Date: 2015-04-16 14:19+0000\n"
+"Last-Translator: Wasilis Mandratzis-Walz\n"
+"Language-Team: Greek (http://www.transifex.com/gottcode/peg-e/language/el/)\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:1
 msgid "Peg-E"
-msgstr ""
+msgstr "Peg-E"
 
 #: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
-msgstr ""
+msgstr "Μετάβαση σε γόμφους για να εξαλειφθούν"
 
 #: ../peg-e.appdata.xml.in.h:3
 msgid ""
@@ -34,7 +34,12 @@ msgid ""
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
 msgstr ""
+"Το Peg-E είναι ένα παιχνίδι πασιέντζας γόμφων, στο οποίο πρεπει να πηδηξετε "
+"πάνω από τα κομμάτια για να τα αφαιρέσετε από την περιοχη του παιχνιδιου, "
+"και να προσπαθησετε να εξαλειφθούν όλα. Οι πίνακες δημιουργούνται με τυχαίο "
+"τρόπο, με 100 επίπεδα δυσκολίας. Το παιχνίδι αποθηκευτε αυτοματα. Τα "
+"κομμάτια μπορουν να κινηθουν οριζόντια, κάθετα και διαγώνια."
 
 #: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
-msgstr ""
+msgstr "Peg παιχνίδι εξάλειψης "

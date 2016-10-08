@@ -6,6 +6,7 @@
   <name>Peg-E</name>
   <name xml:lang="cs">Peg-E</name>
   <name xml:lang="de">Peg-E</name>
+  <name xml:lang="el">Peg-E</name>
   <name xml:lang="es">Peg-E</name>
   <name xml:lang="lt">Peg-E</name>
   <name xml:lang="ms">Peg-E</name>
@@ -15,18 +16,27 @@
   <name xml:lang="ru">Peg-E</name>
   <name xml:lang="tr">Peg-E</name>
   <summary>Jump pegs to eliminate them</summary>
+  <summary xml:lang="de">Sprung zu Heringen, um sie zu beseitigen</summary>
+  <summary xml:lang="el">Μετάβαση σε γόμφους για να εξαλειφθούν</summary>
   <summary xml:lang="es">Salta sobre los pegs para eliminarlos</summary>
   <summary xml:lang="he">קפוץ מעל גולות כדי לסלק אותן</summary>
   <summary xml:lang="lt">Peršokite per kamštelius, kad juos pašalintumėte</summary>
   <summary xml:lang="ms">Langkau pepaku untuk menyingkirnya</summary>
+  <summary xml:lang="nl">Verwijdern staafjes door er overheen te springen</summary>
+  <summary xml:lang="pl">Przeskocz kołki, aby je usunąć</summary>
   <summary xml:lang="ro">Sari peste pioni pentru a-i eliminna</summary>
 
   <description>
     <p>Peg-E is a peg solitaire game in which you jump over pieces in order to remove them from the board, ultimately trying to eliminate all but one. The boards are randomly generated, with 100 levels of difficulty. The game auto-saves, and has undo-redo capability. Pieces can move horizontally, vertically, and diagonally.</p>
+    <p xml:lang="de">Peg-E ist ein Solitär-Spiel, in dem Sie über Stücke, um sie vom Brett zu entfernen springen und schließlich versuchen, alle bis auf einen zu beseitigen. Die Platten werden nach dem Zufallsprinzip erzeugt mit 100 Schwierigkeitsstufen. Das Spiel wird automatisch speichert und hat eine zurücksetzen-Redo-Funktion. Stücke können horizontal bewegt werden aber auch vertikal und diagonal.</p>
+    <p xml:lang="el">Το Peg-E είναι ένα παιχνίδι πασιέντζας γόμφων, στο οποίο πρεπει να πηδηξετε πάνω από τα κομμάτια για να τα αφαιρέσετε από την περιοχη του παιχνιδιου, και να προσπαθησετε να εξαλειφθούν όλα. Οι πίνακες δημιουργούνται με τυχαίο τρόπο, με 100 επίπεδα δυσκολίας. Το παιχνίδι αποθηκευτε αυτοματα. Τα κομμάτια μπορουν να κινηθουν οριζόντια, κάθετα και διαγώνια.</p>
     <p xml:lang="es">Peg-E es un juego tipo solitario en el que saltas sobre fichas para eliminarlas del tablero hasta que solo quede una. Los tableros se generan al azar, contando con 100 niveles de dificultad. El juego se puede autoguardar y tiene una función para deshacer-rehacer movimientos. Las fichas se pueden mover en horizontal, vertical o diagonal.</p>
-    <p xml:lang="he">Peg-E הינו משחק סוליטר מחשבת בו עליך לקפוץ מעל גולות כדי להסירן מתוך הלוח, בסופו של דבר לנסות להסיר את כולן למעט אחת. הלוחות מופקות באופן אקראי, עם 100 שלבי קושי. המשחק נשמר אוטומטית, ויש לו יכולת ביטול וחזרה של צעדים. גולות ניתנות להזזה באופן מאוזן, מאונך, ובאלכסון.</p>
+    <p xml:lang="he">Peg-E הינו משחק סוליטר מחשבת בו עליך לקפוץ מעל גולות כדי להסירן מתוך הלוח, בסופו של דבר לנסות להסיר את כולן למעט אחת. הלוחות מופקים באופן אקראי, עם 100 שלבי קושי. המשחק נשמר אוטומטית, ויש לו אפשרות ביטול וחזרה על צעדים. גולות ניתנות להזזה באופן מאוזן, מאונך, ובאלכסון.</p>
     <p xml:lang="lt">Peg-E yra kamštelių žaidimas, kuriame peršokate per kamštelius, siekdami pašalinti iš žaidimo plokštės visus kamštelius, išskyrus vieną. Žaidimo plokštės yra atsitiktinai kuriamos, su 100 sunkumo lygių. Žaidimas automatiškai išsaugo žaidimo eigą ir turi anuliavimo ir perdarymo galimybes. Kamšteliai gali būti perkeliami horizontaliai, vertikaliai ir įstrižai.</p>
     <p xml:lang="ms">Peg-E merupakan permainan solitaire pepaku yang mana anda perlu lompat di atas pepaku untuk membuang kesemuanya dari papan permainan kecuali satu pepaku. Papan dijana secara rawak, dengan 100 aras kesukaran. Permainan dalam mod auto-simpan, dan mempunyai keupayaan buat asal - buat semula. Pepaku boleh dialih secara mengufuk, menegak atau mengikut pepenjuru.</p>
+    <p xml:lang="nl">Peg-E is een solitair spel waarbij je over stukken heen moet springen om ze te verwijderen net zolang totdat je nog meer 1 over hebt. De borden worden willekeurig gegenereerd met 100 niveaus van moeilijkheid. Het spel bewaard automatisch en je kunt zetten terugnemen.
+Stukken kunnen horizontaal, verticaal en diagonaal bewegen.</p>
+    <p xml:lang="pl">Peg-E to gra typu solitaire, w której przeskakujesz przez części, aby usunąć je z planszy, w końcu próbujesz usunąć wszystkie, oprócz jednego. Plansze generowane są losowo, przy 100 poziomach trudności. Gra automatycznie zapisuje stan i ma opcję cofania ruchu. Części mogą poruszać się poziomo, pionowo i na ukos.</p>
     <p xml:lang="ro">Peg-E este un joc cu pioni în care sa sari peste piese pentru a le elimina de pe tablă, încercînd, în cele din urmă, a le elimina pe toate cu excepţia uneia. Tablele sunt generate aleator, cu 100 de niveluri de dificultate. Jocul salvează automat şi are capacitatea de a face/reface. Piese se pot deplasa orizontal, vertical şi pe diagonală.</p>
   </description>
 

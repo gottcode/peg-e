@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# M T <michtrz@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2014-11-14 10:34+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Polish (http://www.transifex.com/projects/p/peg-e/language/"
+"PO-Revision-Date: 2015-10-25 22:31+0000\n"
+"Last-Translator: M T <michtrz@gmail.com>\n"
+"Language-Team: Polish (http://www.transifex.com/gottcode/peg-e/language/"
 "pl/)\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +26,7 @@ msgstr "Peg-E"
 
 #: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
-msgstr ""
+msgstr "Przeskocz kołki, aby je usunąć"
 
 #: ../peg-e.appdata.xml.in.h:3
 msgid ""
@@ -35,6 +36,11 @@ msgid ""
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
 msgstr ""
+"Peg-E to gra typu solitaire, w której przeskakujesz przez części, aby usunąć "
+"je z planszy, w końcu próbujesz usunąć wszystkie, oprócz jednego. Plansze "
+"generowane są losowo, przy 100 poziomach trudności. Gra automatycznie "
+"zapisuje stan i ma opcję cofania ruchu. Części mogą poruszać się poziomo, "
+"pionowo i na ukos."
 
 #: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"

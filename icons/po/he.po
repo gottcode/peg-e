@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# GenghisKhan <genghiskhan@gmx.ca>, 2014
+# GenghisKhan <genghiskhan@gmx.ca>, 2014-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2014-11-26 13:29+0000\n"
+"PO-Revision-Date: 2015-09-14 14:28+0000\n"
 "Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
-"Language-Team: Hebrew (http://www.transifex.com/projects/p/peg-e/language/"
+"Language-Team: Hebrew (http://www.transifex.com/gottcode/peg-e/language/"
 "he/)\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
@@ -36,8 +36,8 @@ msgid ""
 "vertically, and diagonally."
 msgstr ""
 "Peg-E הינו משחק סוליטר מחשבת בו עליך לקפוץ מעל גולות כדי להסירן מתוך הלוח, "
-"בסופו של דבר לנסות להסיר את כולן למעט אחת. הלוחות מופקות באופן אקראי, עם 100 "
-"שלבי קושי. המשחק נשמר אוטומטית, ויש לו יכולת ביטול וחזרה של צעדים. גולות "
+"בסופו של דבר לנסות להסיר את כולן למעט אחת. הלוחות מופקים באופן אקראי, עם 100 "
+"שלבי קושי. המשחק נשמר אוטומטית, ויש לו אפשרות ביטול וחזרה על צעדים. גולות "
 "ניתנות להזזה באופן מאוזן, מאונך, ובאלכסון."
 
 #: ../peg-e.desktop.in.h:2

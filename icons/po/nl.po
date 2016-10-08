@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# RobertBorst <webmaster@fam-borst.nl>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2014-11-14 10:34+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Dutch (http://www.transifex.com/projects/p/peg-e/language/"
-"nl/)\n"
+"PO-Revision-Date: 2016-08-21 13:49+0000\n"
+"Last-Translator: RobertBorst <webmaster@fam-borst.nl>\n"
+"Language-Team: Dutch (http://www.transifex.com/gottcode/peg-e/language/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,7 @@ msgstr "Peg-E"
 
 #: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
-msgstr ""
+msgstr "Verwijdern staafjes door er overheen te springen"
 
 #: ../peg-e.appdata.xml.in.h:3
 msgid ""
@@ -34,7 +34,12 @@ msgid ""
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
 msgstr ""
+"Peg-E is een solitair spel waarbij je over stukken heen moet springen om ze "
+"te verwijderen net zolang totdat je nog meer 1 over hebt. De borden worden "
+"willekeurig gegenereerd met 100 niveaus van moeilijkheid. Het spel bewaard "
+"automatisch en je kunt zetten terugnemen.\n"
+"Stukken kunnen horizontaal, verticaal en diagonaal bewegen."
 
 #: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
-msgstr "Pen verwijder spel"
+msgstr "Pinnetjes verwijder spel"
