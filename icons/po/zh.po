@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Graeme Gott
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# 高垚鑫 Gao Yaoxin, aka Felix Yaoxin Gao, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Peg-E\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-14 20:54+0000\n"
+"PO-Revision-Date: 2016-10-29 14:21+0000\n"
+"Last-Translator: 高垚鑫 Gao Yaoxin, aka Felix Yaoxin Gao\n"
+"Language-Team: Chinese (http://www.transifex.com/gottcode/peg-e/language/"
+"zh/)\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:1
+msgid "Peg-E"
+msgstr "Peg-E"
+
+#: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
+msgid "Jump pegs to eliminate them"
+msgstr "跳过棋子，消除它！"
+
+#: ../peg-e.appdata.xml.in.h:3
+msgid ""
+"Peg-E is a peg solitaire game in which you jump over pieces in order to "
+"remove them from the board, ultimately trying to eliminate all but one. The "
+"boards are randomly generated, with 100 levels of difficulty. The game auto-"
+"saves, and has undo-redo capability. Pieces can move horizontally, "
+"vertically, and diagonally."
+msgstr ""
+"Peg-E是一款孔明棋游戏。一颗棋子跳过另一颗后，该棋子就会被消除，游戏的目的是最"
+"终只剩下一颗棋子。本游戏的棋盘自动生成，有100种不同难度可供选择。游戏会自动保"
+"存，并具有撤销（悔棋）、重做功能。棋子可以横向、纵向和斜向移动。"
+
+#: ../peg-e.desktop.in.h:2
+msgid "Peg Elimination Game"
+msgstr "孔明棋游戏"
