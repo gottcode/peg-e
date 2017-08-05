@@ -16,7 +16,7 @@
     <name>LocaleDialog</name>
     <message>
         <source>Select application language:</source>
-        <translation>选择本程序的语言</translation>
+        <translation>选择本游戏的语言</translation>
     </message>
     <message>
         <source>&lt;System Language&gt;</source>
@@ -28,7 +28,7 @@
     </message>
     <message>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>请重启本程序以使语言设置生效</translation>
+        <translation>请重启本程序使语言设置生效</translation>
     </message>
 </context>
 <context>
@@ -43,15 +43,15 @@
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;开始新游戏</translation>
+        <translation>&amp;新游戏</translation>
     </message>
     <message>
         <source>&amp;Restart Game</source>
-        <translation>&amp;重新开始本局</translation>
+        <translation>&amp;重新开始</translation>
     </message>
     <message>
         <source>&amp;Details</source>
-        <translation>本局游戏详情</translation>
+        <translation>&amp;本局游戏详情</translation>
     </message>
     <message>
         <source>Quit</source>
@@ -59,11 +59,11 @@
     </message>
     <message>
         <source>&amp;Move</source>
-        <translation>走棋</translation>
+        <translation>&amp;移动</translation>
     </message>
     <message>
         <source>&amp;Undo</source>
-        <translation>悔棋（撤销）</translation>
+        <translation>&amp;悔棋（撤销）</translation>
     </message>
     <message>
         <source>&amp;Redo</source>
@@ -119,7 +119,7 @@
     </message>
     <message>
         <source>&amp;About</source>
-        <translation>&amp;关于本程序</translation>
+        <translation>&amp;关于</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
