@@ -37,7 +37,7 @@ msgstr ""
 "Peg-E is een solitair spel waarbij je over stukken heen moet springen om ze "
 "te verwijderen net zolang totdat je nog meer 1 over hebt. De borden worden "
 "willekeurig gegenereerd met 100 niveaus van moeilijkheid. Het spel bewaard "
-"automatisch en je kunt zetten terugnemen.\n"
+"automatisch en je kunt zetten terugnemen. "
 "Stukken kunnen horizontaal, verticaal en diagonaal bewegen."
 
 #: ../peg-e.desktop.in.h:2
