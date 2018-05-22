@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2013 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009, 2013, 2018 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -192,7 +192,7 @@ void Board::drawForeground(QPainter* painter, const QRectF&)
 	if (m_status) {
 		QString message((m_status == 2) ? tr("Success") : tr("Game Over"));
 		QFontMetrics metrics(QFont("Sans", 24));
-		int w = metrics.width(message);
+		int w = metrics.boundingRect(message).width();
 		int h = metrics.height();
 		int ratio = devicePixelRatio();
 		QPixmap pixmap(QSize(w + h, h * 2) * ratio);
