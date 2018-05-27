@@ -3,22 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# 高垚鑫, 2018
-# 高垚鑫, 2016
+# Rui <xymarior@yandex.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2018-03-24 07:06+0000\n"
-"Last-Translator: 高垚鑫\n"
-"Language-Team: Chinese (http://www.transifex.com/gottcode/peg-e/language/"
-"zh/)\n"
-"Language: zh\n"
+"PO-Revision-Date: 2018-04-20 14:52+0000\n"
+"Last-Translator: Rui <xymarior@yandex.com>\n"
+"Language-Team: Portuguese (http://www.transifex.com/gottcode/peg-e/language/"
+"pt/)\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:1
 msgid "Peg-E"
@@ -26,7 +25,7 @@ msgstr "Peg-E"
 
 #: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
-msgstr "跳过棋子，消除它！"
+msgstr "Salte com os pinos para os eliminar"
 
 #: ../peg-e.appdata.xml.in.h:3
 msgid ""
@@ -36,10 +35,12 @@ msgid ""
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
 msgstr ""
-"Peg-E 是一款孔明棋游戏。一颗棋子跳过另一颗后，该棋子就会被消除，游戏的目的是"
-"最终只剩下一颗棋子。本游戏的棋盘自动生成，有100种不同难度可供选择。游戏会自动"
-"保存，并具有撤销（悔棋）、重做功能。棋子可以横向、纵向和斜向移动。"
+"O Peg-E é um jogo do tipo solitário em que se salta sobre as peças por forma "
+"a removê-las do tabuleiro, por forma a tentar remover todas até restar "
+"apenas uma. Os tabuleiros são gerados aleatoriamente, com 100 níveis de "
+"dificuldade. O jogo grava automaticamente e tem a funcionalidade de desfazer "
+"as jogadas. As peças podem-se mover na horizontal, vertical e diagonal."
 
 #: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
-msgstr "孔明棋游戏"
+msgstr "Jogo de Eliminação Peg"
