@@ -4,7 +4,6 @@
 echo -n 'Preparing files...'
 cd ..
 
-rm -f peg-e.desktop.in.h
 rm -f peg-e.desktop.in
 cp peg-e.desktop peg-e.desktop.in
 sed -e '/^Name\[/ d' \
@@ -14,9 +13,7 @@ sed -e '/^Name\[/ d' \
 	-e 's/^GenericName/_GenericName/' \
 	-e 's/^Comment/_Comment/' \
 	-i peg-e.desktop.in
-intltool-extract --quiet --type=gettext/ini peg-e.desktop.in
 
-rm -f peg-e.appdata.xml.in.h
 rm -f peg-e.appdata.xml.in
 cp peg-e.appdata.xml peg-e.appdata.xml.in
 sed -e '/p xml:lang/ d' \
@@ -29,17 +26,8 @@ sed -e '/p xml:lang/ d' \
 	-e 's/<name>/<_name>/' \
 	-e 's/<\/name>/<\/_name>/' \
 	-i peg-e.appdata.xml.in
-intltool-extract --quiet --type=gettext/xml peg-e.appdata.xml.in
 
 cd po
-echo ' DONE'
-
-
-echo -n 'Extracting messages...'
-xgettext --from-code=UTF-8 --c++ --keyword=_ --keyword=N_:1 \
-	--package-name='Peg-E' --copyright-holder='Graeme Gott' \
-	--output=description.pot ../*.h
-sed 's/CHARSET/UTF-8/' -i description.pot
 echo ' DONE'
 
 
@@ -56,11 +44,10 @@ echo -n 'Merging translations...'
 cd ..
 
 intltool-merge --quiet --desktop-style po peg-e.desktop.in peg-e.desktop
-rm -f peg-e.desktop.in.h
 rm -f peg-e.desktop.in
 
 intltool-merge --quiet --xml-style po peg-e.appdata.xml.in peg-e.appdata.xml
-rm -f peg-e.appdata.xml.in.h
+echo >> peg-e.appdata.xml
 rm -f peg-e.appdata.xml.in
 
 echo ' DONE'

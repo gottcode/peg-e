@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2016-04-15 21:53+0000\n"
+"PO-Revision-Date: 2017-09-21 13:54+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/gottcode/peg-e/language/"
 "lt/)\n"
@@ -20,15 +20,15 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:1
+#: ../peg-e.appdata.xml.in:6 ../peg-e.desktop.in:3
 msgid "Peg-E"
 msgstr "Peg-E"
 
-#: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
+#: ../peg-e.appdata.xml.in:7 ../peg-e.desktop.in:5
 msgid "Jump pegs to eliminate them"
 msgstr "Peršokite per kamštelius, kad juos pašalintumėte"
 
-#: ../peg-e.appdata.xml.in.h:3
+#: ../peg-e.appdata.xml.in:10
 msgid ""
 "Peg-E is a peg solitaire game in which you jump over pieces in order to "
 "remove them from the board, ultimately trying to eliminate all but one. The "
@@ -42,6 +42,6 @@ msgstr ""
 "automatiškai išsaugo žaidimo eigą ir turi anuliavimo ir perdarymo galimybes. "
 "Kamšteliai gali būti perkeliami horizontaliai, vertikaliai ir įstrižai."
 
-#: ../peg-e.desktop.in.h:2
+#: ../peg-e.desktop.in:4
 msgid "Peg Elimination Game"
 msgstr "Kamštelių šalinimo žaidimas"

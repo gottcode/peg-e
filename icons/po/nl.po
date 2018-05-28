@@ -4,13 +4,14 @@
 #
 # Translators:
 # RobertBorst <webmaster@fam-borst.nl>, 2016
+# RobertBorst <webmaster@fam-borst.nl>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2016-08-21 13:49+0000\n"
-"Last-Translator: RobertBorst <webmaster@fam-borst.nl>\n"
+"PO-Revision-Date: 2018-05-28 18:14+0000\n"
+"Last-Translator: Graeme Gott <graeme@gottcode.org>\n"
 "Language-Team: Dutch (http://www.transifex.com/gottcode/peg-e/language/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -18,15 +19,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:1
+#: ../peg-e.appdata.xml.in:6 ../peg-e.desktop.in:3
 msgid "Peg-E"
 msgstr "Peg-E"
 
-#: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
+#: ../peg-e.appdata.xml.in:7 ../peg-e.desktop.in:5
 msgid "Jump pegs to eliminate them"
 msgstr "Verwijdern staafjes door er overheen te springen"
 
-#: ../peg-e.appdata.xml.in.h:3
+#: ../peg-e.appdata.xml.in:10
 msgid ""
 "Peg-E is a peg solitaire game in which you jump over pieces in order to "
 "remove them from the board, ultimately trying to eliminate all but one. The "
@@ -37,9 +38,9 @@ msgstr ""
 "Peg-E is een solitair spel waarbij je over stukken heen moet springen om ze "
 "te verwijderen net zolang totdat je nog meer 1 over hebt. De borden worden "
 "willekeurig gegenereerd met 100 niveaus van moeilijkheid. Het spel bewaard "
-"automatisch en je kunt zetten terugnemen. "
-"Stukken kunnen horizontaal, verticaal en diagonaal bewegen."
+"automatisch en je kunt zetten terugnemen. Stukken kunnen horizontaal, "
+"verticaal en diagonaal bewegen."
 
-#: ../peg-e.desktop.in.h:2
+#: ../peg-e.desktop.in:4
 msgid "Peg Elimination Game"
 msgstr "Pinnetjes verwijder spel"

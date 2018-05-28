@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Graeme Gott
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the Peg-E package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:1
+#: ../peg-e.appdata.xml.in:6 ../peg-e.desktop.in:3
 msgid "Peg-E"
 msgstr ""
 
-#: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
+#: ../peg-e.appdata.xml.in:7 ../peg-e.desktop.in:5
 msgid "Jump pegs to eliminate them"
 msgstr ""
 
-#: ../peg-e.appdata.xml.in.h:3
+#: ../peg-e.appdata.xml.in:10
 msgid ""
 "Peg-E is a peg solitaire game in which you jump over pieces in order to "
 "remove them from the board, ultimately trying to eliminate all but one. The "
@@ -34,6 +34,6 @@ msgid ""
 "vertically, and diagonally."
 msgstr ""
 
-#: ../peg-e.desktop.in.h:2
+#: ../peg-e.desktop.in:4
 msgid "Peg Elimination Game"
 msgstr ""

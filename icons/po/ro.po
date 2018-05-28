@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2014-11-14 13:24+0000\n"
+"PO-Revision-Date: 2017-09-23 20:29+0000\n"
 "Last-Translator: Oprea Nicolae <jaff2002@yahoo.com>\n"
-"Language-Team: Romanian (http://www.transifex.com/projects/p/peg-e/language/"
+"Language-Team: Romanian (http://www.transifex.com/gottcode/peg-e/language/"
 "ro/)\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,15 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
 "2:1));\n"
 
-#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:1
+#: ../peg-e.appdata.xml.in:6 ../peg-e.desktop.in:3
 msgid "Peg-E"
 msgstr "Peg-E"
 
-#: ../peg-e.appdata.xml.in.h:2 ../peg-e.desktop.in.h:3
+#: ../peg-e.appdata.xml.in:7 ../peg-e.desktop.in:5
 msgid "Jump pegs to eliminate them"
 msgstr "Sari peste pioni pentru a-i eliminna"
 
-#: ../peg-e.appdata.xml.in.h:3
+#: ../peg-e.appdata.xml.in:10
 msgid ""
 "Peg-E is a peg solitaire game in which you jump over pieces in order to "
 "remove them from the board, ultimately trying to eliminate all but one. The "
@@ -42,6 +42,6 @@ msgstr ""
 "Jocul salvează automat şi are capacitatea de a face/reface. Piese se pot "
 "deplasa orizontal, vertical şi pe diagonală."
 
-#: ../peg-e.desktop.in.h:2
+#: ../peg-e.desktop.in:4
 msgid "Peg Elimination Game"
 msgstr "Peg - joc de eliminare"
