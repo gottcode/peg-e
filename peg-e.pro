@@ -70,7 +70,9 @@ macx {
 
 	QMAKE_BUNDLE_DATA += ICONS
 } else:win32 {
-	RC_FILE = icons/icon.rc
+	RC_ICONS = icons/peg-e.ico
+	QMAKE_TARGET_DESCRIPTION = "Peg elimination game"
+	QMAKE_TARGET_COPYRIGHT = "Copyright (C) 2018 Graeme Gott"
 } else:unix {
 	RESOURCES = icons/icon.qrc
 
