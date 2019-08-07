@@ -72,9 +72,15 @@ int main(int argc, char** argv)
 	}
 
 	// Set up icons
+#if defined(Q_OS_MAC) || defined(Q_OS_WIN)
+	QIcon::setThemeName("hicolor");
+#elif (QT_VERSION >= QT_VERSION_CHECK(5,12,0))
+	QIcon::setFallbackThemeName("hicolor");
+#else
 	if (QIcon::themeName().isEmpty()) {
 		QIcon::setThemeName("hicolor");
 	}
+#endif
 
 	Window window;
 	window.show();
