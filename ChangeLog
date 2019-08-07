@@ -1,3 +1,11 @@
+1.2.7
+-----
+* FIXED: Was not loading KDE icon theme.
+* FIXED: Window icon didn't work in Wayland.
+* Improved loading locales.
+* Improved Windows deployment.
+* Replaced deprecated code.
+
 1.2.6
 -----
 * FIXED: Automatic high DPI support.

@@ -2,7 +2,7 @@
 
 APP='Peg-E'
 BUNDLE="$APP.app"
-VERSION='1.2.6'
+VERSION='1.2.7'
 
 # Remove any previous disk folder or DMG
 echo -n 'Preparing... '
