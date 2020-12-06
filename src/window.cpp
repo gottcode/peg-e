@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009-2020 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,6 +31,7 @@
 #include <QFormLayout>
 #include <QMenuBar>
 #include <QMessageBox>
+#include <QRegularExpression>
 #include <QSettings>
 #include <QSpinBox>
 #include <QToolBar>
@@ -281,14 +282,15 @@ void Window::loadGame()
 	startGame(seed, difficulty, algorithm);
 
 	// Load moves
-	QRegExp parse("(-?\\d+)x(-?\\d+) to (-?\\d+)x(-?\\d+)");
+	const QRegularExpression parse("^(-?\\d+)x(-?\\d+) to (-?\\d+)x(-?\\d+)$");
 	for (const QString& move : moves) {
-		if (!parse.exactMatch(move)) {
+		const QRegularExpressionMatch match = parse.match(move);
+		if (!match.hasMatch()) {
 			continue;
 		}
 
-		QPoint old_hole(parse.cap(1).toInt(), parse.cap(2).toInt());
-		QPoint new_hole(parse.cap(3).toInt(), parse.cap(4).toInt());
+		QPoint old_hole(match.captured(1).toInt(), match.captured(2).toInt());
+		QPoint new_hole(match.captured(3).toInt(), match.captured(4).toInt());
 		if (m_board->isPeg(old_hole) && m_board->isHole(new_hole)) {
 			m_board->move(old_hole, new_hole);
 		} else {
