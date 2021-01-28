@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009-2020 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009-2021 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -234,7 +234,7 @@ void Window::about()
 		"<p align='center'>%6<br/><small>%7</small></p>")
 		.arg(tr("Peg-E"), QCoreApplication::applicationVersion(),
 			tr("Peg elimination game"),
-			tr("Copyright &copy; 2009-%1 Graeme Gott").arg("2020"),
+			tr("Copyright &copy; 2009-%1 Graeme Gott").arg("2021"),
 			tr("Released under the <a href=%1>GPL 3</a> license").arg("\"http://www.gnu.org/licenses/gpl.html\""),
 			tr("Uses icons from the <a href=%1>Oxygen</a> icon theme").arg("\"http://www.oxygen-icons.org/\""),
 			tr("Used under the <a href=%1>LGPL 3</a> license").arg("\"http://www.gnu.org/licenses/lgpl.html\""))
