@@ -1,6 +1,6 @@
 /***********************************************************************
  *
- * Copyright (C) 2009-2020 Graeme Gott <graeme@gottcode.org>
+ * Copyright (C) 2009-2021 Graeme Gott <graeme@gottcode.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,6 +21,7 @@
 #include "window.h"
 
 #include <QApplication>
+#include <QCommandLineParser>
 
 /**
  * Program entry point.
@@ -82,6 +83,12 @@ int main(int argc, char** argv)
 	}
 	QIcon::setFallbackThemeName("hicolor");
 #endif
+
+	QCommandLineParser parser;
+	parser.setApplicationDescription(Window::tr("Peg elimination game"));
+	parser.addHelpOption();
+	parser.addVersionOption();
+	parser.process(app);
 
 	Window window;
 	window.show();
