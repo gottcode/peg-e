@@ -43,7 +43,7 @@ public:
 	 * @param board the board containing the peg
 	 * @param parent the parent item of the peg
 	 */
-	Peg(const QPoint& hole, Board* board, QGraphicsItem* parent = 0);
+	Peg(const QPoint& hole, Board* board, QGraphicsItem* parent = nullptr);
 
 	/** Returns @c true if the peg can move; @c false otherwise */
 	bool canMove()

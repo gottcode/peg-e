@@ -45,8 +45,8 @@ Movement::Movement(const QPoint& start_hole, const QPoint& end_hole, Board* boar
 
 void Movement::redo()
 {
-	m_board->hole(m_start_hole)->setPeg(0);
-	m_board->hole(m_jumped_hole)->setPeg(0);
+	m_board->hole(m_start_hole)->setPeg(nullptr);
+	m_board->hole(m_jumped_hole)->setPeg(nullptr);
 	m_board->hole(m_end_hole)->setPeg(m_peg);
 
 	m_jumped_peg->hide();
@@ -63,7 +63,7 @@ void Movement::undo()
 {
 	m_board->hole(m_start_hole)->setPeg(m_peg);
 	m_board->hole(m_jumped_hole)->setPeg(m_jumped_peg);
-	m_board->hole(m_end_hole)->setPeg(0);
+	m_board->hole(m_end_hole)->setPeg(nullptr);
 
 	m_peg->move(m_start_hole);
 	m_jumped_peg->show();

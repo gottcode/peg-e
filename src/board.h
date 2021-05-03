@@ -45,7 +45,7 @@ public:
 	 * @param moves where to store the history of peg movements
 	 * @param parent the game board's parent widget
 	 */
-	Board(QUndoStack* moves, QWidget* parent = 0);
+	Board(QUndoStack* moves, QWidget* parent = nullptr);
 
 	/** Returns @c true if there is only one peg left. */
 	bool isFinished() const

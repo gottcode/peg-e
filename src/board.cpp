@@ -62,21 +62,21 @@ Board::Board(QUndoStack* moves, QWidget* parent)
 
 bool Board::isHole(const QPoint& hole) const
 {
-	return m_holes.contains(hole) ? !m_holes.value(hole)->hasPeg() : 0;
+	return m_holes.contains(hole) ? !m_holes[hole]->hasPeg() : false;
 }
 
 //-----------------------------------------------------------------------------
 
 bool Board::isPeg(const QPoint& hole) const
 {
-	return m_holes.contains(hole) ? m_holes.value(hole)->hasPeg() : 0;
+	return m_holes.contains(hole) ? m_holes[hole]->hasPeg() : false;
 }
 
 //-----------------------------------------------------------------------------
 
 Hole* Board::hole(const QPoint& hole) const
 {
-	return m_holes.contains(hole) ? m_holes[hole] : 0;
+	return m_holes.contains(hole) ? m_holes[hole] : nullptr;
 }
 
 //-----------------------------------------------------------------------------
@@ -91,7 +91,7 @@ void Board::generate(int seed, int difficulty, int algorithm)
 	setInteractive(true);
 
 	// Create puzzle
-	Puzzle* puzzle = 0;
+	Puzzle* puzzle = nullptr;
 	switch (algorithm) {
 	case 2:
 		puzzle = new PuzzleBranch;
