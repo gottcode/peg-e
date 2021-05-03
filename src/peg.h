@@ -68,10 +68,10 @@ public:
 
 protected:
 	/** Override parent function to check if there are valid moves. */
-	void mousePressEvent(QGraphicsSceneMouseEvent* event);
+	void mousePressEvent(QGraphicsSceneMouseEvent* event) override;
 
 	/** Override parent function to handle completing a jump. */
-	void mouseReleaseEvent(QGraphicsSceneMouseEvent* event);
+	void mouseReleaseEvent(QGraphicsSceneMouseEvent* event) override;
 
 private:
 	/** Search game board for valid jumps to make. */

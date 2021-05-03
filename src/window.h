@@ -42,7 +42,7 @@ public:
 
 protected:
 	/** Override parent function to save window geometry. */
-	void closeEvent(QCloseEvent* event);
+	void closeEvent(QCloseEvent* event) override;
 
 private slots:
 	/**

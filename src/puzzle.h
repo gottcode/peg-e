@@ -133,7 +133,7 @@ protected:
 	 *
 	 * @param pegs how many pegs to create
 	 */
-	void generate(int pegs);
+	void generate(int pegs) override;
 };
 
 /** Puzzle that doesn't reuse or shuffle any holes. */
@@ -145,14 +145,14 @@ protected:
 	 *
 	 * @param hole the hole to check
 	 */
-	bool isAvailable(const QPoint& hole) const;
+	bool isAvailable(const QPoint& hole) const override;
 
 	/**
 	 * Override parent function to prevent shuffling the pegs.
 	 *
 	 * @param pegs the pegs to shuffle
 	 */
-	void shuffle(QList<QPoint>& pegs);
+	void shuffle(QList<QPoint>& pegs) override;
 };
 
 #endif // PEGE_PUZZLE_H

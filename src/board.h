@@ -108,13 +108,13 @@ public:
 
 protected:
 	/** Override parent function to draw background gradient. */
-	void drawBackground(QPainter* painter, const QRectF& rect);
+	void drawBackground(QPainter* painter, const QRectF& rect) override;
 
 	/** Override parent function to draw status message. */
-	void drawForeground(QPainter* painter, const QRectF& rect);
+	void drawForeground(QPainter* painter, const QRectF& rect) override;
 
 	/** Override parent function to scale board when resized. */
-	void resizeEvent(QResizeEvent* event);
+	void resizeEvent(QResizeEvent* event) override;
 
 private:
 	/**

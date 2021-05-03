@@ -48,10 +48,10 @@ public:
 	Movement(const QPoint& start_hole, const QPoint& end_hole, Board* board);
 
 	/** Move the peg from the start hole to the end hole, removing the peg in the hole between them. */
-	void redo();
+	void redo() override;
 
 	/** Move the peg from the end hole to the start hole, restoring the peg in the hole between them. */
-	void undo();
+	void undo() override;
 
 private:
 	Peg* m_peg; /**< peg that was moved */
