@@ -245,7 +245,7 @@ void Window::changeAppearanceCustom()
 	QString selected_color = color.name();
 	const QList<QAction*> actions = m_colors->actions();
 	for (QAction* action : actions) {
-		action->setChecked(action->data() == selected_color);
+		action->setChecked(action->data().toString() == selected_color);
 	}
 
 	m_board->setAppearance(color);
