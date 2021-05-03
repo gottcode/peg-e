@@ -258,7 +258,7 @@ void Window::changeAppearanceCustom()
 	}
 
 	QString selected_color = color.name();
-	QList<QAction*> actions = m_colors->actions();
+	const QList<QAction*> actions = m_colors->actions();
 	for (QAction* action : actions) {
 		action->setChecked(action->data() == selected_color);
 	}
@@ -283,7 +283,7 @@ void Window::loadGame()
 
 	// Load moves
 	const QRegularExpression parse("^(-?\\d+)x(-?\\d+) to (-?\\d+)x(-?\\d+)$");
-	for (const QString& move : moves) {
+	for (const QString& move : qAsConst(moves)) {
 		const QRegularExpressionMatch match = parse.match(move);
 		if (!match.hasMatch()) {
 			continue;
