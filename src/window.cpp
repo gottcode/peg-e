@@ -57,20 +57,20 @@ Window::Window()
 	// Create menubar
 	QMenu* game_menu = menuBar()->addMenu(tr("&Game"));
 
-	QAction* new_action = game_menu->addAction(QIcon::fromTheme("document-new"), tr("&New"), this, SLOT(newGame()), QKeySequence::New);
-	QAction* restart_action = game_menu->addAction(QIcon::fromTheme("view-refresh"), tr("&Restart Game"), this, SLOT(restartGame()), QKeySequence::Refresh);
-	game_menu->addAction(tr("&Details"), this, SLOT(showDetails()));
+	QAction* new_action = game_menu->addAction(QIcon::fromTheme("document-new"), tr("&New"), this, &Window::newGame, QKeySequence::New);
+	QAction* restart_action = game_menu->addAction(QIcon::fromTheme("view-refresh"), tr("&Restart Game"), this, &Window::restartGame, QKeySequence::Refresh);
+	game_menu->addAction(tr("&Details"), this, &Window::showDetails);
 	game_menu->addSeparator();
-	QAction* quit_action = game_menu->addAction(QIcon::fromTheme("application-exit"), tr("Quit"), this, SLOT(close()), QKeySequence::Quit);
+	QAction* quit_action = game_menu->addAction(QIcon::fromTheme("application-exit"), tr("Quit"), this, &Window::close, QKeySequence::Quit);
 	quit_action->setMenuRole(QAction::QuitRole);
 
 	QMenu* move_menu = menuBar()->addMenu(tr("&Move"));
 
-	QAction* undo_action = move_menu->addAction(QIcon::fromTheme("edit-undo"), tr("&Undo"), moves, SLOT(undo()), QKeySequence::Undo);
+	QAction* undo_action = move_menu->addAction(QIcon::fromTheme("edit-undo"), tr("&Undo"), moves, &QUndoStack::undo, QKeySequence::Undo);
 	undo_action->setEnabled(false);
 	connect(moves, &QUndoStack::canUndoChanged, undo_action, &QAction::setEnabled);
 
-	QAction* redo_action = move_menu->addAction(QIcon::fromTheme("edit-redo"), tr("&Redo"), moves, SLOT(redo()), QKeySequence::Redo);
+	QAction* redo_action = move_menu->addAction(QIcon::fromTheme("edit-redo"), tr("&Redo"), moves, &QUndoStack::redo, QKeySequence::Redo);
 	redo_action->setEnabled(false);
 	connect(moves, &QUndoStack::canRedoChanged, redo_action, &QAction::setEnabled);
 
@@ -101,15 +101,15 @@ Window::Window()
 
 	connect(m_colors, &QActionGroup::triggered, this, &Window::changeAppearance);
 
-	appearance_menu->addAction(tr("Custom..."), this, SLOT(changeAppearanceCustom()));
+	appearance_menu->addAction(tr("Custom..."), this, &Window::changeAppearanceCustom);
 
 	QMenu* settings_menu = menuBar()->addMenu(tr("&Settings"));
-	settings_menu->addAction(tr("Application &Language..."), this, SLOT(setLocale()));
+	settings_menu->addAction(tr("Application &Language..."), this, &Window::setLocale);
 
 	QMenu* help_menu = menuBar()->addMenu(tr("&Help"));
-	QAction* about_action = help_menu->addAction(tr("&About"), this, SLOT(about()));
+	QAction* about_action = help_menu->addAction(tr("&About"), this, &Window::about);
 	about_action->setMenuRole(QAction::AboutRole);
-	QAction* about_qt_action = help_menu->addAction(tr("About &Qt"), qApp, SLOT(aboutQt()));
+	QAction* about_qt_action = help_menu->addAction(tr("About &Qt"), qApp, &QApplication::aboutQt);
 	about_qt_action->setMenuRole(QAction::AboutQtRole);
 
 	// Create toolbar
