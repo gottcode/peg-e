@@ -40,11 +40,11 @@ inline uint qHash(const QPoint& key)
 
 //-----------------------------------------------------------------------------
 
-Board::Board(QUndoStack* moves, QWidget* parent) :
-	QGraphicsView(parent),
-	m_color(QSettings().value("Appearance", "#0055ff").toString()),
-	m_status(0),
-	m_moves(moves)
+Board::Board(QUndoStack* moves, QWidget* parent)
+	: QGraphicsView(parent)
+	, m_color(QSettings().value("Appearance", "#0055ff").toString())
+	, m_status(0)
+	, m_moves(moves)
 {
 	QGraphicsScene* scene = new QGraphicsScene(this);
 	setScene(scene);

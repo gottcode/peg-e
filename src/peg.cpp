@@ -26,10 +26,10 @@
 
 //-----------------------------------------------------------------------------
 
-Peg::Peg(const QPoint& hole, Board* board, QGraphicsItem* parent) :
-	QGraphicsEllipseItem(0, 0, 20, 20, parent),
-	m_hole(hole),
-	m_board(board)
+Peg::Peg(const QPoint& hole, Board* board, QGraphicsItem* parent)
+	: QGraphicsEllipseItem(0, 0, 20, 20, parent)
+	, m_hole(hole)
+	, m_board(board)
 {
 	setPen(Qt::NoPen);
 

@@ -25,9 +25,9 @@
 
 //-----------------------------------------------------------------------------
 
-Hole::Hole(const QPoint& position, QGraphicsItem* parent) :
-	QGraphicsEllipseItem(0, 0, 16, 16, parent),
-	m_peg(0)
+Hole::Hole(const QPoint& position, QGraphicsItem* parent)
+	: QGraphicsEllipseItem(0, 0, 16, 16, parent)
+	, m_peg(0)
 {
 	QRadialGradient gradient(QPointF(8,8), 8);
 	gradient.setColorAt(0, QColor(0, 0, 0, 0));

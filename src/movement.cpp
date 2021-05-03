@@ -27,11 +27,11 @@
 
 //-----------------------------------------------------------------------------
 
-Movement::Movement(const QPoint& start_hole, const QPoint& end_hole, Board* board) :
-	m_start_hole(start_hole),
-	m_jumped_hole(start_hole + ((end_hole - start_hole) / 2)),
-	m_end_hole(end_hole),
-	m_board(board)
+Movement::Movement(const QPoint& start_hole, const QPoint& end_hole, Board* board)
+	: m_start_hole(start_hole)
+	, m_jumped_hole(start_hole + ((end_hole - start_hole) / 2))
+	, m_end_hole(end_hole)
+	, m_board(board)
 {
 	Q_ASSERT(m_board->isPeg(m_start_hole));
 	Q_ASSERT(m_board->isPeg(m_jumped_hole));

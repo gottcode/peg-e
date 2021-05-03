@@ -43,10 +43,10 @@
 
 //-----------------------------------------------------------------------------
 
-Window::Window() :
-	m_seed(0),
-	m_difficulty(QSettings().value("Difficulty", 5).toInt()),
-	m_algorithm(QSettings().value("Algorithm", 1).toInt())
+Window::Window()
+	: m_seed(0)
+	, m_difficulty(QSettings().value("Difficulty", 5).toInt())
+	, m_algorithm(QSettings().value("Algorithm", 1).toInt())
 {
 	// Create board
 	QUndoStack* moves = new QUndoStack(this);
