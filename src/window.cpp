@@ -18,15 +18,13 @@
 #include <QFormLayout>
 #include <QMenuBar>
 #include <QMessageBox>
+#include <QRandomGenerator>
 #include <QRegularExpression>
 #include <QSettings>
 #include <QSpinBox>
 #include <QToolBar>
 #include <QUndoStack>
 #include <QVBoxLayout>
-
-#include <ctime>
-#include <random>
 
 //-----------------------------------------------------------------------------
 
@@ -291,14 +289,7 @@ void Window::loadGame()
 void Window::startGame(int seed, int difficulty, int algorithm)
 {
 	if (seed == 0) {
-#ifndef Q_OS_WIN
-		std::random_device rd;
-		std::mt19937 gen(rd());
-#else
-		std::mt19937 gen(time(0));
-#endif
-		std::uniform_int_distribution<int> dis;
-		seed = dis(gen);
+		seed = QRandomGenerator::system()->bounded(INT_MAX);
 	}
 	m_seed = seed;
 	m_difficulty = difficulty;
