@@ -24,7 +24,7 @@ class Puzzle
 {
 public:
 	/** Constructs an empty layout. */
-	Puzzle();
+	explicit Puzzle();
 
 	/** Destroys the layout. */
 	virtual ~Puzzle();

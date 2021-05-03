@@ -25,7 +25,7 @@ class Window : public QMainWindow
 
 public:
 	/** Constructs the main window. */
-	Window();
+	explicit Window();
 
 protected:
 	/** Override parent function to save window geometry. */

@@ -27,7 +27,7 @@ public:
 	 * @param position the location of the hole
 	 * @param parent the parent item of the hole
 	 */
-	Hole(const QPoint& position, QGraphicsItem* parent = nullptr);
+	explicit Hole(const QPoint& position, QGraphicsItem* parent = nullptr);
 
 	/** Returns @c true if the hole has a peg. */
 	bool hasPeg() const
