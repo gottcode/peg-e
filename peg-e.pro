@@ -83,9 +83,6 @@ macx {
 	icon.files = icons/hicolor/*
 	icon.path = $$PREFIX/share/icons/hicolor
 
-	pixmap.files = icons/peg-e.xpm
-	pixmap.path = $$PREFIX/share/pixmaps
-
 	icons.files = icons/oxygen/hicolor/*
 	icons.path = $$PREFIX/share/peg-e/icons/hicolor
 
@@ -102,5 +99,5 @@ macx {
 	man.files = doc/peg-e.6
 	man.path = $$PREFIX/share/man/man6
 
-	INSTALLS += target icon pixmap desktop appdata icons qm man
+	INSTALLS += target icon desktop appdata icons qm man
 }
