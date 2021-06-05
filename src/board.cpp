@@ -20,15 +20,6 @@
 
 //-----------------------------------------------------------------------------
 
-#if (QT_VERSION < QT_VERSION_CHECK(6,0,0))
-inline uint qHash(const QPoint& key)
-{
-	return (key.x() << 16) + key.y();
-}
-#endif
-
-//-----------------------------------------------------------------------------
-
 Board::Board(QUndoStack* moves, QWidget* parent)
 	: QGraphicsView(parent)
 	, m_color(QSettings().value("Appearance", "#0055ff").toString())

@@ -10,15 +10,6 @@
 
 //-----------------------------------------------------------------------------
 
-#if (QT_VERSION < QT_VERSION_CHECK(6,0,0))
-inline uint qHash(const QPoint& key)
-{
-	return (key.x() << 16) + key.y();
-}
-#endif
-
-//-----------------------------------------------------------------------------
-
 Puzzle::Puzzle()
 {
 	m_directions = QList<QPoint>()
