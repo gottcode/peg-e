@@ -3,8 +3,8 @@
 
 !define APPNAME "Peg-E"
 !define VERSIONMAJOR 1
-!define VERSIONMINOR 2
-!define VERSIONPATCH 8
+!define VERSIONMINOR 3
+!define VERSIONPATCH 0
 !define APPVERSION "${VERSIONMAJOR}.${VERSIONMINOR}.${VERSIONPATCH}"
 !define ABOUTURL "https://gottcode.org/peg-e/"
 
