@@ -7,6 +7,7 @@
   <name xml:lang="cs">Peg-E</name>
   <name xml:lang="de">Peg-E</name>
   <name xml:lang="el">Peg-E</name>
+  <name xml:lang="eo">Peg-Eo</name>
   <name xml:lang="es">Peg-E</name>
   <name xml:lang="lt">Peg-E</name>
   <name xml:lang="ms">Peg-E</name>
@@ -16,11 +17,13 @@
   <name xml:lang="ro">Peg-E</name>
   <name xml:lang="ru">Peg-E</name>
   <name xml:lang="sv">Peg-E</name>
+  <name xml:lang="te">పెగ్-ఇ</name>
   <name xml:lang="tr">Peg-E</name>
   <name xml:lang="zh">Peg-E</name>
   <summary>Jump pegs to eliminate them</summary>
   <summary xml:lang="de">Sprung zu Heringen, um sie zu beseitigen</summary>
   <summary xml:lang="el">Μετάβαση σε γόμφους για να εξαλειφθούν</summary>
+  <summary xml:lang="eo">Saltu sur pegojn por ilin elimini </summary>
   <summary xml:lang="es">Salta sobre los pegs para eliminarlos</summary>
   <summary xml:lang="he">קפוץ מעל גולות כדי לסלק אותן</summary>
   <summary xml:lang="lt">Peršokite per kamštelius, kad juos pašalintumėte</summary>
@@ -30,6 +33,7 @@
   <summary xml:lang="pt">Salte com os pinos para os eliminar</summary>
   <summary xml:lang="ro">Sari peste pioni pentru a-i eliminna</summary>
   <summary xml:lang="sv">Hoppa över pinnar för att eliminera dem</summary>
+  <summary xml:lang="te">వాటిని తొలగించడానికి పెగ్స్ ని ఎగరవేయి</summary>
   <summary xml:lang="zh">跳过棋子，消除它！</summary>
 
   <description>
@@ -45,6 +49,7 @@
     <p xml:lang="pt">O Peg-E é um jogo do tipo solitário em que se salta sobre as peças por forma a removê-las do tabuleiro, por forma a tentar remover todas até restar apenas uma. Os tabuleiros são gerados aleatoriamente, com 100 níveis de dificuldade. O jogo grava automaticamente e tem a funcionalidade de desfazer as jogadas. As peças podem-se mover na horizontal, vertical e diagonal.</p>
     <p xml:lang="ro">Peg-E este un joc cu pioni în care sa sari peste piese pentru a le elimina de pe tablă, încercînd, în cele din urmă, a le elimina pe toate cu excepţia uneia. Tablele sunt generate aleator, cu 100 de niveluri de dificultate. Jocul salvează automat şi are capacitatea de a face/reface. Piese se pot deplasa orizontal, vertical şi pe diagonală.</p>
     <p xml:lang="sv">Peg-E är ett solitairespel där du hoppar över bitar för att ta bort dem från brädet, i slutändan för att eliminera alla utom en. Banorna genereras slumpmässigt i 100 svårighetsgrader. Spelet sparas automatiskt och har ångra-gör-om-funktioner. Bitarna kan röra sig horisontellt, vertikalt och diagonalt.</p>
+    <p xml:lang="te">పెగ్-ఇ అనేది ఒక పెగ్ సాలిటైర్ ఆట, దీనిలో మీరు వాటిని బోర్డు నుండి తొలగించడానికి ముక్కల మీద దూకుతారు, చివరికి ఒకటి తప్తేపి అన్నింటినీ తొలగించడానికి ప్రయత్నిస్తారు. బోర్డులు యాదృచ్ఛికంగా ఉత్పత్తి చేయబడతాయి, కష్టమైన 100 స్థాయిలు ఉంటాయి. ఆట స్వయంచాలకంగా సేవ్ చేస్తుంది మరియు అన్డు-పునరావృత సామర్థ్యాన్ని కలిగి ఉంటుంది. ముక్కలు అడ్డంగా, నిలువుగా మరియు వికర్ణంగా కదలగలవు.</p>
     <p xml:lang="zh">Peg-E 是一款孔明棋游戏。一颗棋子跳过另一颗后，该棋子就会被消除，游戏的目的是最终只剩下一颗棋子。本游戏的棋盘自动生成，有100种不同难度可供选择。游戏会自动保存，并具有撤销（悔棋）、重做功能。棋子可以横向、纵向和斜向移动。</p>
   </description>
 
