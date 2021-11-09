@@ -49,6 +49,7 @@ Comment[ro]=Sari peste pioni pentru a-i eliminna
 Comment[sv]=Hoppa över pinnar för att eliminera dem
 Comment[te]=వాటిని తొలగించడానికి పెగ్స్ ని ఎగరవేయి
 Comment[zh]=跳过棋子，消除它！
+TryExec=peg-e
 Exec=peg-e
 Icon=peg-e
 Terminal=false
