@@ -175,7 +175,7 @@
     </message>
     <message>
         <source>About Peg-E</source>
-        <translation type="unfinished"></translation>
+        <translation>Pri Peg-E</translation>
     </message>
     <message>
         <source>Peg elimination game</source>
