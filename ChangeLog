@@ -1,3 +1,8 @@
+1.3.1
+-----
+* Switched to Qt 6.
+* Translation updates: Esperanto, French.
+
 1.3.0
 -----
 * Added support for Qt 6.
