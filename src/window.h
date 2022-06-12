@@ -31,7 +31,7 @@ protected:
 	/** Override parent function to save window geometry. */
 	void closeEvent(QCloseEvent* event) override;
 
-private slots:
+private Q_SLOTS:
 	/**
 	 * Start a new game.
 	 *
