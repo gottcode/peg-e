@@ -7,6 +7,8 @@ cmake_minimum_required(VERSION 3.16)
 # Configure project
 project(peg-e VERSION 1.3.1 LANGUAGES CXX)
 
+set(project_copyright "2009-2022 Graeme Gott")
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -14,9 +16,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui LinguistTools Widgets)
-if(UNIX AND NOT APPLE)
-	include(GNUInstallDirs)
-endif()
+include(GNUInstallDirs)
 
 add_compile_definitions(
 	QT_NO_KEYWORDS
@@ -77,7 +77,36 @@ if(ENABLE_STRIP)
 endif()
 
 # Install
-if(UNIX AND NOT APPLE)
+if(APPLE)
+	set(datadir "../Resources")
+
+	set_target_properties(peg-e PROPERTIES
+		OUTPUT_NAME Peg-E
+		MACOSX_BUNDLE TRUE
+		MACOSX_BUNDLE_INFO_PLIST ${CMAKE_SOURCE_DIR}/mac/Info.plist.in
+	)
+
+	include(cmake/BundleResources.cmake)
+	bundle_data(peg-e ${CMAKE_SOURCE_DIR}/icons/peg-e.icns Resources)
+	bundle_data(peg-e ${CMAKE_SOURCE_DIR}/icons/oxygen/hicolor Resources/icons)
+	bundle_translations(peg-e "${translations_QM}")
+elseif(WIN32)
+	set(datadir ".")
+
+	# Use Qt6 macro until CMake provides something
+	# https://bugreports.qt.io/browse/QTBUG-87618
+	set_target_properties(peg-e PROPERTIES
+		OUTPUT_NAME Peg-E
+		WIN32_EXECUTABLE TRUE
+		QT_TARGET_VERSION "${PROJECT_VERSION}"
+		QT_TARGET_COMPANY_NAME "Graeme Gott"
+		QT_TARGET_DESCRIPTION "Peg elimination game"
+		QT_TARGET_COPYRIGHT "\\xA9 ${project_copyright}"
+		QT_TARGET_PRODUCT_NAME "Peg-E"
+		QT_TARGET_RC_ICONS ${CMAKE_SOURCE_DIR}/icons/peg-e.ico
+	)
+	_qt_internal_generate_win32_rc_file(peg-e)
+else()
 	file(RELATIVE_PATH datadir ${CMAKE_INSTALL_FULL_BINDIR} ${CMAKE_INSTALL_FULL_DATADIR}/peg-e)
 
 	target_sources(peg-e PRIVATE icons/icon.qrc)
@@ -89,21 +118,6 @@ if(UNIX AND NOT APPLE)
 	install(DIRECTORY icons/oxygen/hicolor DESTINATION ${CMAKE_INSTALL_DATADIR}/peg-e/icons)
 	install(FILES icons/peg-e.appdata.xml DESTINATION ${CMAKE_INSTALL_DATADIR}/metainfo)
 	install(FILES icons/peg-e.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
-elseif(WIN32)
-	set(datadir ".")
-
-	# Use Qt6 macro until CMake provides something
-	# https://bugreports.qt.io/browse/QTBUG-87618
-	set_target_properties(peg-e PROPERTIES
-		WIN32_EXECUTABLE TRUE
-		QT_TARGET_VERSION "${PROJECT_VERSION}"
-		QT_TARGET_COMPANY_NAME "Graeme Gott"
-		QT_TARGET_DESCRIPTION "Peg elimination game"
-		QT_TARGET_COPYRIGHT "Copyright (C) 2022 Graeme Gott"
-		QT_TARGET_PRODUCT_NAME "Peg-E"
-		QT_TARGET_RC_ICONS ${CMAKE_SOURCE_DIR}/icons/peg-e.ico
-	)
-	_qt_internal_generate_win32_rc_file(peg-e)
 endif()
 
 set_property(SOURCE src/main.cpp APPEND PROPERTY COMPILE_DEFINITIONS PEGE_DATADIR="${datadir}")
