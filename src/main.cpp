@@ -9,6 +9,8 @@
 
 #include <QApplication>
 #include <QCommandLineParser>
+#include <QFileInfo>
+#include <QSettings>
 
 /**
  * Program entry point.
@@ -31,6 +33,7 @@ int main(int argc, char** argv)
 #endif
 	app.setAttribute(Qt::AA_DontShowIconsInMenus, true);
 
+	// Find application data
 	const QString appdir = app.applicationDirPath();
 	const QStringList datadirs{
 #if defined(Q_OS_MAC)
@@ -43,24 +46,33 @@ int main(int argc, char** argv)
 #endif
 	};
 
+	// Handle portability
+#ifdef Q_OS_MAC
+	const QFileInfo portable(appdir + "/../../../Data");
+#else
+	const QFileInfo portable(appdir + "/Data");
+#endif
+	if (portable.exists() && portable.isWritable()) {
+		QSettings::setDefaultFormat(QSettings::IniFormat);
+		QSettings::setPath(QSettings::IniFormat, QSettings::UserScope, portable.absoluteFilePath() + "/Settings");
+	}
+
+	// Load application language
 	LocaleDialog::loadTranslator("pege_", datadirs);
 
-	// Set location of fallback icons
-	{
-		QString appdir = app.applicationDirPath();
-		QString datadir;
-#if defined(Q_OS_MAC)
-		datadir = appdir + "/../Resources";
-#elif defined(Q_OS_UNIX)
-		datadir = appdir + "/../share/peg-e";
-#else
-		datadir = appdir;
-#endif
+	// Handle commandline
+	QCommandLineParser parser;
+	parser.setApplicationDescription(Window::tr("Peg elimination game"));
+	parser.addHelpOption();
+	parser.addVersionOption();
+	parser.process(app);
 
-		QStringList paths = QIcon::themeSearchPaths();
+	// Set location of fallback icons
+	QStringList paths = QIcon::themeSearchPaths();
+	for (const QString& datadir : datadirs) {
 		paths.prepend(datadir + "/icons");
-		QIcon::setThemeSearchPaths(paths);
 	}
+	QIcon::setThemeSearchPaths(paths);
 
 	// Set up icons
 #if defined(Q_OS_MAC) || defined(Q_OS_WIN)
@@ -72,12 +84,7 @@ int main(int argc, char** argv)
 	QIcon::setFallbackThemeName("hicolor");
 #endif
 
-	QCommandLineParser parser;
-	parser.setApplicationDescription(Window::tr("Peg elimination game"));
-	parser.addHelpOption();
-	parser.addVersionOption();
-	parser.process(app);
-
+	// Create main window
 	Window window;
 	window.show();
 
