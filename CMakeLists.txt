@@ -78,6 +78,8 @@ endif()
 
 # Install
 if(UNIX AND NOT APPLE)
+	target_compile_definitions(peg-e PRIVATE DATADIR="${CMAKE_INSTALL_FULL_DATADIR}/peg-e")
+
 	target_sources(peg-e PRIVATE icons/icon.qrc)
 
 	install(TARGETS peg-e RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
