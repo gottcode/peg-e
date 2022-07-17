@@ -78,7 +78,7 @@ endif()
 
 # Install
 if(UNIX AND NOT APPLE)
-	target_compile_definitions(peg-e PRIVATE DATADIR="${CMAKE_INSTALL_FULL_DATADIR}/peg-e")
+	file(RELATIVE_PATH datadir ${CMAKE_INSTALL_FULL_BINDIR} ${CMAKE_INSTALL_FULL_DATADIR}/peg-e)
 
 	target_sources(peg-e PRIVATE icons/icon.qrc)
 
@@ -90,6 +90,8 @@ if(UNIX AND NOT APPLE)
 	install(FILES icons/peg-e.appdata.xml DESTINATION ${CMAKE_INSTALL_DATADIR}/metainfo)
 	install(FILES icons/peg-e.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
 elseif(WIN32)
+	set(datadir ".")
+
 	# Use Qt6 macro until CMake provides something
 	# https://bugreports.qt.io/browse/QTBUG-87618
 	set_target_properties(peg-e PROPERTIES
@@ -103,3 +105,5 @@ elseif(WIN32)
 	)
 	_qt_internal_generate_win32_rc_file(peg-e)
 endif()
+
+set_property(SOURCE src/main.cpp APPEND PROPERTY COMPILE_DEFINITIONS PEGE_DATADIR="${datadir}")

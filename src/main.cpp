@@ -9,6 +9,7 @@
 
 #include <QApplication>
 #include <QCommandLineParser>
+#include <QDir>
 #include <QFileInfo>
 #include <QSettings>
 
@@ -35,16 +36,7 @@ int main(int argc, char** argv)
 
 	// Find application data
 	const QString appdir = app.applicationDirPath();
-	const QStringList datadirs{
-#if defined(Q_OS_MAC)
-		appdir + "/../Resources"
-#elif defined(Q_OS_UNIX)
-		DATADIR,
-		appdir + "/../share/peg-e"
-#else
-		appdir
-#endif
-	};
+	const QString datadir = QDir::cleanPath(appdir + "/" + PEGE_DATADIR);
 
 	// Handle portability
 #ifdef Q_OS_MAC
@@ -58,7 +50,7 @@ int main(int argc, char** argv)
 	}
 
 	// Load application language
-	LocaleDialog::loadTranslator("pege_", datadirs);
+	LocaleDialog::loadTranslator("pege_", datadir);
 
 	// Handle commandline
 	QCommandLineParser parser;
@@ -69,9 +61,7 @@ int main(int argc, char** argv)
 
 	// Set location of fallback icons
 	QStringList paths = QIcon::themeSearchPaths();
-	for (const QString& datadir : datadirs) {
-		paths.prepend(datadir + "/icons");
-	}
+	paths.prepend(datadir + "/icons");
 	QIcon::setThemeSearchPaths(paths);
 
 	// Set up icons
