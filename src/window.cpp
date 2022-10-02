@@ -42,20 +42,25 @@ Window::Window()
 	// Create menubar
 	QMenu* game_menu = menuBar()->addMenu(tr("&Game"));
 
-	QAction* new_action = game_menu->addAction(QIcon::fromTheme("document-new"), tr("&New"), this, &Window::newGame, QKeySequence::New);
-	QAction* restart_action = game_menu->addAction(QIcon::fromTheme("view-refresh"), tr("&Restart Game"), this, &Window::restartGame, QKeySequence::Refresh);
+	QAction* new_action = game_menu->addAction(QIcon::fromTheme("document-new"), tr("&New"), this, &Window::newGame);
+	new_action->setShortcut(QKeySequence::New);
+	QAction* restart_action = game_menu->addAction(QIcon::fromTheme("view-refresh"), tr("&Restart Game"), this, &Window::restartGame);
+	restart_action->setShortcut(QKeySequence::Refresh);
 	game_menu->addAction(tr("&Details"), this, &Window::showDetails);
 	game_menu->addSeparator();
-	QAction* quit_action = game_menu->addAction(QIcon::fromTheme("application-exit"), tr("Quit"), this, &Window::close, QKeySequence::Quit);
+	QAction* quit_action = game_menu->addAction(QIcon::fromTheme("application-exit"), tr("Quit"), this, &Window::close);
+	quit_action->setShortcut(QKeySequence::Quit);
 	quit_action->setMenuRole(QAction::QuitRole);
 
 	QMenu* move_menu = menuBar()->addMenu(tr("&Move"));
 
-	QAction* undo_action = move_menu->addAction(QIcon::fromTheme("edit-undo"), tr("&Undo"), moves, &QUndoStack::undo, QKeySequence::Undo);
+	QAction* undo_action = move_menu->addAction(QIcon::fromTheme("edit-undo"), tr("&Undo"), moves, &QUndoStack::undo);
+	undo_action->setShortcut(QKeySequence::Undo);
 	undo_action->setEnabled(false);
 	connect(moves, &QUndoStack::canUndoChanged, undo_action, &QAction::setEnabled);
 
-	QAction* redo_action = move_menu->addAction(QIcon::fromTheme("edit-redo"), tr("&Redo"), moves, &QUndoStack::redo, QKeySequence::Redo);
+	QAction* redo_action = move_menu->addAction(QIcon::fromTheme("edit-redo"), tr("&Redo"), moves, &QUndoStack::redo);
+	redo_action->setShortcut(QKeySequence::Redo);
 	redo_action->setEnabled(false);
 	connect(moves, &QUndoStack::canRedoChanged, redo_action, &QAction::setEnabled);
 
