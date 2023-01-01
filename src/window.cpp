@@ -1,5 +1,5 @@
 /*
-	SPDX-FileCopyrightText: 2009-2022 Graeme Gott <graeme@gottcode.org>
+	SPDX-FileCopyrightText: 2009-2023 Graeme Gott <graeme@gottcode.org>
 
 	SPDX-License-Identifier: GPL-3.0-or-later
 */
@@ -224,7 +224,7 @@ void Window::about()
 		"<p align='center'>%6<br/><small>%7</small></p>")
 		.arg(tr("Peg-E"), QCoreApplication::applicationVersion(),
 			tr("Peg elimination game"),
-			tr("Copyright &copy; 2009-%1 Graeme Gott").arg("2022"),
+			tr("Copyright &copy; 2009-%1 Graeme Gott").arg("2023"),
 			tr("Released under the <a href=%1>GPL 3</a> license").arg("\"http://www.gnu.org/licenses/gpl.html\""),
 			tr("Uses icons from the <a href=%1>Oxygen</a> icon theme").arg("\"http://www.oxygen-icons.org/\""),
 			tr("Used under the <a href=%1>LGPL 3</a> license").arg("\"http://www.gnu.org/licenses/lgpl.html\""))
