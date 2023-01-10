@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 # Configure project
-project(peg-e VERSION 1.3.1 LANGUAGES CXX)
+project(peg-e VERSION 1.3.2 LANGUAGES CXX)
 
 set(project_copyright "2009-2023 Graeme Gott")
 
