@@ -273,7 +273,7 @@ void Window::loadGame()
 
 	// Load moves
 	const QRegularExpression parse("^(-?\\d+)x(-?\\d+) to (-?\\d+)x(-?\\d+)$");
-	for (const QString& move : qAsConst(moves)) {
+	for (const QString& move : std::as_const(moves)) {
 		const QRegularExpressionMatch match = parse.match(move);
 		if (!match.hasMatch()) {
 			continue;

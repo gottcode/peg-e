@@ -90,7 +90,7 @@ void Puzzle::shuffle(QList<QPoint>& pegs)
 bool Puzzle::findNextMove(const QPoint& start_hole, QPoint& jumped_hole, QPoint& end_hole)
 {
 	std::shuffle(m_directions.begin(), m_directions.end(), m_random);
-	for (const QPoint& direction : qAsConst(m_directions)) {
+	for (const QPoint& direction : std::as_const(m_directions)) {
 		jumped_hole = direction + start_hole;
 		end_hole = (direction * 2) + start_hole;
 		if (isAvailable(jumped_hole) && isAvailable(end_hole)) {
@@ -113,7 +113,7 @@ QPoint Puzzle::findMoves(const QPoint& start, int loops)
 	QPoint jumped_hole, end_hole;
 	for (int i = 0; i < loops; ++i) {
 		shuffle(pegs);
-		for (const QPoint& start_hole : qAsConst(pegs)) {
+		for (const QPoint& start_hole : std::as_const(pegs)) {
 			if (findNextMove(start_hole, jumped_hole, end_hole)) {
 				pegs.removeOne(start_hole);
 				pegs.append(jumped_hole);

@@ -211,7 +211,7 @@ void Board::resizeEvent(QResizeEvent* event)
 bool Board::checkFinished()
 {
 	int pegs = 0;
-	for (Hole* hole : qAsConst(m_holes)) {
+	for (Hole* hole : std::as_const(m_holes)) {
 		if (hole->hasPeg()) {
 			pegs++;
 			if (hole->peg()->canMove()) {
