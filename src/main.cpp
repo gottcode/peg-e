@@ -65,14 +65,12 @@ int main(int argc, char** argv)
 	QIcon::setThemeSearchPaths(paths);
 
 	// Set up icons
-#if defined(Q_OS_MAC) || defined(Q_OS_WIN)
-	QIcon::setThemeName("hicolor");
-#else
+#if !defined(Q_OS_MAC) && !defined(Q_OS_WIN)
 	if (QIcon::themeName() == "hicolor") {
 		QIcon::setThemeName("Hicolor");
 	}
-	QIcon::setFallbackThemeName("hicolor");
 #endif
+	QIcon::setFallbackThemeName("hicolor");
 
 	// Create main window
 	Window window;
