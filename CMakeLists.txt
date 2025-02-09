@@ -31,6 +31,15 @@ add_version_compile_definition(src/main.cpp VERSIONSTR)
 
 # Create program
 qt_add_executable(peg-e
+	# Headers
+	src/board.h
+	src/hole.h
+	src/locale_dialog.h
+	src/movement.h
+	src/peg.h
+	src/puzzle.h
+	src/window.h
+	# Sources
 	src/board.cpp
 	src/hole.cpp
 	src/locale_dialog.cpp
@@ -39,6 +48,7 @@ qt_add_executable(peg-e
 	src/peg.cpp
 	src/puzzle.cpp
 	src/window.cpp
+	# Resources
 	${translations_QM}
 )
 
