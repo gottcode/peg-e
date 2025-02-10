@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Peg-E
+GenericName=Peg Elimination Game
+Comment=Jump pegs to eliminate them
+TryExec=peg-e
+Exec=peg-e
+Icon=peg-e
+Terminal=false
+Type=Application
+Categories=Qt;Game;BoardGame;
+Keywords=game;board;
