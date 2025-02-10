@@ -1,47 +1,40 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Graeme Gott
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Oprea Nicolae <jaff2002@yahoo.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2017-09-23 20:29+0000\n"
-"Last-Translator: Oprea Nicolae <jaff2002@yahoo.com>\n"
-"Language-Team: Romanian (http://www.transifex.com/gottcode/peg-e/language/"
-"ro/)\n"
-"Language: ro\n"
+"POT-Creation-Date: 2014-11-14 10:30+0000\n"
+"PO-Revision-Date: 2014-11-14 10:34+0000\n"
+"Last-Translator: Oprea Nicolae <jaff2002@yahoo.com>, 2014\n"
+"Language-Team: Romanian (http://app.transifex.com/gottcode/peg-e/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
-"2:1));\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
-#: ../peg-e.appdata.xml.in:6 ../peg-e.desktop.in:3
-msgid "Peg-E"
-msgstr "Peg-E"
-
-#: ../peg-e.appdata.xml.in:7 ../peg-e.desktop.in:5
+#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
 msgstr "Sari peste pioni pentru a-i eliminna"
 
-#: ../peg-e.appdata.xml.in:10
+#: ../peg-e.appdata.xml.in.h:2
 msgid ""
 "Peg-E is a peg solitaire game in which you jump over pieces in order to "
 "remove them from the board, ultimately trying to eliminate all but one. The "
 "boards are randomly generated, with 100 levels of difficulty. The game auto-"
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
-msgstr ""
-"Peg-E este un joc cu pioni în care sa sari peste piese pentru a le elimina "
-"de pe tablă, încercînd, în cele din urmă, a le elimina pe toate cu excepţia "
-"uneia. Tablele sunt generate aleator, cu 100 de niveluri de dificultate. "
-"Jocul salvează automat şi are capacitatea de a face/reface. Piese se pot "
-"deplasa orizontal, vertical şi pe diagonală."
+msgstr "Peg-E este un joc cu pioni în care sa sari peste piese pentru a le elimina de pe tablă, încercînd, în cele din urmă, a le elimina pe toate cu excepţia uneia. Tablele sunt generate aleator, cu 100 de niveluri de dificultate. Jocul salvează automat şi are capacitatea de a face/reface. Piese se pot deplasa orizontal, vertical şi pe diagonală."
 
-#: ../peg-e.desktop.in:4
+#: ../peg-e.desktop.in.h:1
+msgid "Peg-E"
+msgstr "Peg-E"
+
+#: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
 msgstr "Peg - joc de eliminare"

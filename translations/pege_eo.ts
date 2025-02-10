@@ -46,16 +46,8 @@
         <translation>Nova</translation>
     </message>
     <message>
-        <source>Ctrl+N</source>
-        <translation>Ctrl+N</translation>
-    </message>
-    <message>
         <source>&amp;Restart Game</source>
         <translation>Rekomenci la ludon</translation>
-    </message>
-    <message>
-        <source>F5</source>
-        <translation>F5</translation>
     </message>
     <message>
         <source>&amp;Details</source>
@@ -66,10 +58,6 @@
         <translation>Fini</translation>
     </message>
     <message>
-        <source>Ctrl+Q</source>
-        <translation>Ctrl+Q</translation>
-    </message>
-    <message>
         <source>&amp;Move</source>
         <translation>Movi</translation>
     </message>
@@ -78,16 +66,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Ctrl+z</source>
-        <translation>Ctrl+z</translation>
-    </message>
-    <message>
         <source>&amp;Redo</source>
         <translation>Refari</translation>
-    </message>
-    <message>
-        <source>Shift+Ctrl+Z</source>
-        <translation>Shift+Ctrl+z</translation>
     </message>
     <message>
         <source>&amp;Appearance</source>

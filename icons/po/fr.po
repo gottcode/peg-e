@@ -1,47 +1,40 @@
-# french translation Peg-E
-# Copyright (C) 2021 Debian French l10n team <debian-l10n-french@lists.debian.org>
-# This file is distributed under the same license as the Peg-E package.
-#
-# Translator:
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Graeme Gott
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Bruno Kerforn <bubub@no-log.org>, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2021-11-16 12:02+0100\n"
-"Last-Translator: Bruno Kerforn <bubub@no-log.org>\n"
-"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
-"Language: fr_FR\n"
+"POT-Creation-Date: 2014-11-14 10:30+0000\n"
+"PO-Revision-Date: 2014-11-14 10:34+0000\n"
+"Last-Translator: Bruno Kerforn <bubub@no-log.org>, 2021\n"
+"Language-Team: French (http://app.transifex.com/gottcode/peg-e/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.0\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../peg-e.appdata.xml.in:6 ../peg-e.desktop.in:3
-msgid "Peg-E"
-msgstr "Peg-E"
-
-#: ../peg-e.appdata.xml.in:7 ../peg-e.desktop.in:5
+#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
-msgstr "Sautez les pions pour les éliminer."
+msgstr "Sautez les pions pour les éliminer"
 
-#: ../peg-e.appdata.xml.in:10
+#: ../peg-e.appdata.xml.in.h:2
 msgid ""
 "Peg-E is a peg solitaire game in which you jump over pieces in order to "
 "remove them from the board, ultimately trying to eliminate all but one. The "
 "boards are randomly generated, with 100 levels of difficulty. The game auto-"
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
-msgstr ""
-"Peg-E est un jeu de solitaire dans lequel vous sautez par dessus des pions "
-"dans le but de les enlever du plateau de jeu, pour essayer au final de les "
-"éliminer tous, sauf un. Les plateaux de jeu sont générés aléatoirement, avec "
-"cent niveaux de difficulté. Le jeu se sauvegarde automatiquement, et a la "
-"compétence annuler/rétablir (undo-redo). Les pions peuvent bouger "
-"horizontalement, verticalement et en diagonale."
+msgstr "Peg-E est un jeu de solitaire dans lequel vous sautez par dessus des pions dans le but de les enlever du plateau de jeu, pour essayer au final de les éliminer tous, sauf un. Les plateaux de jeu sont générés aléatoirement, avec cent niveaux de difficulté. Le jeu se sauvegarde automatiquement, et a la compétence annuler/rétablir (undo-redo). Les pions peuvent bouger horizontalement, verticalement et en diagonale."
 
-#: ../peg-e.desktop.in:4
+#: ../peg-e.desktop.in.h:1
+msgid "Peg-E"
+msgstr "Peg-E"
+
+#: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
-msgstr "Jeu d'élimination de pions."
+msgstr "Jeu d'élimination de pions"

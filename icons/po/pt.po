@@ -1,46 +1,40 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Graeme Gott
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Rui <xymarior@yandex.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2018-04-20 14:52+0000\n"
-"Last-Translator: Rui <xymarior@yandex.com>\n"
-"Language-Team: Portuguese (http://www.transifex.com/gottcode/peg-e/language/"
-"pt/)\n"
-"Language: pt\n"
+"POT-Creation-Date: 2014-11-14 10:30+0000\n"
+"PO-Revision-Date: 2014-11-14 10:34+0000\n"
+"Last-Translator: Rui <xymarior@yandex.com>, 2018\n"
+"Language-Team: Portuguese (http://app.transifex.com/gottcode/peg-e/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../peg-e.appdata.xml.in:6 ../peg-e.desktop.in:3
-msgid "Peg-E"
-msgstr "Peg-E"
-
-#: ../peg-e.appdata.xml.in:7 ../peg-e.desktop.in:5
+#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
 msgstr "Salte com os pinos para os eliminar"
 
-#: ../peg-e.appdata.xml.in:10
+#: ../peg-e.appdata.xml.in.h:2
 msgid ""
 "Peg-E is a peg solitaire game in which you jump over pieces in order to "
 "remove them from the board, ultimately trying to eliminate all but one. The "
 "boards are randomly generated, with 100 levels of difficulty. The game auto-"
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
-msgstr ""
-"O Peg-E é um jogo do tipo solitário em que se salta sobre as peças por forma "
-"a removê-las do tabuleiro, por forma a tentar remover todas até restar "
-"apenas uma. Os tabuleiros são gerados aleatoriamente, com 100 níveis de "
-"dificuldade. O jogo grava automaticamente e tem a funcionalidade de desfazer "
-"as jogadas. As peças podem-se mover na horizontal, vertical e diagonal."
+msgstr "O Peg-E é um jogo do tipo solitário em que se salta sobre as peças por forma a removê-las do tabuleiro, por forma a tentar remover todas até restar apenas uma. Os tabuleiros são gerados aleatoriamente, com 100 níveis de dificuldade. O jogo grava automaticamente e tem a funcionalidade de desfazer as jogadas. As peças podem-se mover na horizontal, vertical e diagonal."
 
-#: ../peg-e.desktop.in:4
+#: ../peg-e.desktop.in.h:1
+msgid "Peg-E"
+msgstr "Peg-E"
+
+#: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
 msgstr "Jogo de Eliminação Peg"

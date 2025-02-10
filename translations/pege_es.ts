@@ -28,7 +28,7 @@
     </message>
     <message>
         <source>Please restart this application for the change in language to take effect.</source>
-        <translation>Por favor reinicia la aplicación para que se produzca el cambio de idioma.</translation>
+        <translation>Reinicia la aplicación para efectuar el cambio de idioma.</translation>
     </message>
 </context>
 <context>

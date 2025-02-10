@@ -1,48 +1,40 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Graeme Gott
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
-# M T <michtrz@gmail.com>, 2015
+# Michał Trzebiatowski <michtrz@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2017-09-21 13:54+0000\n"
-"Last-Translator: M T <michtrz@gmail.com>\n"
-"Language-Team: Polish (http://www.transifex.com/gottcode/peg-e/language/"
-"pl/)\n"
-"Language: pl\n"
+"POT-Creation-Date: 2014-11-14 10:30+0000\n"
+"PO-Revision-Date: 2014-11-14 10:34+0000\n"
+"Last-Translator: Michał Trzebiatowski <michtrz@gmail.com>, 2015\n"
+"Language-Team: Polish (http://app.transifex.com/gottcode/peg-e/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
-"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
-"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: ../peg-e.appdata.xml.in:6 ../peg-e.desktop.in:3
-msgid "Peg-E"
-msgstr "Peg-E"
-
-#: ../peg-e.appdata.xml.in:7 ../peg-e.desktop.in:5
+#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
 msgstr "Przeskocz kołki, aby je usunąć"
 
-#: ../peg-e.appdata.xml.in:10
+#: ../peg-e.appdata.xml.in.h:2
 msgid ""
 "Peg-E is a peg solitaire game in which you jump over pieces in order to "
 "remove them from the board, ultimately trying to eliminate all but one. The "
 "boards are randomly generated, with 100 levels of difficulty. The game auto-"
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
-msgstr ""
-"Peg-E to gra typu solitaire, w której przeskakujesz przez części, aby usunąć "
-"je z planszy, w końcu próbujesz usunąć wszystkie, oprócz jednego. Plansze "
-"generowane są losowo, przy 100 poziomach trudności. Gra automatycznie "
-"zapisuje stan i ma opcję cofania ruchu. Części mogą poruszać się poziomo, "
-"pionowo i na ukos."
+msgstr "Peg-E to gra typu solitaire, w której przeskakujesz przez części, aby usunąć je z planszy, w końcu próbujesz usunąć wszystkie, oprócz jednego. Plansze generowane są losowo, przy 100 poziomach trudności. Gra automatycznie zapisuje stan i ma opcję cofania ruchu. Części mogą poruszać się poziomo, pionowo i na ukos."
 
-#: ../peg-e.desktop.in:4
+#: ../peg-e.desktop.in.h:1
+msgid "Peg-E"
+msgstr "Peg-E"
+
+#: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
 msgstr "Gra eliminacji Peg"

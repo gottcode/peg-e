@@ -1,46 +1,40 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Graeme Gott
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Åke Engelbrektson, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Peg-E\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:54+0000\n"
-"PO-Revision-Date: 2021-02-18 04:56+0000\n"
-"Last-Translator: Åke Engelbrektson\n"
-"Language-Team: Swedish (http://www.transifex.com/gottcode/peg-e/language/"
-"sv/)\n"
-"Language: sv\n"
+"POT-Creation-Date: 2014-11-14 10:30+0000\n"
+"PO-Revision-Date: 2014-11-14 10:34+0000\n"
+"Last-Translator: Åke Engelbrektson, 2021\n"
+"Language-Team: Swedish (http://app.transifex.com/gottcode/peg-e/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../peg-e.appdata.xml.in:6 ../peg-e.desktop.in:3
-msgid "Peg-E"
-msgstr "Peg-E"
-
-#: ../peg-e.appdata.xml.in:7 ../peg-e.desktop.in:5
+#: ../peg-e.appdata.xml.in.h:1 ../peg-e.desktop.in.h:3
 msgid "Jump pegs to eliminate them"
 msgstr "Hoppa över pinnar för att eliminera dem"
 
-#: ../peg-e.appdata.xml.in:10
+#: ../peg-e.appdata.xml.in.h:2
 msgid ""
 "Peg-E is a peg solitaire game in which you jump over pieces in order to "
 "remove them from the board, ultimately trying to eliminate all but one. The "
 "boards are randomly generated, with 100 levels of difficulty. The game auto-"
 "saves, and has undo-redo capability. Pieces can move horizontally, "
 "vertically, and diagonally."
-msgstr ""
-"Peg-E är ett solitairespel där du hoppar över bitar för att ta bort dem från "
-"brädet, i slutändan för att eliminera alla utom en. Banorna genereras "
-"slumpmässigt i 100 svårighetsgrader. Spelet sparas automatiskt och har ångra-"
-"gör-om-funktioner. Bitarna kan röra sig horisontellt, vertikalt och "
-"diagonalt."
+msgstr "Peg-E är ett solitairespel där du hoppar över bitar för att ta bort dem från brädet, i slutändan för att eliminera alla utom en. Banorna genereras slumpmässigt i 100 svårighetsgrader. Spelet sparas automatiskt och har ångra-gör-om-funktioner. Bitarna kan röra sig horisontellt, vertikalt och diagonalt."
 
-#: ../peg-e.desktop.in:4
+#: ../peg-e.desktop.in.h:1
+msgid "Peg-E"
+msgstr "Peg-E"
+
+#: ../peg-e.desktop.in.h:2
 msgid "Peg Elimination Game"
 msgstr "Peggelimineringsspel"
