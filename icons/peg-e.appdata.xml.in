@@ -32,12 +32,6 @@
     <binary>peg-e</binary>
   </provides>
   <launchable type="desktop-id">peg-e.desktop</launchable>
-  <icon type="stock">peg-e</icon>
-
-  <categories>
-    <category>Game</category>
-    <category>BoardGame</category>
-  </categories>
 
   <kudos>
     <kudo>HiDpiIcon</kudo>
