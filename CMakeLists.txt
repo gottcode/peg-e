@@ -126,7 +126,7 @@ else()
 	install(DIRECTORY icons/oxygen/hicolor DESTINATION ${CMAKE_INSTALL_DATADIR}/peg-e/icons)
 
 	include(cmake/TranslateMetainfo.cmake)
-	process_and_install_metainfo(Peg-E ${CMAKE_SOURCE_DIR}/icons/po)
+	process_and_install_metainfo(PO_DIR ${CMAKE_SOURCE_DIR}/icons/po)
 endif()
 
 set_property(SOURCE src/main.cpp APPEND PROPERTY COMPILE_DEFINITIONS PEGE_DATADIR="${datadir}")
