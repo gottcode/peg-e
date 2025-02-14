@@ -4,7 +4,7 @@
 
 SET SRCDIR=..\peg-e
 SET APP=Peg-E
-SET VERSION=1.3.4
+SET VERSION=1.3.5
 
 ECHO Copying executable
 MKDIR %SRCDIR%\%APP%
