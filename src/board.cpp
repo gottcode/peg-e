@@ -11,6 +11,8 @@
 #include "peg.h"
 #include "puzzle.h"
 
+#include <QGridLayout>
+#include <QLabel>
 #include <QLinearGradient>
 #include <QResizeEvent>
 #include <QSettings>
@@ -28,6 +30,23 @@ Board::Board(QUndoStack* moves, QWidget* parent)
 {
 	QGraphicsScene* scene = new QGraphicsScene(this);
 	setScene(scene);
+
+	m_message = new QLabel(this);
+	m_message->setFont(QFont("Sans", 24));
+	m_message->setStyleSheet(
+		"QLabel {"
+			"background-color: rgba(0, 0, 0, 200);"
+			"color: white;"
+			"margin: 0;"
+			"padding: 1em;"
+			"border-radius: 10px;"
+		"}");
+	m_message->hide();
+
+	QGridLayout* layout = new QGridLayout(this);
+	layout->setContentsMargins(0, 0, 0, 0);
+	layout->setSpacing(0);
+	layout->addWidget(m_message, 0, 0, Qt::AlignCenter);
 
 	// Configure view
 	setCacheMode(QGraphicsView::CacheNone);
@@ -65,6 +84,7 @@ void Board::generate(int seed, int difficulty, int algorithm)
 {
 	// Remove old board
 	m_status = 0;
+	m_message->hide();
 	m_moves->clear();
 	m_holes.clear();
 	scene()->clear();
@@ -166,40 +186,6 @@ void Board::drawBackground(QPainter* painter, const QRectF& rect)
 
 //-----------------------------------------------------------------------------
 
-void Board::drawForeground(QPainter* painter, const QRectF&)
-{
-	if (m_status) {
-		QString message((m_status == 2) ? tr("Success") : tr("Game Over"));
-		QFontMetrics metrics(QFont("Sans", 24));
-		int w = metrics.boundingRect(message).width();
-		int h = metrics.height();
-		int ratio = devicePixelRatio();
-		QPixmap pixmap(QSize(w + h, h * 2) * ratio);
-		pixmap.setDevicePixelRatio(ratio);
-		pixmap.fill(QColor(0, 0, 0, 0));
-		{
-			QPainter pixmap_painter(&pixmap);
-
-			pixmap_painter.setPen(Qt::NoPen);
-			pixmap_painter.setBrush(QColor(0, 0, 0, 200));
-			pixmap_painter.setRenderHint(QPainter::Antialiasing, true);
-			pixmap_painter.drawRoundedRect(0, 0, w + h, h * 2, 10, 10);
-
-			pixmap_painter.setFont(QFont("Sans", 24));
-			pixmap_painter.setPen(Qt::white);
-			pixmap_painter.setRenderHint(QPainter::TextAntialiasing, true);
-			pixmap_painter.drawText(h / 2, h / 2 + metrics.ascent(), message);
-		}
-
-		painter->save();
-		painter->resetTransform();
-		painter->drawPixmap((width() - (pixmap.width() / ratio)) / 2, (height() - (pixmap.height() / ratio)) / 2, pixmap);
-		painter->restore();
-	}
-}
-
-//-----------------------------------------------------------------------------
-
 void Board::resizeEvent(QResizeEvent* event)
 {
 	fitInView(sceneRect(), Qt::KeepAspectRatio);
@@ -219,7 +205,16 @@ bool Board::checkFinished()
 			}
 		}
 	}
-	m_status = (pegs == 1) ? 2 : 1;
+
+	if (pegs == 1) {
+		m_status = 2;
+		m_message->setText(tr("Success"));
+	} else {
+		m_status = 1;
+		m_message->setText(tr("Game Over"));
+	}
+	m_message->show();
+
 	return true;
 }
 

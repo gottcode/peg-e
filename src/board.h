@@ -13,6 +13,7 @@ class Peg;
 #include <QColor>
 #include <QGraphicsView>
 #include <QHash>
+class QLabel;
 class QUndoStack;
 
 /**
@@ -97,9 +98,6 @@ protected:
 	/** Override parent function to draw background gradient. */
 	void drawBackground(QPainter* painter, const QRectF& rect) override;
 
-	/** Override parent function to draw status message. */
-	void drawForeground(QPainter* painter, const QRectF& rect) override;
-
 	/** Override parent function to scale board when resized. */
 	void resizeEvent(QResizeEvent* event) override;
 
@@ -115,6 +113,7 @@ private:
 	QHash<QPoint, Hole*> m_holes; /**< holes on board */
 	QColor m_color; /**< peg color */
 	int m_status; /**< status of game. @li @c 0 game is active @li @c 1 game is lost @li @c 2 game is won */
+	QLabel* m_message; /**< show status message */
 	QUndoStack* m_moves; /**< history of peg movements */
 };
 
