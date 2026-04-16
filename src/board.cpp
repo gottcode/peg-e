@@ -49,7 +49,7 @@ Board::Board(QUndoStack* moves, QWidget* parent)
 	layout->addWidget(m_message, 0, 0, Qt::AlignCenter);
 
 	// Configure view
-	setCacheMode(QGraphicsView::CacheNone);
+	setCacheMode(QGraphicsView::CacheBackground);
 	setRenderHints(QPainter::Antialiasing | QPainter::TextAntialiasing);
 	setFrameStyle(QFrame::NoFrame);
 	setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
