@@ -77,9 +77,7 @@ Window::Window()
 	QString selected_color = QSettings().value("Appearance", "#0055ff").toString();
 
 	m_colors = new QActionGroup(this);
-	QMapIterator<QString, QString> i(colors);
-	while (i.hasNext()) {
-		i.next();
+	for (auto i = colors.cbegin(); i != colors.cend(); ++i) {
 		QAction* color_action = appearance_menu->addAction(i.key());
 		color_action->setData(i.value());
 		color_action->setCheckable(true);

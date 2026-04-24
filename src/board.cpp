@@ -110,10 +110,8 @@ void Board::generate(int seed, int difficulty, int algorithm)
 	setSceneRect(QRectF(puzzle->position() * 20, puzzle->size() * 20).adjusted(-10,-10,10,10));
 	fitInView(sceneRect(), Qt::KeepAspectRatio);
 
-	QHash<QPoint, bool> holes = puzzle->holes();
-	QHashIterator<QPoint, bool> i(holes);
-	while (i.hasNext()) {
-		i.next();
+	const QHash<QPoint, bool> holes = puzzle->holes();
+	for (auto i = holes.cbegin(); i != holes.cend(); ++i) {
 		QPoint position = i.key();
 
 		Hole* hole = new Hole(position);
@@ -165,9 +163,8 @@ void Board::setAppearance(const QColor& color)
 	m_color = color;
 	QSettings().setValue("Appearance", m_color.name());
 
-	QHashIterator<QPoint, Hole*> i(m_holes);
-	while (i.hasNext()) {
-		Peg* peg = i.next().value()->peg();
+	for (Hole* hole : std::as_const(m_holes)) {
+		Peg* peg = hole->peg();
 		if (peg) {
 			peg->setAppearance(m_color);
 		}
