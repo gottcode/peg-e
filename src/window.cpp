@@ -311,3 +311,5 @@ void Window::startGame(int seed, int difficulty, int algorithm)
 }
 
 //-----------------------------------------------------------------------------
+
+#include "moc_window.cpp"
