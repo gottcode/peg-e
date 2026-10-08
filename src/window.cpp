@@ -16,6 +16,7 @@
 #include <QDialog>
 #include <QDialogButtonBox>
 #include <QFormLayout>
+#include <QMap>
 #include <QMenuBar>
 #include <QMessageBox>
 #include <QRandomGenerator>
